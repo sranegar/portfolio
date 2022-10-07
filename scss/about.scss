@@ -1,0 +1,376 @@
+  
+        span {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+           
+            letter-spacing: 5px;
+           font-weight: bolder;
+            margin-top: 10vh;
+            transform: translateX(-50%);
+            color: white;
+            background: url('../assets/images/scope.jpg');
+            background-size: auto 255%;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 60s ease-in-out infinite;
+
+            &:nth-child(2) {
+                top: 50vh;
+            }
+
+            @keyframes shine {
+                from {
+                    background-position: center 0;
+                }
+
+                to {
+                    background-position: center 200%;
+                }
+            }
+
+        }
+   
+    h1 {
+        font-family: PoppinsLight;
+        font-size: 16px;
+        color: $site-white;
+        letter-spacing: 1.3px;
+    }
+
+    hr {
+        border: .5px solid $hr-color;
+        margin-bottom: 12px;
+    }
+
+    .about-section-row {
+        display: flex;
+        justify-content: space-between;
+         margin-bottom: 30px;
+        p {
+            font-family: PoppinsReg;
+            font-size: 14px;
+            color: $content-text;
+            letter-spacing: .5px;
+
+        }
+
+        .about-col1 {
+            min-width: 60%;
+            padding: 18px;
+            border-right: 1px solid $hr-color;
+
+        }
+
+        .about-col2 {
+            min-width: 40%;
+            padding: 18px;
+
+            .about-col2-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .about-label {
+                    font-family: PoppinsReg;
+                    background-color: $neon;
+                    color: $site-black;
+                    padding: 0px 5px;
+                    max-height: 20px;
+                    min-width: 80px;
+                    margin-right: 20px;
+                }
+
+                .about-answer {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .skills-row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        min-height: 400px;
+
+        h3 {
+            font-family: PoppinsLight;
+            font-size: 16px;
+            color: $site-white;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding-bottom: 40px;
+
+            i {
+                color: $neon;
+                font-size: 22px;
+                padding-right: 8px;
+            }
+        }
+
+        p {
+            font-family: PoppinsReg;
+            font-size: 14px;
+            color: $site-white;
+        }
+
+        .skills-col1 {
+            min-width: 50%;
+            border-right: 1px solid $hr-color;
+            padding: 16px;
+
+            .dev-skills {
+                display: flex;
+                flex-direction: column;
+                max-width: 75%;
+                margin: 0 auto;
+                padding-bottom: 3px;
+                padding-top: 5px;
+
+                label {
+                    font-family: PoppinsLight;
+                    font-size: 13px;
+                    color: $site-white;
+                    padding-bottom: 5px;
+                }
+
+                progress {
+                    width: 100%;
+                    -webkit-appearance: none;
+
+                }
+
+                progress::-webkit-progress-bar {
+                    background-color: $hr-color;
+                    height: 2px;
+                }
+
+                progress::-webkit-progress-value {
+                    background-color: $neon;
+                }
+
+                progress::-moz-progress-bar {
+                    background-color: $neon;
+                }
+            }
+        }
+
+        .skills-col2 {
+            min-width: 50%;
+            padding: 18px;
+
+        }
+    }
+
+    .services-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+        padding-bottom: 8px;
+
+        h3 {
+            font-family: PoppinsLight;
+            font-size: 16px;
+            color: $site-white;
+            letter-spacing: 2px;
+
+        }
+
+        p {
+            font-family: PoppinsReg;
+            font-size: 14px;
+            color: $content-text;
+            margin-top: -10px;
+        }
+
+        .services-wrapper {
+            display: flex;
+            max-width: 55%;
+
+            .icon-wrapper {
+                min-width: 55px;
+
+
+                i {
+                    color: $neon;
+                    font-size: 22px;
+
+                }
+            }
+
+
+        }
+
+        .button-wrapper {
+            max-width: 200px;
+            height: 50px;
+
+            button {
+                background-color: transparent;
+                padding: 8px;
+                font-family: PoppinsReg;
+                color: $disable;
+                border: none;
+                background-color: $site-black;
+                cursor: pointer;
+                transition: all 0.3s;
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+
+                &:hover {
+
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .about-section-row {
+
+
+            .about-col1 {
+
+
+                max-width: 50%;
+                padding-right: 10px;
+                padding-left: 0px;
+
+                p {
+                    width: 100%;
+                    font-size: 12px;
+                }
+            }
+
+            .about-col2 {
+
+
+
+
+                padding-right: 0px;
+
+                .about-col2-wrapper {
+                    flex-direction: column;
+
+                    .about-label {
+                        color: $site-black;
+                        border-bottom: .5px solid $neon;
+                        font-size: 12px;
+                        margin-bottom: 4px;
+
+                    }
+
+                    .about-answer {
+                        max-height: 20px;
+                        max-width: 75%;
+                        background-color: rgba(192, 192, 192, 0.31);
+                        margin: 0px;
+                        font-size: 10px;
+                        text-align: right;
+                        margin-bottom: 2px;
+                        margin-left: 8px;
+                        color: $site-black;
+                        font-family: PoppinsItalic;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .skills-row {
+            padding-bottom: 40px;
+
+            h3 {
+                font-size: 12px;
+
+                i {
+                    font-size: 18px;
+                    padding-right: 8px;
+                }
+            }
+
+            .skills-col1 {
+                .dev-skills {
+                    min-width: 95%;
+                }
+            }
+
+        }
+
+        .services-row {
+
+            h3 {
+                font-family: PoppinsLight;
+                font-size: 12.5px;
+                color: $site-white;
+                letter-spacing: 1.5px;
+
+            }
+
+            p {
+                font-size: 10.5px;
+            }
+
+
+            .services-wrapper {
+
+                .icon-wrapper {
+                    min-width: 40px;
+
+                    i {
+                        font-size: 18px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+
+            .button-wrapper {
+                max-width: 160px;
+                height: 40px;
+
+                button {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        .about-section-row {
+            flex-direction: column;
+
+            .about-col1 {
+                min-width: 100%;
+                padding: 18px;
+                border-right: none;
+            }
+
+            .about-col2 {
+                width: 300px;
+                margin: 0 auto;
+                padding: 16px;
+
+                .about-col2-wrapper {
+
+
+                    .about-label {}
+
+                    .about-answer {
+
+                        background-color: rgba(192, 192, 192, 0.31);
+                        margin: 0px;
+                        font-size: 10px;
+                        text-align: right;
+                        margin-bottom: 2px;
+                        margin-left: 35px;
+
+                    }
+                }
+            }
+        }
+    }

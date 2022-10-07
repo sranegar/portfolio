@@ -1,0 +1,93 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html,
+  body {
+      height: 100%;
+    
+  }
+
+  body {
+   
+      }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+      margin-bottom: 16px
+  }
+
+  //Scroll bar 
+
+  *::-webkit-scrollbar {
+      width: 4px;
+      max-height: 20px;
+  }
+
+  *::-webkit-scrollbar-track {}
+
+  *::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      border: 6px solid transparent;
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background-color: #eafc20ad;
+  }
+
+  //Fonts
+  
+  @font-face {
+      font-family: PoppinsReg;
+      src: url(../assets/fonts/Poppins-Regular.ttf)
+  }
+
+  @font-face {
+      font-family: PoppinsLight;
+      src: url(../assets/fonts/Poppins-Light.ttf)
+  }
+
+  @font-face {
+      font-family: PoppinsMed;
+      src: url(../assets/fonts/Poppins-Medium.ttf)
+  }
+
+  @font-face {
+      font-family: PoppinsItalic;
+      src: url(../assets/fonts/Poppins-Italic.ttf)
+  }
+
+
+//Key frames
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+@keyframes delay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.05);
+        -webkit-transform: scaleY(0.05);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}

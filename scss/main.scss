@@ -1,0 +1,161 @@
+ .site-container {
+     max-width: 100vw;
+     height: 100%;
+     display: flex;
+     background-size: 400% 400%;
+     position: relative;
+     height: 100vh;
+     width: 100%;
+     padding: 0;
+     margin: 0px;
+
+     nav {
+         position: relative;
+         height: 100vh;
+         min-width: 200px;
+         background-color: rgb(210, 223, 223);
+         // background-image: linear-gradient(60deg, #FB9F54 0%, #46C055 40%, #2c7a72 60%, #382C7A 100%);
+         display: flex;
+         align-items: center;
+
+         position: relative;
+         overflow: hidden;
+
+         &:hover {}
+
+         .links-wrapper {
+             height: 220px;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             width: 90%;
+             margin: 0 auto;
+             text-align: right;
+
+             .logo {
+                 display: none;
+             }
+
+             .nav-logo {
+                 position: absolute;
+                 top: 10px;
+                 left: 0px;
+                 width: 200px;
+             }
+
+             a {
+                 font-size: 14px;
+                 color: $site-black;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 font-family: 'Montserrat', sans-serif;
+                 cursor: pointer;
+                 font-family: PoppinsMed;
+                 letter-spacing: 1.2px;
+                 border-bottom: 2px solid $site-gray;
+                 padding: 18px;
+                 margin-top: 10px;
+             }
+
+             .mouseOver {
+                 border-image: linear-gradient(to right, #EE2780, #382C7A, #467dc0, #46C055, #EE2780, ) 10;
+                 animation: slidebg 40s linear infinite alternate;
+
+             }
+         }
+
+     }
+
+     //All dynamic loading loads into here
+     .scroll-section {
+         min-width: 70vw;
+         background-color: rgba(5, 12, 18, 0.991);
+         height: 100vh;
+         overflow-y: auto;
+         padding: 20px 80px;
+         padding-top: 120px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+     }
+
+     h2,
+     h1 {
+         font-family: PoppinsLight;
+         font-size: 20px;
+         color: $site-white;
+         letter-spacing: 1.3px;
+     }
+
+
+
+     hr {
+         border: .5px solid $hr-color;
+         margin-bottom: 12px;
+     }
+ }
+
+
+
+ @media screen and (max-width: 768px) {
+     .site-container {
+         nav {
+             min-width: 95px;
+
+             .links-wrapper {
+                 max-width: 100%;
+
+                 a {
+                     font-size: 12px;
+                     letter-spacing: 0px;
+                 }
+
+                 .nav-logo {
+                     display: none;
+                 }
+
+                 .logo {
+                     position: absolute;
+                     display: flex;
+                     max-width: 75%;
+                     top: 10px;
+                     left: 5px;
+                 }
+             }
+         }
+
+         .scroll-section {
+             padding: 40px 20px;
+             margin-top: 0vh;
+             height: 100vh;
+
+         }
+     }
+
+ }
+
+ @media screen and (max-width: 390px) {
+     .site-container {
+         nav {
+             width: 0vw;
+
+             .links-wrapper {
+                 .logo {
+                     width: 60px;
+                 }
+
+                 a {}
+             }
+         }
+
+         .scroll-section {
+             padding: 40px 5px;
+         }
+     }
+
+ }
+
+ @keyframes slidebg {
+     to {
+         background-position: 80vw;
+     }
+ }
