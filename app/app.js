@@ -6,7 +6,7 @@ function route() {
  
 
   if (!pageID) {
-    MODEL.changePage("home");
+    MODEL.changePage("about");
   } else if (pageID == "" || pageID == "home") {
     MODEL.changePage(pageID);
   } else {

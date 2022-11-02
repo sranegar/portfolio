@@ -49,10 +49,11 @@
         justify-content: space-between;
          margin-bottom: 30px;
         p {
-            font-family: PoppinsReg;
+            font-family: PoppinsLight;
             font-size: 14px;
             color: $content-text;
             letter-spacing: .5px;
+            line-height: 25px;
 
         }
 
@@ -110,7 +111,7 @@
         }
 
         p {
-            font-family: PoppinsReg;
+            font-family: PoppinsLight;
             font-size: 14px;
             color: $site-white;
         }
@@ -129,7 +130,7 @@
                 padding-top: 5px;
 
                 label {
-                    font-family: PoppinsLight;
+                    font-family: PoppinsReg;
                     font-size: 13px;
                     color: $site-white;
                     padding-bottom: 5px;

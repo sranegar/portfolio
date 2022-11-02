@@ -1,37 +1,35 @@
  .site-container {
-     max-width: 100vw;
-     height: 100%;
+    
      display: flex;
      background-size: 400% 400%;
      position: relative;
      height: 100vh;
-     width: 100%;
+     width: 100vw;
      padding: 0;
      margin: 0px;
 
      nav {
          position: relative;
          height: 100vh;
-         min-width: 200px;
+         min-width: 20vw;
          background-color: rgb(210, 223, 223);
          // background-image: linear-gradient(60deg, #FB9F54 0%, #46C055 40%, #2c7a72 60%, #382C7A 100%);
          display: flex;
          align-items: center;
-
          position: relative;
          overflow: hidden;
-
+box-shadow: rgba(27, 27, 27, 0.7) -50px 0px 100px;
          &:hover {}
 
          .links-wrapper {
-             height: 220px;
+             height:50px;
              display: flex;
              flex-direction: column;
              justify-content: space-between;
-             width: 90%;
+             width: 75%;
              margin: 0 auto;
              text-align: right;
-
+             
              .logo {
                  display: none;
              }
@@ -51,9 +49,9 @@
                  font-family: 'Montserrat', sans-serif;
                  cursor: pointer;
                  font-family: PoppinsMed;
-                 letter-spacing: 1.2px;
+                 letter-spacing: 1.4px;
                  border-bottom: 2px solid $site-gray;
-                 padding: 18px;
+                 padding: 18px 30px;
                  margin-top: 10px;
              }
 
@@ -69,7 +67,7 @@
      //All dynamic loading loads into here
      .scroll-section {
          min-width: 70vw;
-         background-color: rgba(5, 12, 18, 0.991);
+         background-color: #09182d;
          height: 100vh;
          overflow-y: auto;
          padding: 20px 80px;
@@ -81,9 +79,13 @@
      h2,
      h1 {
          font-family: PoppinsLight;
-         font-size: 20px;
+         font-size: 25px;
          color: $site-white;
          letter-spacing: 1.3px;
+      
+   
+            
+      
      }
 
 
