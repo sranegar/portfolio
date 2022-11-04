@@ -1,14 +1,28 @@
-$neon: #eafc20d7;
-$orange: #FB9F54;
-$site-green: #8a9b4a;
-$site-white: #ffffffa5;
-$site-black: #000;
-$link-color: #ffffffa3;
-$content-text: #ffffffbd;
-$hr-color: #ffffff2a;
-$subheading: #e0e0e090;
-$disable: #ffffff72;
-$site-gray: #b1c0c0;
+// $neon: #eafc20d7;
+$neon: #ffd026;
+$site-white: #fff;
+$site-black: #080808;
+$subheader: #909090;
+$subsection: #ebe9e9;
+$content-text: #040404f2;
+$hr-color: #2c26269c;
+$subheading: #040303fe;
+$disable: #f3f0f0;
 
-
+$header-color: #2feabe;
+$site-pink:  #f41177;
  
+
+$color-html: hsl(15, 100%, 60%);
+$color-css: hsl(200, 100%, 60%);
+$color-scss: hsl(300, 100%, 60%);
+
+
+$porcent-html: 92;
+$porcent-css: 80;
+$porcent-scss: 85;
+
+
+@function strokeDashoffset($num) {
+    @return 314 - (314 * $num) / 100;
+}

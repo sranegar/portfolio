@@ -7,11 +7,10 @@
   html,
   body {
       height: 100%;
-    
   }
 
   body {
-   
+   background-color: #dde4ec;
       }
 
   h1,
@@ -24,23 +23,33 @@
       margin-bottom: 16px
   }
 
+  section {
+    min-height: 100vh;
+ 
+    overflow-x: auto;
+  }
+ 
   //Scroll bar 
 
-  *::-webkit-scrollbar {
-      width: 4px;
+   ::-webkit-scrollbar {
+      width: 0px;
       max-height: 20px;
+
+      
   }
 
-  *::-webkit-scrollbar-track {}
+   ::-webkit-scrollbar-track {
+    background-color: $site-black;
+  }
 
-  *::-webkit-scrollbar-thumb {
+   ::-webkit-scrollbar-thumb {
       border-radius: 20px;
       border: 6px solid transparent;
-
+background-color: $header-color;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-      background-color: #eafc20ad;
+      background-color: darken($header-color, 20%);
   }
 
   //Fonts
@@ -63,6 +72,14 @@
   @font-face {
       font-family: PoppinsItalic;
       src: url(../assets/fonts/Poppins-Italic.ttf)
+  }
+  @font-face {
+      font-family: Smithen;
+      src: url(../assets/fonts/Smithen\ Script.ttf)
+  }
+  @font-face {
+      font-family: Yeseva;
+      src: url(../assets/fonts/YesevaOne-Regular.ttf)
   }
 
 

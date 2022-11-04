@@ -1,160 +1,229 @@
  .site-container {
-    
-     display: flex;
-     background-size: 400% 400%;
-     position: relative;
-     height: 100vh;
-     width: 100vw;
-     padding: 0;
+     max-width: 100vw;
+     padding: 0px;
      margin: 0px;
 
+
      nav {
-         position: relative;
-         height: 100vh;
-         min-width: 20vw;
-         background-color: rgb(210, 223, 223);
-         // background-image: linear-gradient(60deg, #FB9F54 0%, #46C055 40%, #2c7a72 60%, #382C7A 100%);
+         height: 90vh;
+         padding: 10px;
+         background-color: #f41177;
+         box-shadow: rgba(0, 0, 0, 0.471) 0px 0px 25px;
+         margin: 0 auto;
          display: flex;
-         align-items: center;
-         position: relative;
-         overflow: hidden;
-box-shadow: rgba(27, 27, 27, 0.7) -50px 0px 100px;
-         &:hover {}
+         flex-direction: column;
+         justify-content: space-between;
 
-         .links-wrapper {
-             height:50px;
+         svg {
+             width: 100%;
+             padding: 20px;
+         }
+
+         .filled-heading {
+             text-transform: lowercase;
+             font-family: Smithen;
+             font-weight: 100;
+             font-size: 5.5em;
+
+             .intro {
+                 text-transform: capitalize;
+                 font-size: .085em;
+                 font-weight: 280;
+                 font-family: Poppins;
+                 letter-spacing: .2px;
+             }
+         }
+
+         /* Animate the background shapes */
+         #background path {
+             animation: pulse 4s ease-in;
+
+             /* Necessary to keep the SVG objects in place while scaling */
+             transform-origin: 50% 50%;
+             transform-box: fill-box;
+         }
+
+         @keyframes pulse {
+
+             /* Rotating it along with the scale makes it a little bit more fancy */
+             0%,
+             0% {
+                 transform: scale(0) rotate(33deg);
+             }
+
+             25%,
+             55% {
+                 transform: scale(1) rotate(0deg);
+             }
+         }
+
+         .bottom {
+
+             padding-bottom: 0px;
              display: flex;
-             flex-direction: column;
-             justify-content: space-between;
-             width: 75%;
-             margin: 0 auto;
-             text-align: right;
-             
-             .logo {
-                 display: none;
-             }
+             justify-content: center;
 
-             .nav-logo {
-                 position: absolute;
-                 top: 10px;
-                 left: 0px;
-                 width: 200px;
-             }
 
-             a {
-                 font-size: 14px;
-                 color: $site-black;
-                 text-decoration: none;
-                 text-transform: uppercase;
-                 font-family: 'Montserrat', sans-serif;
+             .fa-solid,
+             .fas {
+                 font-size: 50px;
+                 color: lighten($site-pink, 20%);
+                 opacity: 55%;
                  cursor: pointer;
-                 font-family: PoppinsMed;
-                 letter-spacing: 1.4px;
-                 border-bottom: 2px solid $site-gray;
-                 padding: 18px 30px;
-                 margin-top: 10px;
-             }
-
-             .mouseOver {
-                 border-image: linear-gradient(to right, #EE2780, #382C7A, #467dc0, #46C055, #EE2780, ) 10;
-                 animation: slidebg 40s linear infinite alternate;
 
              }
          }
 
-     }
-
-     //All dynamic loading loads into here
-     .scroll-section {
-         min-width: 70vw;
-         background-color: #09182d;
-         height: 100vh;
-         overflow-y: auto;
-         padding: 20px 80px;
-         padding-top: 120px;
-         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
      }
 
-     h2,
-     h1 {
-         font-family: PoppinsLight;
-         font-size: 25px;
-         color: $site-white;
-         letter-spacing: 1.3px;
+     .links-wrapper {
+         height: 10vh;
+         display: flex;
+         align-items: center;
+         background-color: $site-white;
+         border-bottom: 1.5px solid black;
+         padding-left: 25px;
       
-   
-            
-      
+        
+         a {
+             font-size: 15px;
+             color: $site-black;
+             text-transform: uppercase;
+             font-family: 'Montserrat', sans-serif;
+             cursor: pointer;
+             font-family: PoppinsLight;
+             letter-spacing: 1.4px;
+             text-decoration: none;
+             display: flex;
+             align-items: center;
+             padding: 0px 15px 0px;
+             height: 100%;
+
+
+             &:hover {
+                 background-color: lighten($header-color, 15%);
+
+             }
+
+             
+
+
+         }
+                 .na {
+                     background-color: none;}
+
+ .active-link {
+     background-color: lighten($header-color, 15%);
+
+ }
      }
 
+     .main-container {
+         max-width: 100%;
+         background-color: $site-black;
 
+
+         .scroll-section {
+
+             // border-left: 170px solid  ;
+             margin: 0 auto;
+             max-height: 91vh;
+             overflow-x: auto;
+
+             padding: 0px 0px 10px;
+             background-color: white;
+
+             transition: scrollbar-color 0.3s ease-out;
+
+
+         }
+
+         h1 {
+             font-family: Yeseva;
+
+             font-size: 24px;
+             color: $site-black;
+             letter-spacing: 1px;
+
+             font-weight: 100;
+         }
+
+         h2,
+         {
+         font-family: Poppins;
+
+         font-size: 18px;
+         color: $subheader;
+         letter-spacing: .8px;
+         margin: 0px;
+     }
 
      hr {
          border: .5px solid $hr-color;
          margin-bottom: 12px;
      }
  }
-
-
-
- @media screen and (max-width: 768px) {
-     .site-container {
-         nav {
-             min-width: 95px;
-
-             .links-wrapper {
-                 max-width: 100%;
-
-                 a {
-                     font-size: 12px;
-                     letter-spacing: 0px;
-                 }
-
-                 .nav-logo {
-                     display: none;
-                 }
-
-                 .logo {
-                     position: absolute;
-                     display: flex;
-                     max-width: 75%;
-                     top: 10px;
-                     left: 5px;
-                 }
-             }
-         }
-
-         .scroll-section {
-             padding: 40px 20px;
-             margin-top: 0vh;
-             height: 100vh;
-
-         }
-     }
-
  }
 
- @media screen and (max-width: 390px) {
-     .site-container {
-         nav {
-             width: 0vw;
 
-             .links-wrapper {
-                 .logo {
-                     width: 60px;
-                 }
+ //  @media screen and (max-width: 768px) {
+ //      .site-container {
+ //          nav {
+ //              min-width: 95px;
 
-                 a {}
-             }
-         }
+ //              .links-wrapper {
+ //                  max-width: 100%;
 
-         .scroll-section {
-             padding: 40px 5px;
-         }
-     }
+ //                  a {
+ //                      font-size: 12px;
+ //                      letter-spacing: 0px;
+ //                  }
 
- }
+ //                  .nav-logo {
+ //                      display: none;
+ //                  }
+
+ //                  .logo {
+ //                      position: absolute;
+ //                      display: flex;
+ //                      max-width: 75%;
+ //                      top: 10px;
+ //                      left: 5px;
+ //                  }
+ //              }
+ //          }
+
+ //          .scroll-section {
+ //              padding: 40px 20px;
+ //              margin-top: 0vh;
+ //              height: 100vh;
+
+ //          }
+ //      }
+
+ //  }
+
+ //  @media screen and (max-width: 390px) {
+ //      .site-container {
+ //          nav {
+ //              width: 0vw;
+
+ //              .links-wrapper {
+ //                  .logo {
+ //                      width: 60px;
+ //                  }
+
+ //                  a {}
+ //              }
+ //          }
+
+ //          .scroll-section {
+ //              padding: 40px 5px;
+ //          }
+ //      }
+
+ //  }
 
  @keyframes slidebg {
      to {
