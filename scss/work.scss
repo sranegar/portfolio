@@ -1,201 +1,271 @@
- .work {
-   
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  #modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    display: none;
 
-     .work-links-wrapper {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin: 0 auto;
-         width: 50%;
-         padding: 60px 10px 60px;
-         max-height: 50px;
+    #modal-content {
+      width: 50%;
+      background-color: #fff;
+      height: 80%;
+      margin: 5% auto;
 
-         .work-link {
-             width: 100%;
+      .modal-top {
+        height: 65%;
+        overflow: hidden;
+        //    background-image: url(../assets/images/slide2.jpg);
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     background-size:contain;
+        position: relative;
+        border-bottom: 2px solid $site-black;
+        img {
+          max-width: 100%;
+        }
+        .fa-circle-chevron-right {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-size: 40px;
+          cursor: pointer;
+          padding: 10px;
+          color: rgba(0, 0, 0, 0.212);
+        }
+        .fa-circle-chevron-left {
+          position: absolute;
+          left: 0;
+          font-size: 40px;
+          bottom: 0;
+          cursor: pointer;
+          padding: 10px;
+          color: rgba(0, 0, 0, 0.212);
+        }
+      }
+      .modal-bottom {
+        height: 35%;
+        padding: 20px;
+        position: relative;
+        h2 {
+          font-family: PoppinsReg;
+          letter-spacing: 1px;
+          margin: 0px;
+        }
+        h4 {
+          font-family: PoppinsLight;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: rgb(83, 83, 83);
+        }
+        p {
+          height: auto;
+          font-family: PoppinsLight;
+        }
+        button {
+          width: 150px;
+          height: 40px;
+          font-family: PoppinsLight;
+          text-transform: uppercase;
+          background-color: $site-pink;
+          border: 2px solid $site-pink;
+          color: $site-white;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $site-white;
+            border: 2px solid $site-pink;
+            color: $site-pink;
+            font-weight: 900;
+            transition: all 0.3s;
+          }
+        }
+        .fa-xmark {
+          position: absolute;
+          right: 0;
+          padding: 20px 30px;
+          bottom: 0;
+          font-size: 30px;
+          cursor: pointer;
+          color: #c0c0c0;
+        }
+      }
+    }
+  }
+  .work-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8vh auto 0vh;
+    width: 50%;
+    padding-bottom: 20px;
 
-             color: $site-black;
-             padding: 5px;
-             text-align: center;
+    //  max-height: 50px;
 
-             font-family: PoppinsMed;
-             text-transform: uppercase;
-             cursor: pointer;
-             white-space: nowrap;
-         }
+    .work-link {
+      width: 100%;
 
-         .active-work-link {
-             background-color: $header-color;
-             color: white;
-         }
-     }
+      color: $site-black;
+      padding: 5px;
+      text-align: center;
 
-     .work-wrapper {
-         display: flex;
-         justify-content: center;
-       max-height: 40%;
+      font-family: PoppinsMed;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+    }
 
+    .active-work-link {
+      background-color: $header-color;
+      color: white;
+    }
+  }
 
-         .work-col {
-             max-width: 25%;
-             padding: 0px;
-             // border: 1px solid $hr-color;
+  .work-wrapper {
+    display: flex;
+    justify-content: center;
 
+    .work-col {
+      max-width: 25%;
+      padding: 0px;
+      // border: 1px solid $hr-color;
 
-             .project-container {
-                 border: 1px solid $hr-color;
-                 padding: 0px 0px;
-                 width: 100%;
+      .project-container {
+        border: 1px solid #fff;
 
-                 .project-entry {
+        width: 100%;
 
-                     .image-container {
-                         position: relative;
-                         width: 100%;
-                         max-height: 350px;
-                         margin: 0 auto;
-                         overflow: hidden;
+        .image-container {
+          position: relative;
+          width: 100%;
+          max-height: 400px;
+          margin: 0 auto;
+          overflow: hidden;
 
-                         transition: all 0.3s;
-                         display: flex;
-                         justify-content: center;
-                         align-items: center;
+          transition: all 0.3s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
+          &:hover {
+            cursor: pointer;
 
-                         &:hover {
-                             cursor: pointer;
+            .title-wrapper {
+              opacity: 100%;
 
-                             .title-wrapper {
-                                 opacity: 100%;
+              .title,
+              .subtitle,
+              .work-btn-wrapper {
+                display: block;
+              }
+            }
+          }
 
-                                 .title,
-                                 .subtitle,
-                                 .work-btn-wrapper {
-                                     display: block;
+          img {
+            width: 100%;
+          }
+        }
 
-                                 }
+        .title-wrapper {
+          position: absolute;
+          background-color: $neon;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0%;
+          transition: 0.4s ease-in, 0.4s ease-out;
 
-                             }
-                         }
+          .title {
+            margin: 0 auto;
+            text-align: center;
+            font-family: PoppinsMed;
+            font-size: 18px;
+            color: $site-black;
+            display: none;
+          }
 
-                         .image-wrapper {
-                             min-width: 100%;
-                             height: 100%;
+          .subtitle {
+            font-family: PoppinsLight;
+            text-align: center;
+            color: $site-black;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            display: none;
+          }
 
+          .work-btn-wrapper {
+            background-color: red;
+            width: 35%;
+            margin: 0 auto;
+            display: none;
 
+            .work-btn {
+              @include site-button($btnBorderColor: $site-black);
+              @include site-button-sweep-anim();
+              width: 100%;
+              z-index: 9999;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .work {
+    .work-links-wrapper {
+      min-width: 100%;
+      flex-direction: column;
+      height: auto;
 
-                             img {
-                                 max-width: 100%;
+      .work-link {
+        min-width: 100%;
+      }
+    }
 
-                             }
+    .work-wrapper {
+      flex-direction: column;
 
+      .work-col {
+        margin: 0 auto;
+        min-width: 100%;
 
+        .project-container {
+          margin: 0px 0px 30px;
 
+          .project-entry {
+            .image-container {
+              .image-wrapper {
+                img {
+                  max-width: 100%;
+                  padding: 0px;
+                }
+              }
+            }
 
-                         }
+            .title-wrapper {
+              .title {
+              }
 
-                     }
-                 }
-
-                 .proj1,
-                 .proj2,
-                 .proj3,
-                 .proj4 {}
-
-                 .title-wrapper {
-                     position: absolute;
-                     background-color: $neon;
-                     width: 100%;
-                     height: 100%;
-                     display: flex;
-                     flex-direction: column;
-
-                     justify-content: center;
-                     opacity: 0%;
-                     transition: 0.4s ease-in, 0.4s ease-out;
-
-                     .title {
-                         margin: 0 auto;
-                         text-align: center;
-
-
-
-                         font-family: PoppinsReg;
-                         font-size: 16px;
-                         color: $site-black;
-                         display: none;
-
-                     }
-
-                     .subtitle {
-                         font-family: PoppinsMed;
-                         text-align: center;
-                         color: $site-black;
-                         letter-spacing: .5px;
-                         font-size: 15px;
-                         display: none;
-                     }
-
-                     .work-btn-wrapper {
-                         background-color: red;
-                         width: 48%;
-                         margin: 0 auto;
-                         display: none;
-
-                         .work-btn {
-                             @include site-button($btnBorderColor: $site-black );
-                             @include site-button-sweep-anim();
-                             width: 100%;
-
-                         }
-                     }
-                 }
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 768px) {
-     .work {
-         .work-links-wrapper {
-             min-width: 100%;
-             flex-direction: column;
-             height: auto;
-
-             .work-link {
-                 min-width: 100%;
-             }
-         }
-
-         .work-wrapper {
-             flex-direction: column;
-
-
-             .work-col {
-                 margin: 0 auto;
-                 min-width: 100%;
-
-                 .project-container {
-                     margin: 0px 0px 30px;
-
-                     .project-entry {
-                         .image-container {
-                             .image-wrapper {
-                                 img {
-                                     max-width: 100%;
-                                     padding: 0px;
-                                 }
-                             }
-                         }
-
-                         .title-wrapper {
-                             .title {}
-
-                             .subtitle {}
-                         }
-                     }
-                 }
-             }
-         }
-     }
- }
+              .subtitle {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

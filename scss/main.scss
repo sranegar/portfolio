@@ -1,232 +1,219 @@
- .site-container {
-     max-width: 100vw;
-     padding: 0px;
-     margin: 0px;
+.site-container {
+  max-width: 100vw;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+ 
 
+  #nav {
+    height: 100vh;
+    padding: 10px;
+    background-color: #f41177;
+    box-shadow: rgba(0, 0, 0, 0.471) 0px 0px 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-     nav {
-         height: 90vh;
-         padding: 10px;
-         background-color: #f41177;
-         box-shadow: rgba(0, 0, 0, 0.471) 0px 0px 25px;
-         margin: 0 auto;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
+    svg {
+      width: 100%;
+      padding: 20px;
+    }
 
-         svg {
-             width: 100%;
-             padding: 20px;
-         }
+    .filled-heading {
+      text-transform: lowercase;
+      font-family: Smithen;
+      font-weight: 100;
+      font-size: 5.5em;
 
-         .filled-heading {
-             text-transform: lowercase;
-             font-family: Smithen;
-             font-weight: 100;
-             font-size: 5.5em;
+      .intro {
+        text-transform: capitalize;
+        font-size: 0.085em;
+        font-weight: 280;
+        font-family: Poppins;
+        letter-spacing: 0.2px;
+      }
+    }
 
-             .intro {
-                 text-transform: capitalize;
-                 font-size: .085em;
-                 font-weight: 280;
-                 font-family: Poppins;
-                 letter-spacing: .2px;
-             }
-         }
+    /* Animate the background shapes */
+    #background path {
+      animation: pulse 4s ease-in;
 
-         /* Animate the background shapes */
-         #background path {
-             animation: pulse 4s ease-in;
+      /* Necessary to keep the SVG objects in place while scaling */
+      transform-origin: 50% 50%;
+      transform-box: fill-box;
+    }
 
-             /* Necessary to keep the SVG objects in place while scaling */
-             transform-origin: 50% 50%;
-             transform-box: fill-box;
-         }
+    @keyframes pulse {
+      /* Rotating it along with the scale makes it a little bit more fancy */
+      0%,
+      0% {
+        transform: scale(0) rotate(33deg);
+      }
 
-         @keyframes pulse {
+      25%,
+      55% {
+        transform: scale(1) rotate(0deg);
+      }
+    }
 
-             /* Rotating it along with the scale makes it a little bit more fancy */
-             0%,
-             0% {
-                 transform: scale(0) rotate(33deg);
-             }
+    .bottom {
+      padding-bottom: 0px;
+      display: flex;
+      justify-content: center;
 
-             25%,
-             55% {
-                 transform: scale(1) rotate(0deg);
-             }
-         }
+      .fa-solid,
+      .fas {
+        font-size: 50px;
+        color: lighten($site-pink, 20%);
+        opacity: 55%;
+        cursor: pointer;
+      }
+    }
+  }
+ 
+  #nav-bar {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: $site-white;
+    border-bottom: 2px solid black;
+    position: fixed;
+    
+    width: 100%;
+    z-index: 1;
 
-         .bottom {
+    a {
+      font-size: 16px;
+      color: $site-black;
+      text-transform: uppercase;
+ 
+      cursor: pointer;
+      font-family: PoppinsReg;
+      letter-spacing: 1.4px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 0px 30px;
+      height: 100%;
 
-             padding-bottom: 0px;
-             display: flex;
-             justify-content: center;
+      &:hover {
+        background-color: lighten($header-color, 15%);
+      }
+    }
+    .na {
+      background-color: none;
+    }
 
+    .active-link {
+      background-color: lighten($header-color, 15%);
+    }
 
-             .fa-solid,
-             .fas {
-                 font-size: 50px;
-                 color: lighten($site-pink, 20%);
-                 opacity: 55%;
-                 cursor: pointer;
+    .links-toggle {
+        top: 0;
+    }
+  }
 
-             }
-         }
+  //  .main-container {
+  //      max-width: 100%;
+  //      background-color: $site-black;
+ 
+  #app {
+    // border-left: 170px solid  ;
+    
+    
+    padding: 0px 0px  0px;
+    background-color: rgb(255, 255, 255);
+    transition: scrollbar-color 0.3s ease-out;
+  
+  }
 
+  h1 {
+    font-family: Yeseva;
 
-     }
+    font-size: 24px;
+    color: $site-black;
+    letter-spacing: 1px;
 
-     .links-wrapper {
-         height: 10vh;
-         display: flex;
-         align-items: center;
-         background-color: $site-white;
-         border-bottom: 1.5px solid black;
-         padding-left: 25px;
-      
-        
-         a {
-             font-size: 15px;
-             color: $site-black;
-             text-transform: uppercase;
-             font-family: 'Montserrat', sans-serif;
-             cursor: pointer;
-             font-family: PoppinsLight;
-             letter-spacing: 1.4px;
-             text-decoration: none;
-             display: flex;
-             align-items: center;
-             padding: 0px 15px 0px;
-             height: 100%;
+    font-weight: 100;
+  }
 
+  h2 {
+    font-family: Poppins;
 
-             &:hover {
-                 background-color: lighten($header-color, 15%);
+    font-size: 18px;
+    color: $subheader;
+    letter-spacing: 0.8px;
+    margin: 0px;
+  }
 
-             }
+  hr {
+    border: 0.5px solid $hr-color;
+    margin-bottom: 12px;
+  }
+}
+//  }
 
-             
+//  @media screen and (max-width: 768px) {
+//      .site-container {
+//          nav {
+//              min-width: 95px;
 
+//              .links-wrapper {
+//                  max-width: 100%;
 
-         }
-                 .na {
-                     background-color: none;}
+//                  a {
+//                      font-size: 12px;
+//                      letter-spacing: 0px;
+//                  }
 
- .active-link {
-     background-color: lighten($header-color, 15%);
+//                  .nav-logo {
+//                      display: none;
+//                  }
 
- }
-     }
+//                  .logo {
+//                      position: absolute;
+//                      display: flex;
+//                      max-width: 75%;
+//                      top: 10px;
+//                      left: 5px;
+//                  }
+//              }
+//          }
 
-     .main-container {
-         max-width: 100%;
-         background-color: $site-black;
+//          .scroll-section {
+//              padding: 40px 20px;
+//              margin-top: 0vh;
+//              height: 100vh;
 
+//          }
+//      }
 
-         .scroll-section {
+//  }
 
-             // border-left: 170px solid  ;
-             margin: 0 auto;
-             max-height: 91vh;
-             overflow-x: auto;
+//  @media screen and (max-width: 390px) {
+//      .site-container {
+//          nav {
+//              width: 0vw;
 
-             padding: 0px 0px 10px;
-             background-color: white;
+//              .links-wrapper {
+//                  .logo {
+//                      width: 60px;
+//                  }
 
-             transition: scrollbar-color 0.3s ease-out;
+//                  a {}
+//              }
+//          }
 
+//          .scroll-section {
+//              padding: 40px 5px;
+//          }
+//      }
 
-         }
+//  }
 
-         h1 {
-             font-family: Yeseva;
-
-             font-size: 24px;
-             color: $site-black;
-             letter-spacing: 1px;
-
-             font-weight: 100;
-         }
-
-         h2,
-         {
-         font-family: Poppins;
-
-         font-size: 18px;
-         color: $subheader;
-         letter-spacing: .8px;
-         margin: 0px;
-     }
-
-     hr {
-         border: .5px solid $hr-color;
-         margin-bottom: 12px;
-     }
- }
- }
-
-
- //  @media screen and (max-width: 768px) {
- //      .site-container {
- //          nav {
- //              min-width: 95px;
-
- //              .links-wrapper {
- //                  max-width: 100%;
-
- //                  a {
- //                      font-size: 12px;
- //                      letter-spacing: 0px;
- //                  }
-
- //                  .nav-logo {
- //                      display: none;
- //                  }
-
- //                  .logo {
- //                      position: absolute;
- //                      display: flex;
- //                      max-width: 75%;
- //                      top: 10px;
- //                      left: 5px;
- //                  }
- //              }
- //          }
-
- //          .scroll-section {
- //              padding: 40px 20px;
- //              margin-top: 0vh;
- //              height: 100vh;
-
- //          }
- //      }
-
- //  }
-
- //  @media screen and (max-width: 390px) {
- //      .site-container {
- //          nav {
- //              width: 0vw;
-
- //              .links-wrapper {
- //                  .logo {
- //                      width: 60px;
- //                  }
-
- //                  a {}
- //              }
- //          }
-
- //          .scroll-section {
- //              padding: 40px 5px;
- //          }
- //      }
-
- //  }
-
- @keyframes slidebg {
-     to {
-         background-position: 80vw;
-     }
- }
+@keyframes slidebg {
+  to {
+    background-position: 80vw;
+  }
+}
