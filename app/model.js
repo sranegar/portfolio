@@ -6,9 +6,9 @@ var columns = [
         title: "Irving Materials Inc.",
         subtitle: "Next.js",
         img: "assets/images/poster-truck.jpg",
-     subDetails: "Landing Page Solution",
-     details: "",
-     href: "https://driveimi.com/"
+        subDetails: "Landing Page Solution",
+        details: "",
+        href: "https://driveimi.com/",
       },
       {
         id: 1,
@@ -17,7 +17,7 @@ var columns = [
         img: "assets/images/game-planet2.jpg",
         subDetails: "E-Commerce Web Solution",
         details: "",
-        href: ""
+        href: "https://gameplanet-mvc.herokuapp.com/",
       },
     ],
   },
@@ -30,7 +30,7 @@ var columns = [
         img: "assets/images/mas1.jpg",
         subDetails: "Email Template Design",
         details: "",
-        href: ""
+        href: "",
       },
 
       {
@@ -40,7 +40,7 @@ var columns = [
         img: "assets/images/brighter-days.jpg",
         subDetails: "E-Commerce Design Solution",
         details: "",
-        href: ""
+        href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
       },
     ],
   },
@@ -53,7 +53,7 @@ var columns = [
         img: "assets/images/music-app.jpg",
         subDetails: "MP3 Player",
         details: "",
-        href: ""
+        href: "",
       },
       {
         id: 5,
@@ -62,12 +62,12 @@ var columns = [
         img: "assets/images/hct.jpg",
         subDetails: "Re-design Solution",
         details: "",
-        href: ""
+        href: "",
       },
     ],
   },
 ];
- 
+
 var curProject = {};
 
 export function changePage(pageID, subPage, callback) {
@@ -91,13 +91,11 @@ export function changePage(pageID, subPage, callback) {
         $("#modal").css("display", "none");
       });
       let pageColumn = "";
-      
+
       $.each(columns, (idx, col) => {
         pageColumn += `<div class="work-col">`;
-       
-        
+
         $.each(col.projects, (id, proj) => {
-        
           pageColumn += ` <div class="project-container" id=${proj.id}">
           <div class="image-container proj1">     
                   <img src=${proj.img} alt="Drive imi Project" />   
@@ -112,15 +110,13 @@ export function changePage(pageID, subPage, callback) {
               </div>
           </div>
   </div>`;
-         
         });
-      
+
         pageColumn += `</div>`;
       });
-      
+
       $(".work-wrapper").append(pageColumn);
       callback();
-     
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
@@ -137,20 +133,19 @@ export function changePage(pageID, subPage, callback) {
 }
 
 export function viewProject(projId) {
-  console.log(projId)
+  console.log(projId);
   let projIdArray = projId.split("");
-  let colId = projIdArray[0]
-  let projIndex = projIdArray[1]
-  let projID = projIdArray[2]
- 
-   curProject = columns[colId].projects[projIndex];
-   console.log(curProject)
+  let colId = projIdArray[0];
+  let projIndex = projIdArray[1];
+  let projID = projIdArray[2];
+
+  curProject = columns[colId].projects[projIndex];
+  console.log(curProject);
   if (curProject.id == projID) {
-    $("#modal-content img").attr("src", curProject.img)
-    $("#modal-content a").attr("href", curProject.href)
-    $("#modal-content h2").text(curProject.title)
-    $("#modal-content h4").text(curProject.subDetails)
+    $("#modal-content img").attr("src", curProject.img);
+    $("#modal-content a").attr("href", curProject.href);
+    $("#modal-content h2").text(curProject.title);
+    $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
   }
- 
 }
