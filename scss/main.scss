@@ -142,16 +142,14 @@
   #nav {
     height: 100vh;
     padding: 10px;
-    background-color: #f41177;
-
+    background-color: $site-pink;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  
 
     svg {
       width: 100%;
-      padding: 20px;
+      padding: 50px;
+  
     }
 
     .filled-heading {
@@ -164,7 +162,7 @@
         text-transform: capitalize;
         font-size: 0.085em;
         font-weight: 280;
-        font-family: Poppins;
+        font-family: PoppinsReg;
         letter-spacing: 0.2px;
       }
     }
@@ -191,35 +189,22 @@
       }
     }
 
-    .bottom {
-      padding-bottom: 0px;
-      display: flex;
-      justify-content: center;
-
-      .fa-solid,
-      .fas {
-        font-size: 50px;
-        color: lighten($site-pink, 20%);
-        opacity: 55%;
-        cursor: pointer;
-      }
-    }
+     
   }
 
   #nav-bar {
     height: 7vh;
     display: flex;
     align-items: center;
-    background-color: $site-white;
-    border-bottom: 2px solid black;
+    background-color: $site-dark;
+    border-bottom: 2px solid $header-color;
     position: fixed;
-
     width: 100%;
     z-index: 1;
 
     a {
       font-size: 16px;
-      color: $site-black;
+      color: $site-white;
       text-transform: uppercase;
 
       cursor: pointer;
@@ -232,15 +217,16 @@
       height: 100%;
 
       &:hover {
-        background-color: lighten($header-color, 15%);
+        background-color: lighten($header-color, 25%);
+        color: $site-dark;
+        font-weight: 900;
+        
       }
-    }
-    .na {
-      background-color: none;
     }
 
     .active-link {
       background-color: lighten($header-color, 15%);
+    
     }
 
     .links-toggle {
@@ -248,31 +234,23 @@
     }
   }
 
-  //  .main-container {
-  //      max-width: 100%;
-  //      background-color: $site-black;
 
   #app {
-    // border-left: 170px solid  ;
-
-    padding: 0px 0px 0px;
+    padding: 0px;
     background-color: rgb(255, 255, 255);
     transition: scrollbar-color 0.3s ease-out;
   }
 
   h1 {
     font-family: Yeseva;
-
     font-size: 24px;
     color: $site-black;
     letter-spacing: 1px;
-
     font-weight: 100;
   }
 
   h2 {
     font-family: Poppins;
-
     font-size: 18px;
     color: $subheader;
     letter-spacing: 0.8px;

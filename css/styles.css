@@ -200,14 +200,11 @@ section {
   padding: 10px;
   background-color: #f41177;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   /* Animate the background shapes */
 }
 .site-container #nav svg {
   width: 100%;
-  padding: 20px;
+  padding: 50px;
 }
 .site-container #nav .filled-heading {
   text-transform: lowercase;
@@ -219,7 +216,7 @@ section {
   text-transform: capitalize;
   font-size: 0.085em;
   font-weight: 280;
-  font-family: Poppins;
+  font-family: PoppinsReg;
   letter-spacing: 0.2px;
 }
 .site-container #nav #background path {
@@ -237,31 +234,19 @@ section {
     transform: scale(1) rotate(0deg);
   }
 }
-.site-container #nav .bottom {
-  padding-bottom: 0px;
-  display: flex;
-  justify-content: center;
-}
-.site-container #nav .bottom .fa-solid,
-.site-container #nav .bottom .fas {
-  font-size: 50px;
-  color: #f972af;
-  opacity: 55%;
-  cursor: pointer;
-}
 .site-container #nav-bar {
   height: 7vh;
   display: flex;
   align-items: center;
-  background-color: #fff;
-  border-bottom: 2px solid black;
+  background-color: #222137;
+  border-bottom: 2px solid #2feabe;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 .site-container #nav-bar a {
   font-size: 16px;
-  color: #080808;
+  color: #fff;
   text-transform: uppercase;
   cursor: pointer;
   font-family: PoppinsReg;
@@ -273,10 +258,9 @@ section {
   height: 100%;
 }
 .site-container #nav-bar a:hover {
-  background-color: #74f1d4;
-}
-.site-container #nav-bar .na {
-  background-color: none;
+  background-color: #a3f6e2;
+  color: #222137;
+  font-weight: 900;
 }
 .site-container #nav-bar .active-link {
   background-color: #74f1d4;
@@ -285,7 +269,7 @@ section {
   top: 0;
 }
 .site-container #app {
-  padding: 0px 0px 0px;
+  padding: 0px;
   background-color: rgb(255, 255, 255);
   transition: scrollbar-color 0.3s ease-out;
 }
@@ -317,24 +301,25 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 7vh;
-  background-color: #b1f7e7;
+  background-color: #efeff3;
 }
 #about-page .page-header {
-  padding: 30px;
+  padding: 10px 50px 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+  background-color: #e8fdf8;
 }
 #about-page .page-header h2 {
   display: flex;
   height: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: 1.6em;
+  font-family: Smithen;
+  font-size: 3em;
   max-width: 100%;
-  text-transform: uppercase;
+  letter-spacing: 5px;
   color: #080808;
 }
 #about-page .about-row {
-  background-color: #ffd026;
-  padding: 50px 30px;
+  padding: 20px 30px 0px;
 }
 #about-page .about-row .about-wrapper {
   display: flex;
@@ -342,17 +327,19 @@ section {
 }
 #about-page .about-row .about-wrapper .about-image {
   width: 20%;
-  padding: 10px 30px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 #about-page .about-row .about-wrapper .about-image img {
   max-width: 100%;
   display: block;
-  margin: 5% auto;
+  margin: 15% auto;
   border-radius: 50%;
 }
 #about-page .about-row .about-wrapper .about-text {
-  width: 30%;
-  padding: 50px 20px;
+  width: 40%;
+  padding: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 #about-page .about-row .about-wrapper .about-text h2 {
   font-size: 1.5em;
@@ -360,17 +347,39 @@ section {
 }
 #about-page .about-row .about-wrapper .about-text h3 {
   font-family: PoppinsLight;
-  font-size: 1em;
+  font-size: 18px;
+  color: #080808;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 #about-page .about-row .about-wrapper .about-text p {
   font-family: PoppinsLight;
+}
+#about-page .about-row .about-wrapper .about-text button {
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  font-family: PoppinsLight;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 0px solid #fff;
+  background-color: #f41177;
+  cursor: pointer;
+  border: 2px solid #f41177;
+}
+#about-page .about-row .about-wrapper .about-text button:hover {
+  background-color: #fff;
+  color: #f41177;
+  font-weight: 900;
 }
 #about-page .skills-row {
   display: flex;
   justify-content: space-between;
   height: auto;
-  padding: 50px 30px;
-  background-color: #ffd026;
+  padding: 30px 80px;
 }
 #about-page .skills-row h3 {
   font-family: PoppinsLight;
@@ -395,8 +404,8 @@ section {
   color: #080808;
 }
 #about-page .skills-row .skills-col1 {
-  min-width: 46%;
-  border-right: 2px solid #fff;
+  min-width: 50%;
+  border-right: 2px solid #f41177;
   padding: 18px;
   padding-right: 50px;
 }
@@ -417,7 +426,7 @@ section {
   -webkit-appearance: none;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-bar {
-  background-color: #dddddd;
+  background-color: #b6b6b6;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-value {
   background-color: #f41177;
@@ -431,12 +440,13 @@ section {
 }
 #about-page .skills-row .skills-col2 .container__progressbars {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   min-width: 200px;
   width: 100%;
   max-height: 100%;
+  padding: 70px;
 }
 #about-page .skills-row .skills-col2 .progressbar {
   position: relative;
@@ -454,7 +464,7 @@ section {
 #about-page .skills-row .skills-col2 .bg {
   fill: none;
   stroke-width: 6px;
-  stroke: #dddddd;
+  stroke: #b6b6b6;
   transform: translate(2px, 2px);
 }
 #about-page .skills-row .skills-col2 .progressbar__svg-circle {
@@ -827,12 +837,29 @@ section {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  padding-top: 7vh;
+  background-color: #efeff3;
+}
+.work .page-header {
+  padding: 10px 50px 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+  background-color: #e8fdf8;
+}
+.work .page-header h2 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  font-family: Smithen;
+  font-size: 3em;
+  max-width: 100%;
+  letter-spacing: 5px;
+  color: #080808;
 }
 .work .work-links-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 8vh auto 0vh;
+  margin: 6vh auto 1vh;
   width: 50%;
   padding-bottom: 20px;
 }
