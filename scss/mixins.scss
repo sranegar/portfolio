@@ -2,14 +2,14 @@
      color: $btnBorderColor;
      width: 150px;
      height: 40px;
-     font-family: PoppinsLight;
+     font-family: PoppinsReg;
      text-transform: uppercase;
      transition: all 0.3s;
      position: relative;
      overflow: hidden;
      z-index: 1;
      border: $btnBorderWidth solid $btnBorderColor;
-  
+    letter-spacing: .5px;
 
  }
 
@@ -26,6 +26,7 @@
          height: 100%;
          background-color: lighten($btnBgColor, 20%);
          z-index: -2;
+         
      }
 
      &:before {

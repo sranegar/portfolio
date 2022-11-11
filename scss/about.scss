@@ -2,23 +2,35 @@
   display: flex;
   flex-direction: column;
   padding-top: 7vh;
-  background-color: $site-gray;
-  .page-header {
-    padding: 10px 50px 5px;
-    //  background-color: $neon;
-    // background-color: lighten($header-color, 36%);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
-    background-color: lighten($header-color, 40%);
-    h2 {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      
-      font-family: Smithen;
-      font-size: 3em;
-      max-width: 100%;
-        letter-spacing: 5px;
+ 
+  background-color: $site-white;
+  .work-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: 0vh auto;
+    width: 50%;
+    
+
+    //  max-height: 50px;
+
+    .work-link {
+      width: 100%;
+
       color: $site-black;
+      padding: 5px;
+      text-align: center;
+
+      font-family: PoppinsMed;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .active-work-link {
+      background-color: $header-color;
+      color: white;
+      border-bottom: 2px solid $header-color;
     }
   }
   .about-row {
@@ -70,7 +82,7 @@
             &:hover {
                 background-color: $site-white;
                 color: $site-pink;
-                font-weight: 900;
+              
             }
         }
       }
@@ -80,9 +92,9 @@
     display: flex;
     justify-content: space-between;
     height: auto;
-
+    background-color: $site-gray;
     padding: 30px 80px;
- 
+    
     h3 {
       font-family: PoppinsLight;
       font-size: 18px;

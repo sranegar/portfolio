@@ -7,23 +7,26 @@
   right: 0;
   left: 0;
   visibility: hidden;
-
+display: flex;
+align-items: center;
+  
   #modal-content {
-    background-color: #fff;
-    margin: 5vh auto;
-   min-height: 80%;
+    position: relative;
+    margin: 0 auto;
+   max-height: 100%;
     width: 45%;
-
+    
+ 
     .slider {
-      min-height: 75%;
+      
       overflow: hidden;
-      border-bottom: 2px solid $site-black;
+      border-bottom: 3px solid $site-dark;
 
       position: relative;
 
       img {
         
-          max-height: 25em;
+          max-height: 27em;
       }
 
       .slick-prev {
@@ -50,6 +53,7 @@
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.151);
         border: none;
+        
       }
     }
 
@@ -73,10 +77,11 @@
     }
 
     .modal-bottom {
-       min-height: 25%;
+       
       padding: 10px;
-      position: relative;
-      background-color: pink;
+      min-height: 100%;
+      background-color: $site-gray;
+      overflow: hidden;
       h2 {
         font-family: PoppinsReg;
         letter-spacing: 1px;
@@ -92,9 +97,10 @@
          
       }
       p {
-      
-     
-        background-color: green;
+         max-height: 150px;
+         display: block;
+         overflow-y: auto;
+        background-color: red;
         font-family: PoppinsLight;
         font-size: .8em;
         
@@ -102,20 +108,25 @@
       button {
         width: 150px;
         height: 40px;
-        font-family: PoppinsLight;
+        font-family: PoppinsReg;
         text-transform: uppercase;
         background-color: $site-pink;
         border: 2px solid $site-pink;
         color: $site-white;
-    
-        
+        letter-spacing: .5px;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
         cursor: pointer;
         transition: all 0.3s;
+        i{
+          margin-right: 10px;
+        }
         &:hover {
           background-color: $site-white;
           border: 2px solid $site-pink;
           color: $site-pink;
-          font-weight: 900;
+          
           transition: all 0.3s;
         }
       }
@@ -126,7 +137,7 @@
         bottom: 0;
         font-size: 1.7em;
         cursor: pointer;
-        color: #c0c0c0;
+        color: $site-dark;
       }
     }
   }
@@ -142,14 +153,15 @@
   #nav {
     height: 100vh;
     padding: 10px;
-    background-color: $site-pink;
+    background-color: $secondary-dark;
     margin: 0 auto;
   
 
     svg {
       width: 100%;
-      padding: 50px;
-  
+      padding: 70px 50px 0px;
+ 
+  fill: rgba(255, 255, 255, 0.89) ;
     }
 
     .filled-heading {
@@ -157,13 +169,14 @@
       font-family: Smithen;
       font-weight: 100;
       font-size: 5.5em;
-
+ 
       .intro {
         text-transform: capitalize;
         font-size: 0.085em;
         font-weight: 280;
         font-family: PoppinsReg;
         letter-spacing: 0.2px;
+      
       }
     }
 
@@ -237,7 +250,6 @@
 
   #app {
     padding: 0px;
-    background-color: rgb(255, 255, 255);
     transition: scrollbar-color 0.3s ease-out;
   }
 

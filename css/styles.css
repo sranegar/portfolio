@@ -78,21 +78,22 @@ section {
   right: 0;
   left: 0;
   visibility: hidden;
+  display: flex;
+  align-items: center;
 }
 #modal #modal-content {
-  background-color: #fff;
-  margin: 5vh auto;
-  min-height: 80%;
+  position: relative;
+  margin: 0 auto;
+  max-height: 100%;
   width: 45%;
 }
 #modal #modal-content .slider {
-  min-height: 75%;
   overflow: hidden;
-  border-bottom: 2px solid #080808;
+  border-bottom: 3px solid #222137;
   position: relative;
 }
 #modal #modal-content .slider img {
-  max-height: 25em;
+  max-height: 27em;
 }
 #modal #modal-content .slider .slick-prev {
   left: 0;
@@ -137,10 +138,10 @@ section {
   color: rgba(0, 0, 0, 0.212);
 }
 #modal #modal-content .modal-bottom {
-  min-height: 25%;
   padding: 10px;
-  position: relative;
-  background-color: pink;
+  min-height: 100%;
+  background-color: #f7f7f7;
+  overflow: hidden;
 }
 #modal #modal-content .modal-bottom h2 {
   font-family: PoppinsReg;
@@ -156,26 +157,35 @@ section {
   font-size: 0.9em;
 }
 #modal #modal-content .modal-bottom p {
-  background-color: green;
+  max-height: 150px;
+  display: block;
+  overflow-y: auto;
+  background-color: red;
   font-family: PoppinsLight;
   font-size: 0.8em;
 }
 #modal #modal-content .modal-bottom button {
   width: 150px;
   height: 40px;
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   text-transform: uppercase;
   background-color: #f41177;
   border: 2px solid #f41177;
   color: #fff;
+  letter-spacing: 0.5px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
   cursor: pointer;
   transition: all 0.3s;
+}
+#modal #modal-content .modal-bottom button i {
+  margin-right: 10px;
 }
 #modal #modal-content .modal-bottom button:hover {
   background-color: #fff;
   border: 2px solid #f41177;
   color: #f41177;
-  font-weight: 900;
   transition: all 0.3s;
 }
 #modal #modal-content .modal-bottom .fa-xmark {
@@ -185,7 +195,7 @@ section {
   bottom: 0;
   font-size: 1.7em;
   cursor: pointer;
-  color: #c0c0c0;
+  color: #222137;
 }
 
 .site-container {
@@ -198,13 +208,14 @@ section {
 .site-container #nav {
   height: 100vh;
   padding: 10px;
-  background-color: #f41177;
+  background-color: #12121a;
   margin: 0 auto;
   /* Animate the background shapes */
 }
 .site-container #nav svg {
   width: 100%;
-  padding: 50px;
+  padding: 70px 50px 0px;
+  fill: rgba(255, 255, 255, 0.89);
 }
 .site-container #nav .filled-heading {
   text-transform: lowercase;
@@ -270,7 +281,6 @@ section {
 }
 .site-container #app {
   padding: 0px;
-  background-color: rgb(255, 255, 255);
   transition: scrollbar-color 0.3s ease-out;
 }
 .site-container h1 {
@@ -301,22 +311,29 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 7vh;
-  background-color: #efeff3;
+  background-color: #fff;
 }
-#about-page .page-header {
-  padding: 10px 50px 5px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.13);
-  background-color: #e8fdf8;
-}
-#about-page .page-header h2 {
+#about-page .work-links-wrapper {
   display: flex;
-  height: 100%;
+  justify-content: space-between;
   align-items: center;
-  font-family: Smithen;
-  font-size: 3em;
-  max-width: 100%;
-  letter-spacing: 5px;
+  margin: 0vh auto;
+  width: 50%;
+}
+#about-page .work-links-wrapper .work-link {
+  width: 100%;
   color: #080808;
+  padding: 5px;
+  text-align: center;
+  font-family: PoppinsMed;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#about-page .work-links-wrapper .active-work-link {
+  background-color: #2feabe;
+  color: white;
+  border-bottom: 2px solid #2feabe;
 }
 #about-page .about-row {
   padding: 20px 30px 0px;
@@ -359,13 +376,14 @@ section {
   color: #fff;
   width: 150px;
   height: 40px;
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   text-transform: uppercase;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   border: 0px solid #fff;
+  letter-spacing: 0.5px;
   background-color: #f41177;
   cursor: pointer;
   border: 2px solid #f41177;
@@ -373,12 +391,12 @@ section {
 #about-page .about-row .about-wrapper .about-text button:hover {
   background-color: #fff;
   color: #f41177;
-  font-weight: 900;
 }
 #about-page .skills-row {
   display: flex;
   justify-content: space-between;
   height: auto;
+  background-color: #f7f7f7;
   padding: 30px 80px;
 }
 #about-page .skills-row h3 {
@@ -838,7 +856,7 @@ section {
   justify-content: center;
   position: relative;
   padding-top: 7vh;
-  background-color: #efeff3;
+  background-color: #fff;
 }
 .work .page-header {
   padding: 10px 50px 5px;
@@ -859,9 +877,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 6vh auto 1vh;
+  margin: 0vh auto;
   width: 50%;
-  padding-bottom: 20px;
 }
 .work .work-links-wrapper .work-link {
   width: 100%;
@@ -876,17 +893,19 @@ section {
 .work .work-links-wrapper .active-work-link {
   background-color: #2feabe;
   color: white;
+  border-bottom: 2px solid #2feabe;
 }
 .work .work-wrapper {
   display: flex;
   justify-content: center;
+  padding: 50px 0px;
 }
 .work .work-wrapper .work-col {
   max-width: 25%;
   padding: 0px;
 }
 .work .work-wrapper .work-col .project-container {
-  border: 1px solid #fff;
+  border: 1px solid #222137;
   width: 100%;
 }
 .work .work-wrapper .work-col .project-container .image-container {
@@ -929,35 +948,36 @@ section {
   margin: 0 auto;
   text-align: center;
   font-family: PoppinsMed;
-  font-size: 18px;
+  font-size: 1.3em;
   color: #080808;
   display: none;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .subtitle {
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   text-align: center;
-  color: #080808;
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 1em;
   display: none;
+  color: #f41177;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper {
-  background-color: red;
   width: 35%;
   margin: 0 auto;
   display: none;
+  padding: 20px 0px;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn {
   color: #080808;
   width: 150px;
   height: 40px;
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   text-transform: uppercase;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   border: 0px solid #080808;
+  letter-spacing: 0.5px;
   width: 100%;
   z-index: 9999;
 }
@@ -1014,6 +1034,9 @@ section {
     max-width: 100%;
     padding: 0px;
   }
+}
+#contact-section {
+  background-color: #12121a;
 }
 
 /*# sourceMappingURL=styles.css.map */
