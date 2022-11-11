@@ -9,11 +9,28 @@
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 <link rel="stylesheet" href="css/styles.css">
-</link>
+
 </head>
 
 <body>
+    <div id="modal">
+        <div id="modal-content">
+        <div id="slider" class="slider">
+             <img id="slide1" src="assets/images/poster-truck.jpg" alt="">
+             <img id="slide2" src="assets/images/slide1.jpg" alt="">
+        </div>
+            <div class="modal-bottom">
+                <h2>Project Header</h2>
+                <h4>Subheader</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptas.</p>
+                <a href="" target="_blank"><button><i class="fa-solid fa-arrow-up-right-from-square"></i> View Site</button></a>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
     <div class="site-container">
         
             <div id="nav-bar" class="links-wrapper">
@@ -21,18 +38,23 @@
                 <a href="#work" id="work">portfolio</a>
                 <a href="#about" id="about">about</a>              
             </div>
+            
+        <div id="app"></div>
        
-        <div id="app">
-        
          
     </div>
 
 
     <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <script src="lib/jquery-3.6.1.min.js"></script>
-    <script type='module' src="app/model.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+ 
+     <script type='module' src="app/model.js"></script>
 
     <script type='module' src="app/app.js"></script>
+    
 </body>
 
 </html>

@@ -2,106 +2,106 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
-  #modal {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.836);
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    left: 0;
-    display: none;
+  position: relative;
+  // #modal {
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(0, 0, 0, 0.836);
+  //   position: fixed;
+  //   z-index: 9999;
+  //   right: 0;
+  //   left: 0;
+  //   display: none;
 
-    #modal-content {
-      width: 50%;
-      background-color: #fff;
-      height: 80%;
-      margin: 5% auto;
-
-      .modal-top {
-        height: 65%;
-        overflow: hidden;
-        //    background-image: url(../assets/images/slide2.jpg);
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     background-size:contain;
-        position: relative;
-        border-bottom: 2px solid $site-black;
-        img {
-          max-width: 100%;
-        }
-        .fa-circle-chevron-right {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          font-size: 40px;
-          cursor: pointer;
-          padding: 10px;
-          color: rgba(0, 0, 0, 0.212);
-        }
-        .fa-circle-chevron-left {
-          position: absolute;
-          left: 0;
-          font-size: 40px;
-          bottom: 0;
-          cursor: pointer;
-          padding: 10px;
-          color: rgba(0, 0, 0, 0.212);
-        }
-      }
-      .modal-bottom {
-        height: 35%;
-        padding: 20px;
-        position: relative;
-        h2 {
-          font-family: PoppinsReg;
-          letter-spacing: 1px;
-          margin: 0px;
-        }
-        h4 {
-          font-family: PoppinsLight;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          color: rgb(83, 83, 83);
-        }
-        p {
-          height: auto;
-          font-family: PoppinsLight;
-        }
-        button {
-          width: 150px;
-          height: 40px;
-          font-family: PoppinsLight;
-          text-transform: uppercase;
-          background-color: $site-pink;
-          border: 2px solid $site-pink;
-          color: $site-white;
-          position: absolute;
-          bottom: 20px;
-          left: 20px;
-          cursor: pointer;
-          transition: all 0.3s;
-          &:hover {
-            background-color: $site-white;
-            border: 2px solid $site-pink;
-            color: $site-pink;
-            font-weight: 900;
-            transition: all 0.3s;
-          }
-        }
-        .fa-xmark {
-          position: absolute;
-          right: 0;
-          padding: 20px 30px;
-          bottom: 0;
-          font-size: 30px;
-          cursor: pointer;
-          color: #c0c0c0;
-        }
-      }
-    }
-  }
+  //   #modal-content {
+  //     width: 50%;
+  //     background-color: #fff;
+  //     height: 80%;
+  //     margin: 5% auto;
+      
+  //     .modal-top {
+  //       height: 65%;
+  //       overflow: hidden;
+  //       //    background-image: url(../assets/images/slide2.jpg);
+  //       //     background-position: center;
+  //       //     background-repeat: no-repeat;
+  //       //     background-size:contain;
+  //       position: relative;
+  //       border-bottom: 2px solid $site-black;
+  //       img {
+  //         max-width: 100%;
+  //       }
+  //       .fa-circle-chevron-right {
+  //         position: absolute;
+  //         right: 0;
+  //         bottom: 0;
+  //         font-size: 40px;
+  //         cursor: pointer;
+  //         padding: 10px;
+  //         color: rgba(0, 0, 0, 0.212);
+  //       }
+  //       .fa-circle-chevron-left {
+  //         position: absolute;
+  //         left: 0;
+  //         font-size: 40px;
+  //         bottom: 0;
+  //         cursor: pointer;
+  //         padding: 10px;
+  //         color: rgba(0, 0, 0, 0.212);
+  //       }
+  //     }
+  //     .modal-bottom {
+  //       height: 35%;
+  //       padding: 20px;
+  //       position: relative;
+  //       h2 {
+  //         font-family: PoppinsReg;
+  //         letter-spacing: 1px;
+  //         margin: 0px;
+  //       }
+  //       h4 {
+  //         font-family: PoppinsLight;
+  //         text-transform: uppercase;
+  //         letter-spacing: 1px;
+  //         color: rgb(83, 83, 83);
+  //       }
+  //       p {
+  //         height: auto;
+  //         font-family: PoppinsLight;
+  //       }
+  //       button {
+  //         width: 150px;
+  //         height: 40px;
+  //         font-family: PoppinsLight;
+  //         text-transform: uppercase;
+  //         background-color: $site-pink;
+  //         border: 2px solid $site-pink;
+  //         color: $site-white;
+  //         position: absolute;
+  //         bottom: 20px;
+  //         left: 20px;
+  //         cursor: pointer;
+  //         transition: all 0.3s;
+  //         &:hover {
+  //           background-color: $site-white;
+  //           border: 2px solid $site-pink;
+  //           color: $site-pink;
+  //           font-weight: 900;
+  //           transition: all 0.3s;
+  //         }
+  //       }
+  //       .fa-xmark {
+  //         position: absolute;
+  //         right: 0;
+  //         padding: 20px 30px;
+  //         bottom: 0;
+  //         font-size: 30px;
+  //         cursor: pointer;
+  //         color: #c0c0c0;
+  //       }
+  //     }
+  //   }
+  // }
   .work-links-wrapper {
     display: flex;
     justify-content: space-between;

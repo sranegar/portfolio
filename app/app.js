@@ -24,48 +24,37 @@ function route() {
   }
 }
 
- function toggleActive() {
-   $("a").click(function (e) {
-     let linkID = e.currentTarget.id;
-     $(linkID).toggleClass("active-link na");
-     
-  console.log(linkID)
-     
-    })
-  }
-
   function openModal() {
      $(".work-btn-wrapper button").click(function (e) {
+     
       let projID = e.currentTarget.id;
-
-    
       MODEL.viewProject(projID)
-      $("#modal").css("display",  "flex");
+      $("#modal").css("visibility",  "visible");
      })
-  }
     
- 
-
-  // function changePhoto() {}
-  // $("#modal .fa-circle-chevron-right").click(function () {
-  //   $("#modal").css("display", "none");
-  // })
-
+  }
+  
   
 function initApp() {
   $(window).on("hashchange", route);
 }
 
 function initListeners() {
-    // $("a").hover(function () {
-    //   $(this).toggleClass("active-link");
-    // });
-  $(window).on("load", route);
+  $(window).on("load", route);   
 }
-
+ 
+ 
+ 
 $(document).ready(function () {
+ 
+  $(".slider").slick({
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    cssEase: "linear",
+  });
   initListeners();
   initApp();
- 
- 
+
 });
+ 

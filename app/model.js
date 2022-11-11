@@ -7,8 +7,9 @@ var columns = [
         subtitle: "Next.js",
         img: "assets/images/poster-truck.jpg",
         subDetails: "Landing Page Solution",
-        details: "",
+        details: "This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah.This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah.",
         href: "https://driveimi.com/",
+        images: ["assets/images/imi1.jpg", "assets/images/poster-truck.JPG"],
       },
       {
         id: 1,
@@ -18,6 +19,7 @@ var columns = [
         subDetails: "E-Commerce Web Solution",
         details: "",
         href: "https://gameplanet-mvc.herokuapp.com/",
+        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
     ],
   },
@@ -31,6 +33,7 @@ var columns = [
         subDetails: "Email Template Design",
         details: "",
         href: "",
+        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
 
       {
@@ -41,6 +44,7 @@ var columns = [
         subDetails: "E-Commerce Design Solution",
         details: "",
         href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
+        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
     ],
   },
@@ -54,6 +58,7 @@ var columns = [
         subDetails: "MP3 Player",
         details: "",
         href: "",
+        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
       {
         id: 5,
@@ -63,6 +68,7 @@ var columns = [
         subDetails: "Re-design Solution",
         details: "",
         href: "",
+        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
     ],
   },
@@ -88,17 +94,21 @@ export function changePage(pageID, subPage, callback) {
       $("#nav-bar").css("top", "0");
 
       $("#modal .fa-xmark").click(function () {
-        $("#modal").css("display", "none");
+        $("#modal").css("visibility", "hidden");
+    
       });
-      let pageColumn = "";
 
+      let pageColumn = "";
+   
+    
       $.each(columns, (idx, col) => {
         pageColumn += `<div class="work-col">`;
-
+ 
         $.each(col.projects, (id, proj) => {
+     
           pageColumn += ` <div class="project-container" id=${proj.id}">
           <div class="image-container proj1">     
-                  <img src=${proj.img} alt="Drive imi Project" />   
+                  <img src=${proj.img} alt="${proj.title}" />   
               <div class="title-wrapper">
                   <div class="title">
                   ${proj.title}
@@ -109,15 +119,18 @@ export function changePage(pageID, subPage, callback) {
                   </div>
               </div>
           </div>
-  </div>`;
+  </div> <script type='module' src="app/slider.js"></script>`;
+  
+       
         });
-
+       
         pageColumn += `</div>`;
       });
-
+       
       $(".work-wrapper").append(pageColumn);
       callback();
     });
+    
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#nav-bar").css("bottom", "");
@@ -133,19 +146,21 @@ export function changePage(pageID, subPage, callback) {
 }
 
 export function viewProject(projId) {
-  console.log(projId);
   let projIdArray = projId.split("");
   let colId = projIdArray[0];
   let projIndex = projIdArray[1];
   let projID = projIdArray[2];
-
   curProject = columns[colId].projects[projIndex];
-  console.log(curProject);
+  let slideImages = curProject.images;
   if (curProject.id == projID) {
-    $("#modal-content img").attr("src", curProject.img);
+    $("#slide1").attr("src", slideImages[0])
+    $("#slide2").attr("src", slideImages[1])
     $("#modal-content a").attr("href", curProject.href);
     $("#modal-content h2").text(curProject.title);
     $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
   }
+ 
+   
 }
+
