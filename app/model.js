@@ -7,7 +7,8 @@ var columns = [
         subtitle: "Next.js",
         img: "assets/images/poster-truck.jpg",
         subDetails: "Landing Page Solution",
-        details: "This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah.This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah.",
+        details:
+          "h project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah.This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah. This is where you'll put the description to the project for each project and all projects and so they say yeah.",
         href: "https://driveimi.com/",
         images: ["assets/images/imi1.jpg", "assets/images/poster-truck.JPG"],
       },
@@ -95,17 +96,14 @@ export function changePage(pageID, subPage, callback) {
 
       $("#modal .fa-xmark").click(function () {
         $("#modal").css("visibility", "hidden");
-    
       });
 
       let pageColumn = "";
-   
-    
+
       $.each(columns, (idx, col) => {
         pageColumn += `<div class="work-col">`;
- 
+
         $.each(col.projects, (id, proj) => {
-     
           pageColumn += ` <div class="project-container" id=${proj.id}">
           <div class="image-container proj1">     
                   <img src=${proj.img} alt="${proj.title}" />   
@@ -120,17 +118,14 @@ export function changePage(pageID, subPage, callback) {
               </div>
           </div>
   </div> <script type='module' src="app/slider.js"></script>`;
-  
-       
         });
-       
+
         pageColumn += `</div>`;
       });
-       
+
       $(".work-wrapper").append(pageColumn);
       callback();
     });
-    
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#nav-bar").css("bottom", "");
@@ -153,14 +148,11 @@ export function viewProject(projId) {
   curProject = columns[colId].projects[projIndex];
   let slideImages = curProject.images;
   if (curProject.id == projID) {
-    $("#slide1").attr("src", slideImages[0])
-    $("#slide2").attr("src", slideImages[1])
+    $("#slide1").attr("src", slideImages[0]);
+    $("#slide2").attr("src", slideImages[1]);
     $("#modal-content a").attr("href", curProject.href);
     $("#modal-content h2").text(curProject.title);
     $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
   }
- 
-   
 }
-

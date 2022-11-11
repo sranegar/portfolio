@@ -1,223 +1,81 @@
- 
- 
- 
- .page-header {
-     background-color: lighten($site-pink, 45%);
-     height: 50px;
 
-
-     h2 {
-         display: flex;
-         height: 100%;
-         align-items: center;
-         justify-content: center;
-         max-width: 100%;
-        text-transform: uppercase;
-        
-
-     }
-
- }
-
- span {
-     margin: 0;
-     font-family: 'Montserrat', sans-serif;
-
-     letter-spacing: 5px;
-     font-weight: bolder;
-     margin-top: 10vh;
-     transform: translateX(-50%);
-     color: white;
-     background: url('../assets/images/scope.jpg');
-     background-size: auto 255%;
-     background-clip: text;
-     text-fill-color: transparent;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     animation: shine 60s ease-in-out infinite;
-
-     &:nth-child(2) {
-         top: 50vh;
-     }
-
-     @keyframes shine {
-         from {
-             background-position: center 0;
-         }
-
-         to {
-             background-position: center 200%;
-         }
-     }
-
- }
-   .top-portfolio-section {
-       padding: 0px;
-
-
-       .portfolio-row {
-           min-height: 250px;
-           max-width: 100%;
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
-
-
-
-           margin: 0 auto;
-
-           .work-icons-wrapper {
-
-               height: 100%;
-               width: 100%;
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-
-               .icon-col {
-                   min-width: 50%;
-                   height: 100%;
-
-                   display: flex;
-                   align-items: center;
-                   justify-content: space-between;
-                   flex-direction: column;
-
-                   .work-icon {
-
-                       min-width: 70px;
-                       min-height: 70px;
-
-
-                       display: flex;
-                       align-items: center;
-                       justify-content: center;
-
-
-                       i {
-
-                           color: $header-color;
-
-                           font-size: 60px;
-
-                       }
-                   }
-
-                   h4 {
-                       font-family: Yeseva;
-                       font-weight: 200;
-                       margin: 5px 0px 5px;
-                   }
-
-                   p {
-                       font-family: PoppinsLight;
-                       font-size: 12px;
-                       text-align: center;
-                       line-height: 13px;
-                       display: none;
-                   }
-               }
-           }
-       }
-   }
-
- h1 {
-     font-family: PoppinsLight;
-     font-size: 16px;
-     color: $site-white;
-     letter-spacing: 1.3px;
- }
-
- hr {
-     border: .5px solid $hr-color;
-     margin-bottom: 12px;
- }
-
- .about-section-row {
-     display: flex;
-     justify-content: space-between;
-     min-height: 25vh;
-     background-color: $header-color;
-     padding: 0px 50px;
-
-     p {
-         font-family: PoppinsLight;
-         font-size: 14px;
-         color: $content-text;
-         letter-spacing: .5px;
-         line-height: 25px;
-
-     }
-
-     .about-col1 {
-         min-width: 60%;
-
-         border-right: 1px solid $hr-color;
-         display: flex;
-
-         .emphasize {
-             background-color: $site-pink;
-             letter-spacing: 0px;
-         }
-
-         .about-img-container {
-             overflow: hidden;
-             max-height: 100%;
-             width: 60%;
-
-             img {
-                 width: 100%;
-             }
-         }
-
-         ;
-     }
-
-     .about-col2 {
-         min-width: 30%;
-
-
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-
-         .about-col2-wrapper {
-             display: flex;
-             justify-content: space-between;
-
-             .about-label {
-                 font-family: PoppinsReg;
-                 background-color: $neon;
-                 color: $site-black;
-                 padding: 0px 5px;
-                 max-height: 20px;
-                 min-width: 80px;
-                 margin-right: 20px;
-             }
-
-             .about-answer {
-                 white-space: nowrap;
-                 
-             }
-         }
-     }
- }
-
-
-
- #skills { 
+ #about-page { 
    
-    // background-color: $neon;
+    
     display: flex;
     flex-direction: column;
-    justify-content: end;
+   padding-top: 7vh;
+background-color: lighten($header-color, 28%);
+    .page-header {
+     
+        
+     padding: 30px;
+    //  background-color: $neon;
+   
+        h2 {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        //   text-decoration: underline wavy;
+        //   text-underline-offset: 10px;
+            font-size: 1.6em;
+            max-width: 100%;
+           text-transform: uppercase;
+           color: $site-black;
+   
+        }
+   
+    }
+    .about-row {
+     background-color: $neon;
+     padding: 50px 30px;
+        .about-wrapper {
+         
+            display: flex;
+            justify-content: center;
+            .about-image {
+             width: 20%;
+              
+            
+               padding: 10px 30px;
+          
+             
+                img {
+                max-width: 100%;
+                display: block;
+            
+  margin: 5% auto;
+                border-radius: 50%;
+                }
+            }
+            .about-text {
+                 width: 30%;
+                padding: 50px 20px;
+            
+                h2 {
+                    font-size: 1.5em;
+                    color: $site-black;
+                }
+                h3 {
+                    font-family: PoppinsLight;
+                    font-size: 1em;
+                }
+                p {
+                    font-family: PoppinsLight;
+                  
+                  
+                }
+            }
+        }
+    }
  .skills-row {
      display: flex;
      justify-content: space-between;
      height: auto;
-     background-color: rgb(235, 233, 233);
-     padding: 0px 30px;
-
+  
+     padding: 50px 30px;
+     background-color: $neon;
      h3 {
          font-family: PoppinsLight;
          font-size: 18px;
@@ -226,8 +84,10 @@
          text-transform: uppercase;
          display: flex;
          align-items: center;
-        padding-bottom: 20px;
-        width: 50%;
+        justify-content: center;
+    
+        width: 100%;
+     
  
 
          i {
@@ -275,7 +135,7 @@
              }
 
              progress::-webkit-progress-bar {
-                 background-color: $site-white;
+                 background-color:   #dddddd;
              
       
                  
@@ -328,7 +188,7 @@
 .bg {
     fill: none;
     stroke-width: 6px;
-    stroke: #ffffff;
+    stroke: #dddddd;
     transform: translate(2px, 2px);
 }
          .progressbar__svg-circle {
@@ -338,7 +198,7 @@
              stroke-width: 6;
              stroke-dasharray: 314;
              stroke-dashoffset: 314;
-             stroke: $site-white;
+             stroke: $site-pink;
              stroke-linejoin:bevel;
              transform: translate(2px, 2px); // stroke-width / 2
              
