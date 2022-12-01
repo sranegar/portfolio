@@ -134,7 +134,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
 
       $(".work-wrapper").append(pageColumn);
       callback();
-      $("head").append('<script src="app/particles.js"></script>');
+       $("head").append('<script src="app/particles.js"></script>');
        $("body").append(`<div id="particles-js"></div>`);
     });
   } else if (pageID == "about") {

@@ -5,27 +5,26 @@ $.getScript(
     particlesJS("particles-js", {
       particles: {
         number: {
-          value: 80,
+          value: 240,
           density: {
-            enable: false,
-            value_area: 600,
+            enable: true,
+            value_area: 1000,
           },
         },
         color: {
-          value: "#eafc20",
+          value: "#2feabe",
         },
         shape: {
           type: "star",
           stroke: {
-            width: 2,
-            color: "#eafc20",
+           
           },
           polygon: {
             nb_sides: 5,
           },
           image: {
-            width: 5,
-            height: 5,
+            width: 10,
+            height: 10,
           },
         },
         opacity: {
@@ -39,7 +38,7 @@ $.getScript(
           },
         },
         size: {
-          value: 1,
+          value: 3,
           random: true,
           anim: {
             enable: false,
@@ -49,7 +48,7 @@ $.getScript(
           },
         },
         line_linked: {
-          enable: true,
+          enable: false,
           distance: 200,
           color: "#ffffff",
           opacity: 0.1,
@@ -70,7 +69,7 @@ $.getScript(
         },
       },
       interactivity: {
-        detect_on: "canvas",
+        detect_on: "none",
         events: {
           onhover: {
             enable: false,
@@ -90,8 +89,8 @@ $.getScript(
             },
           },
           bubble: {
-            distance: 400,
-            size: 4,
+            distance: 100,
+            size: 2,
             duration: 2,
             opacity: 8,
             speed: 10,

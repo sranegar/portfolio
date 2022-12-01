@@ -1,48 +1,47 @@
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
 
- #particles-js {
-   width: 100%;
-   height: 100%;
-   background-size: cover;
-   background-position: 50% 50%;
-   position: fixed;
-   top: 0px;
-   z-index: 1;
- }
 #modal {
   width: 100%;
   height: 100%;
- 
-  background-color: rgba(0, 0, 0, 0.836);
+  background-color: rgba(3, 3, 3, 0.736);
   position: fixed;
   z-index: 9999;
   right: 0;
   left: 0;
   visibility: hidden;
-display: flex;
-align-items: center;
-  
+  display: flex;
+  align-items: center;
+
   #modal-content {
     position: relative;
     margin: 0 auto;
-   max-height: 100%;
+    max-height: 100%;
     width: 45%;
-      background-color: $site-white;
-border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+    background-color: $site-dark;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
     .slider {
       border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
+      border-top-left-radius: 25px;
       overflow: hidden;
-      border-bottom: 1px solid $site-dark;
-
       position: relative;
 
       img {
-          border-top-right-radius: 25px;
-            border-top-left-radius: 25px;
-          max-height: 24em;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        max-height: 24em;
       }
 
       .slick-prev {
@@ -53,6 +52,7 @@ border-top-right-radius: 25px;
         background-size: contain;
         background-position: center;
       }
+
       .slick-next {
         right: 0;
         background-image: url(../assets/svg/arrow-right.svg);
@@ -60,16 +60,15 @@ border-top-right-radius: 25px;
         background-size: contain;
         background-position: center;
       }
+
       button {
         padding: 20px;
-
         position: absolute;
         font-size: 0;
         bottom: 0;
         cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.151);
+        background-color: rgba(0, 0, 0, 0.324);
         border: none;
-        
       }
     }
 
@@ -80,9 +79,10 @@ border-top-right-radius: 25px;
       font-size: 40px;
       cursor: pointer;
       padding: 10px;
-     
+
       color: rgba(0, 0, 0, 0.212);
     }
+
     .fa-circle-chevron-left {
       position: absolute;
       left: 0;
@@ -93,42 +93,47 @@ border-top-right-radius: 25px;
       color: rgba(0, 0, 0, 0.212);
     }
 
-    .modal-bottom {   
+    .modal-bottom {
       position: relative;
-      padding: 5px 8px 0px;
+      padding: 5px 4px 0px;
       min-height: 100%;
-      background-color: $site-gray;
+      background-color: darken($site-white, 15%);
       overflow: hidden;
       border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+
       h2 {
         font-family: PoppinsReg;
         letter-spacing: 1px;
         margin: 0px;
-        font-size: 1em;
+        font-size: 1.185em;
+        padding-left: 10px;
+        margin-top: 1px;
       }
+
       h4 {
-        font-family: PoppinsLight;
+        font-family: PoppinsReg;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: rgb(117, 117, 117);
-        font-size: .85em;
-        margin-top: 0px;
+        color: $site-pink;
+        font-size: .88em;
+        margin-top: -4px;
         margin-bottom: 0px;
-         
+padding-left: 10px;
       }
+
       p {
-         min-height: 120px;
-         display: block;
-         overflow-y: auto;
-       
+        min-height: 120px;
+        display: block;
+        overflow-y: auto;
         font-family: PoppinsReg;
         font-size: .75em;
-        line-height: 1.6em;
-        padding: 10px 10px;
+        line-height: 1.58em;
+        padding: 8px 10px;
       }
+
       button {
-        width: 120px;
+        width: 30px;
         height: 30px;
         font-family: PoppinsReg;
         text-transform: uppercase;
@@ -138,20 +143,20 @@ border-top-right-radius: 25px;
         letter-spacing: .5px;
         position: absolute;
         top: 8px;
-        right: 5px;
+        right: 12px;
         cursor: pointer;
         transition: all 0.3s;
-        i{
-          margin-right: 10px;
-        }
+
+
         &:hover {
           background-color: $site-white;
           border: 2px solid $site-pink;
           color: $site-pink;
-          
+
           transition: all 0.3s;
         }
       }
+
       .fa-xmark {
         position: absolute;
         right: 0;
@@ -159,7 +164,12 @@ border-top-right-radius: 25px;
         bottom: 0;
         font-size: 1.7em;
         cursor: pointer;
-        color: $site-blue;
+        color: rgb(181, 181, 181);
+              transition: all ease-in-out 0.2s;
+        &:hover {
+          color: rgb(142, 142, 142);
+              transition: all ease-in-out 0.2s;
+        }
       }
     }
   }
@@ -177,13 +187,13 @@ border-top-right-radius: 25px;
     padding: 10px;
     background-color: $secondary-dark;
     margin: 0 auto;
-  
+
 
     svg {
       width: 100%;
       padding: 70px 50px 0px;
- 
-  fill: rgba(255, 255, 255, 0.89) ;
+
+      fill: rgba(255, 255, 255, 0.89);
     }
 
     .filled-heading {
@@ -191,14 +201,14 @@ border-top-right-radius: 25px;
       font-family: Smithen;
       font-weight: 100;
       font-size: 5.5em;
- 
+
       .intro {
         text-transform: capitalize;
         font-size: 0.085em;
         font-weight: 280;
         font-family: PoppinsReg;
         letter-spacing: 0.2px;
-      
+
       }
     }
 
@@ -212,6 +222,7 @@ border-top-right-radius: 25px;
     }
 
     @keyframes pulse {
+
       /* Rotating it along with the scale makes it a little bit more fancy */
       0%,
       0% {
@@ -224,7 +235,7 @@ border-top-right-radius: 25px;
       }
     }
 
-     
+
   }
 
   #nav-bar {
@@ -255,13 +266,13 @@ border-top-right-radius: 25px;
         background-color: lighten($header-color, 20%);
         color: $site-purple;
         font-weight: 900;
-        
+
       }
     }
 
     .active-link {
       background-color: lighten($header-color, 15%);
-    
+
     }
 
     .links-toggle {
@@ -296,6 +307,7 @@ border-top-right-radius: 25px;
     margin-bottom: 12px;
   }
 }
+
 //  }
 
 //  @media screen and (max-width: 768px) {

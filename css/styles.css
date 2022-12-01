@@ -96,7 +96,7 @@ section {
 #modal {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.836);
+  background-color: rgba(3, 3, 3, 0.736);
   position: fixed;
   z-index: 9999;
   right: 0;
@@ -110,17 +110,17 @@ section {
   margin: 0 auto;
   max-height: 100%;
   width: 45%;
-  background-color: #fff;
+  background-color: #222137;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #modal #modal-content .slider {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   overflow: hidden;
-  border-bottom: 1px solid #222137;
   position: relative;
 }
 #modal #modal-content .slider img {
@@ -149,7 +149,7 @@ section {
   font-size: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: rgba(0, 0, 0, 0.324);
   border: none;
 }
 #modal #modal-content .fa-circle-chevron-right {
@@ -172,9 +172,9 @@ section {
 }
 #modal #modal-content .modal-bottom {
   position: relative;
-  padding: 5px 8px 0px;
+  padding: 5px 4px 0px;
   min-height: 100%;
-  background-color: #e5e4e4;
+  background-color: #d9d9d9;
   overflow: hidden;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -183,16 +183,19 @@ section {
   font-family: PoppinsReg;
   letter-spacing: 1px;
   margin: 0px;
-  font-size: 1em;
+  font-size: 1.185em;
+  padding-left: 10px;
+  margin-top: 1px;
 }
 #modal #modal-content .modal-bottom h4 {
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgb(117, 117, 117);
-  font-size: 0.85em;
-  margin-top: 0px;
+  color: #f41177;
+  font-size: 0.88em;
+  margin-top: -4px;
   margin-bottom: 0px;
+  padding-left: 10px;
 }
 #modal #modal-content .modal-bottom p {
   min-height: 120px;
@@ -200,11 +203,11 @@ section {
   overflow-y: auto;
   font-family: PoppinsReg;
   font-size: 0.75em;
-  line-height: 1.6em;
-  padding: 10px 10px;
+  line-height: 1.58em;
+  padding: 8px 10px;
 }
 #modal #modal-content .modal-bottom button {
-  width: 120px;
+  width: 30px;
   height: 30px;
   font-family: PoppinsReg;
   text-transform: uppercase;
@@ -214,12 +217,9 @@ section {
   letter-spacing: 0.5px;
   position: absolute;
   top: 8px;
-  right: 5px;
+  right: 12px;
   cursor: pointer;
   transition: all 0.3s;
-}
-#modal #modal-content .modal-bottom button i {
-  margin-right: 10px;
 }
 #modal #modal-content .modal-bottom button:hover {
   background-color: #fff;
@@ -234,7 +234,12 @@ section {
   bottom: 0;
   font-size: 1.7em;
   cursor: pointer;
-  color: #05bce7;
+  color: rgb(181, 181, 181);
+  transition: all ease-in-out 0.2s;
+}
+#modal #modal-content .modal-bottom .fa-xmark:hover {
+  color: rgb(142, 142, 142);
+  transition: all ease-in-out 0.2s;
 }
 
 .site-container {
@@ -995,10 +1000,11 @@ section {
 }
 .work .work-links-wrapper .work-link {
   width: 100%;
-  color: #e5e4e4;
+  background-color: #d1faf1;
+  color: #12121a;
   padding: 5px;
   text-align: center;
-  font-size: 13px;
+  font-size: 16px;
   font-family: PoppinsMed;
   text-transform: uppercase;
   cursor: pointer;
@@ -1007,33 +1013,34 @@ section {
 .work .work-links-wrapper .active-work-link {
   background-color: #2feabe;
   color: white;
-  border-bottom: 2px solid #2feabe;
 }
 .work .work-wrapper {
   display: flex;
   justify-content: center;
-  padding: 50px 0px;
-  max-width: 75%;
+  padding: 10px 0 30px;
+  max-width: 100%;
   margin: 0 auto;
   z-index: 2;
+  background-color: #12121a;
 }
 .work .work-wrapper .work-col {
-  max-width: 35%;
-  padding: 0px;
+  max-width: 30%;
 }
 .work .work-wrapper .work-col .project-container {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto !important;
 }
 .work .work-wrapper .work-col .project-container .image-container {
   position: relative;
   width: 100%;
-  max-height: 310px;
+  max-height: 2000px;
   margin: 0 auto;
   overflow: hidden;
   transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .work .work-wrapper .work-col .project-container .image-container:hover {
   cursor: pointer;
@@ -1051,7 +1058,7 @@ section {
 }
 .work .work-wrapper .work-col .project-container .title-wrapper {
   position: absolute;
-  background-color: #ffd026;
+  background-color: #1c1c29;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1065,7 +1072,7 @@ section {
   text-align: center;
   font-family: PoppinsMed;
   font-size: 1.3em;
-  color: #080808;
+  color: #fff;
   display: none;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .subtitle {
@@ -1074,7 +1081,7 @@ section {
   letter-spacing: 0.5px;
   font-size: 1em;
   display: none;
-  color: #f41177;
+  color: #f75aa1;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper {
   width: 35%;
@@ -1083,7 +1090,7 @@ section {
   padding: 20px 0px;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn {
-  color: #080808;
+  color: #f41177;
   width: 150px;
   height: 40px;
   font-family: PoppinsReg;
@@ -1092,39 +1099,19 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: 0px solid #080808;
+  border: 0px solid #f41177;
   letter-spacing: 0.5px;
+  background-color: #f41177;
+  color: #fff;
   width: 100%;
   z-index: 9999;
-}
-.work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffe68c;
-  z-index: -2;
-}
-.work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #f41177;
-  transition: all 0.3s;
-  z-index: -1;
+  border: 2px solid #f41177;
+  cursor: pointer;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
-  cursor: pointer;
-  color: #fff;
-  border: #f41177;
-}
-.work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover:before {
-  width: 100%;
+  background-color: transparent;
+  color: #f52985;
+  border-color: #f52985;
 }
 
 @media screen and (max-width: 768px) {
@@ -1146,7 +1133,10 @@ section {
   .work .work-wrapper .work-col .project-container {
     margin: 0px 0px 30px;
   }
-  .work .work-wrapper .work-col .project-container .project-entry .image-container .image-wrapper img {
+  .work .work-wrapper .work-col .project-container .image-container {
+    max-height: 250px;
+  }
+  .work .work-wrapper .work-col .project-container .image-container .image-wrapper img {
     max-width: 100%;
     padding: 0px;
   }
