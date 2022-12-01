@@ -36,6 +36,10 @@ section {
   src: url(../assets/fonts/Poppins-Light.ttf);
 }
 @font-face {
+  font-family: PoppinsThin;
+  src: url(../assets/fonts/Poppins-Thin.ttf);
+}
+@font-face {
   font-family: PoppinsMed;
   src: url(../assets/fonts/Poppins-Medium.ttf);
 }
@@ -69,6 +73,26 @@ section {
     -webkit-transform: scaleY(1);
   }
 }
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  top: 0px;
+  z-index: 1;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
 #modal {
   width: 100%;
   height: 100%;
@@ -265,27 +289,27 @@ section {
   display: flex;
   align-items: center;
   background-color: #222137;
-  border-bottom: 2px solid #2feabe;
+  border-bottom: 0px solid #2feabe;
   position: fixed;
   width: 100%;
   z-index: 8;
 }
 .site-container #nav-bar a {
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: PoppinsReg;
+  font-family: PoppinsLight;
   letter-spacing: 1.4px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px 25px;
   height: 100%;
 }
 .site-container #nav-bar a:hover {
-  background-color: #a3f6e2;
-  color: #222137;
+  background-color: #8cf3db;
+  color: #8800ff;
   font-weight: 900;
 }
 .site-container #nav-bar .active-link {
@@ -326,7 +350,7 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 7vh;
-  background-color: rgba(255, 255, 255, 0.338);
+  background-color: rgba(255, 255, 255, 0.396);
 }
 #about-page .blob {
   width: 1200px;
@@ -336,10 +360,10 @@ section {
   position: absolute;
   z-index: 1px;
   transform: translate(-30%, -70%);
-  background-image: linear-gradient(45deg, #9c22d4 0%, #8800ff 100%);
+  background-image: linear-gradient(45deg, #4e1ac8 0%, #7b1dce 100%);
   z-index: 5;
-  animation: morpheusabout 60s linear infinite;
-  opacity: 15%;
+  animation: morpheusabout 75s linear infinite;
+  opacity: 25%;
 }
 @keyframes morpheusabout {
   0% {
@@ -371,7 +395,7 @@ section {
 #about-page .work-links-wrapper .work-link {
   width: 100%;
   font-size: 13px;
-  color: #080808;
+  color: #fff;
   padding: 5px;
   text-align: center;
   font-family: PoppinsMed;
@@ -382,7 +406,7 @@ section {
 #about-page .work-links-wrapper .active-work-link {
   font-size: 13px;
   background-color: #2feabe;
-  color: white;
+  color: #fff;
   border-bottom: 2px solid #2feabe;
 }
 #about-page .about-wrapper {
@@ -393,14 +417,14 @@ section {
   margin-right: 17%;
 }
 #about-page .about-wrapper .about-image {
-  width: 18%;
+  width: 17%;
   position: absolute;
-  left: 312px;
-  top: 100px;
+  left: 300px;
+  top: 105px;
   bottom: 0;
   right: 200px;
   z-index: 5;
-  filter: hue-rotate(295deg);
+  filter: hue-rotate(350deg);
 }
 #about-page .about-wrapper .about-image img {
   max-width: 100%;
@@ -427,7 +451,7 @@ section {
   z-index: 10;
 }
 #about-page .about-wrapper .about-text h3 {
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   margin-bottom: 0px;
   font-size: 18px;
   color: #080808;
@@ -463,7 +487,7 @@ section {
   color: #f41177;
 }
 #about-page .about-wrapper .about-text .about-btns-wrapper .contact-btn {
-  color: #f41177;
+  color: #fff;
   width: 150px;
   height: 40px;
   font-family: PoppinsReg;
@@ -472,15 +496,15 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: 0px solid #f41177;
+  border: 0px solid #fff;
   letter-spacing: 0.5px;
-  background-color: transparent;
+  background-color: #ffd026;
   cursor: pointer;
-  border: 2px solid #f41177;
+  border: 2px solid #ffd026;
 }
 #about-page .about-wrapper .about-text .about-btns-wrapper .contact-btn:hover {
-  background-color: #f41177;
-  color: #fff;
+  background-color: #fff;
+  color: #ffd026;
 }
 #about-page .skills-row {
   display: flex;
@@ -489,7 +513,7 @@ section {
   padding: 30px 80px;
 }
 #about-page .skills-row h3 {
-  font-family: PoppinsLight;
+  font-family: PoppinsReg;
   font-size: 18px;
   color: #080808;
   letter-spacing: 1.5px;
@@ -525,7 +549,7 @@ section {
 }
 #about-page .skills-row .skills-col1 .dev-skills label {
   font-family: PoppinsReg;
-  font-size: 14px;
+  font-size: 12px;
   color: #080808;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress {
@@ -533,7 +557,7 @@ section {
   -webkit-appearance: none;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-bar {
-  background-color: #b6b6b6;
+  background-color: #d5d5d5;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-value {
   background-color: #f41177;
@@ -945,7 +969,7 @@ section {
   justify-content: center;
   position: relative;
   padding-top: 7vh;
-  background-color: #fff;
+  background-color: #12121a;
 }
 .work .page-header {
   padding: 10px 50px 5px;
@@ -971,7 +995,7 @@ section {
 }
 .work .work-links-wrapper .work-link {
   width: 100%;
-  color: #080808;
+  color: #e5e4e4;
   padding: 5px;
   text-align: center;
   font-size: 13px;
@@ -991,6 +1015,7 @@ section {
   padding: 50px 0px;
   max-width: 75%;
   margin: 0 auto;
+  z-index: 2;
 }
 .work .work-wrapper .work-col {
   max-width: 35%;
@@ -1146,13 +1171,13 @@ section {
   text-decoration: underline;
   text-decoration-style: wavy;
   text-underline-offset: 13px;
-  text-decoration-color: #363457;
+  text-decoration-color: #494777;
 }
 #contact-section .contact-wrapper .contact-form p {
   text-align: center;
-  color: #05bce7;
+  color: #70e1fc;
   font-family: PoppinsReg;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
   padding: 10px;
   font-size: 13px;
 }
@@ -1161,12 +1186,12 @@ section {
   height: 50px;
   padding: 10px;
   font-family: PoppinsLight;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 1px;
-  margin: 0px 0 2px;
-  background-color: #222137;
+  margin: 0px 0 3px;
+  background-color: #181727;
   outline: none;
-  color: #05bce7;
+  color: #fbb2d3;
   border: none;
 }
 #contact-section .contact-wrapper .contact-form .no-outline:focus {
@@ -1178,11 +1203,16 @@ section {
 #contact-section .contact-wrapper .contact-form textarea:active {
   border-color: transparent;
   border-bottom: 2px solid #f41177;
-  background-color: #222137;
+  background-color: #181727;
 }
 #contact-section .contact-wrapper .contact-form input[type=submit] {
+  font-family: PoppinsReg !important;
+  font-size: 13px !important;
+  letter-spacing: 0.5px !important;
+  float: right;
+  margin: 8px;
   color: #fff;
-  width: 130px;
+  width: 150px;
   height: 40px;
   font-family: PoppinsReg;
   text-transform: uppercase;
@@ -1193,10 +1223,8 @@ section {
   border: 0px solid #fff;
   letter-spacing: 0.5px;
   background-color: #f41177;
-  border: 2px solid #f41177;
-  margin: 8px 5px;
-  float: right;
   cursor: pointer;
+  border: 2px solid #f41177;
 }
 #contact-section .contact-wrapper .contact-form input[type=submit]:hover {
   background-color: transparent;
@@ -1204,29 +1232,35 @@ section {
 }
 #contact-section .contact-wrapper .contact-form ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: rgba(255, 255, 255, 0.338);
+  color: rgba(255, 255, 255, 0.396);
+  font-family: PoppinsThin;
 }
 #contact-section .contact-wrapper .contact-form :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: rgba(255, 255, 255, 0.338);
+  color: rgba(255, 255, 255, 0.396);
   opacity: 1;
+  font-family: PoppinsThin;
 }
 #contact-section .contact-wrapper .contact-form ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: rgba(255, 255, 255, 0.338);
+  color: rgba(255, 255, 255, 0.396);
   opacity: 1;
+  font-family: PoppinsThin;
 }
 #contact-section .contact-wrapper .contact-form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgba(255, 255, 255, 0.338);
+  color: rgba(255, 255, 255, 0.396);
+  font-family: PoppinsThin;
 }
 #contact-section .contact-wrapper .contact-form ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgba(255, 255, 255, 0.338);
+  color: rgba(255, 255, 255, 0.396);
+  font-family: PoppinsThin;
 }
 #contact-section .contact-wrapper .contact-form ::placeholder {
   /* Most modern browsers support this now. */
-  color: rgba(255, 255, 255, 0.338);
+  color: rgba(255, 255, 255, 0.396);
+  font-family: PoppinsThin;
 }
 #contact-section .contact-wrapper .contact-form textarea {
   outline: none;
@@ -1234,24 +1268,39 @@ section {
   height: 140px;
   padding: 10px 10px;
   font-family: PoppinsLight;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 1px;
   margin: 0px 0 0;
-  background-color: #222137;
+  background-color: #181727;
   border: none;
   resize: none;
-  color: #05bce7;
+  color: #fbb2d3;
 }
 #contact-section .blob {
-  width: 580px;
-  height: 580px;
+  width: 570px;
+  height: 570px;
   margin-left: 300px;
   position: absolute;
   transform: translate(-30%, -70%);
   background-image: linear-gradient(45deg, #d422b9 0%, #ad22d4 60%, #8800ff 100%);
   z-index: 5;
-  animation: morpheus 24s linear infinite;
-  opacity: 13%;
+  animation: morpheus 50s linear infinite;
+  opacity: 18%;
+}
+#contact-section .blob2 {
+  width: 420px;
+  height: 420px;
+  right: 0;
+  top: 500px;
+  position: absolute;
+  transform: translate(-65%, -70%);
+  animation: morpheus 20s linear infinite;
+  opacity: 3%;
+  z-index: 1;
+  background-image: url(../assets/images/dalmatian-print.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @keyframes morpheus {
   0% {

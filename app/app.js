@@ -1,5 +1,5 @@
 import * as MODEL from "./model.js";
-
+  
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -11,14 +11,14 @@ function route() {
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
-    MODEL.changePage(pageID);
+    MODEL.changePage(pageID, removeParticles());
   } else if (pageID == "about") {
-    MODEL.changePage(pageID);
+    MODEL.changePage(pageID, removeParticles());
   }
    else if (pageID == "work") {
     MODEL.changePage(pageID, subPageID, openModal);
   } else if (pageID == "contact") {
-    MODEL.changePage(pageID, subPageID, initFormListener);
+    MODEL.changePage(pageID, subPageID, removeParticles());
   } else {
     if (pageID === subPageID) {
       MODEL.changePage(pageID);
@@ -26,6 +26,9 @@ function route() {
       MODEL.changePage(pageID, subPageID);
     }
   }
+}
+function removeParticles() {
+    $("#particles-js").remove();
 }
 
 function openModal() {
@@ -64,12 +67,18 @@ function initFormListener() {
   });
 }
 
+
+
+
 function initApp() {
   $(window).on("hashchange", route);
+  
 }
 
 function initListeners() {
   $(window).on("load", route);
+
+ 
 }
 
 $(document).ready(function () {
@@ -81,4 +90,7 @@ $(document).ready(function () {
   });
   initListeners();
   initApp();
+  
 });
+ 
+ 

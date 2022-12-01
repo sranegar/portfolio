@@ -22,14 +22,14 @@
              text-decoration: underline;
              text-decoration-style: wavy;
              text-underline-offset: 13px;
-             text-decoration-color: lighten($site-dark, 10%);
+             text-decoration-color: lighten($site-dark, 20%);
           }
 
           p {
              text-align: center;
-             color: $site-blue;
+             color: lighten($site-blue, 25%);
              font-family: PoppinsReg;
-             letter-spacing: .3px;
+             letter-spacing: .4px;
              padding: 10px;
              font-size: 13px;
           }
@@ -39,13 +39,15 @@
              width: 100%;
              height: 50px;
              padding: 10px;
-             font-family: PoppinsLight;
-             font-size: 10px;
+      
+            font-family: PoppinsLight;
+             font-size: 11px;
              letter-spacing: 1px;
-             margin: 0px 0 2px;
-             background-color: $site-dark;
+             margin: 0px 0 3px;
+             background-color: darken($site-dark, 5%);
              outline: none;
-             color: $site-blue;
+             color: lighten($site-pink, 33%);
+           
              border: none;
           }
 
@@ -60,57 +62,66 @@
           {
           border-color: transparent;
           border-bottom: 2px solid $site-pink;
-          background-color: $site-dark;
+          background-color:darken($site-dark, 5%);
        }
 
        input[type=submit] {
 
 
-          @include site-button($btnBorderColor: $site-white, $btnWidth: 130px);
-          background-color: $site-pink;
-          border: 2px solid $site-pink;
-          margin: 8px 5px;
-          float: right;
-          cursor: pointer;
-
-          &:hover {
-             background-color: transparent;
-             color: $site-pink;
-
-          }
+      font-family: PoppinsReg !important;
+         font-size: 13px !important;
+         letter-spacing: .5px !important;
+         float: right;
+          margin: 8px;
+            @include site-button($btnBorderColor: $site-white);
+            background-color: $site-pink;
+            cursor: pointer;
+            border: 2px solid $site-pink;
+         
+            &:hover {
+               background-color: transparent;
+               color: $site-pink;
+         
+            }
        }
 
 
        ::-webkit-input-placeholder {
           /* WebKit, Blink, Edge */
           color: $secondary-white;
+         font-family: PoppinsThin;
        }
 
        :-moz-placeholder {
           /* Mozilla Firefox 4 to 18 */
           color: $secondary-white;
           opacity: 1;
+         font-family: PoppinsThin;
        }
 
        ::-moz-placeholder {
           /* Mozilla Firefox 19+ */
           color: $secondary-white;
           opacity: 1;
+         font-family: PoppinsThin;
        }
 
        :-ms-input-placeholder {
           /* Internet Explorer 10-11 */
           color: $secondary-white;
+      font-family: PoppinsThin;
        }
 
        ::-ms-input-placeholder {
           /* Microsoft Edge */
           color: $secondary-white;
+      font-family: PoppinsThin;
        }
 
        ::placeholder {
           /* Most modern browsers support this now. */
           color: $secondary-white;
+         font-family: PoppinsThin;
        }
 
        textarea {
@@ -119,13 +130,14 @@
           height: 140px;
           padding: 10px 10px;
           font-family: PoppinsLight;
-          font-size: 10px;
+          font-size: 11px;
+       
           letter-spacing: 1px;
           margin: 0px 0 0;
-          background-color: $site-dark;
+          background-color: darken($site-dark, 5%);
           border: none;
           resize: none;
-          color: $site-blue;
+         color: lighten($site-pink, 33%);
        }
 
     }
@@ -133,16 +145,33 @@
  }
 
  .blob {
-    width: 580px;
-    height: 580px;
+    width: 570px;
+    height: 570px;
     margin-left: 300px;
     position: absolute;
     transform: translate(-30%, -70%);
     background-image: linear-gradient(45deg, #d422b9 0%, #ad22d4 60%, #8800ff 100%);
     z-index: 5;
-    animation: morpheus 24s linear infinite;
-    opacity: 13%;
-
+    animation: morpheus 50s linear infinite;
+    opacity: 18%;
+ 
+ }
+ .blob2 {
+    width: 420px;
+    height: 420px;
+    right: 0;
+   
+    top:  500px;
+    position: absolute;
+    transform: translate(-65%, -70%);
+    
+    animation: morpheus 20s linear infinite;
+    opacity: 3%;
+    z-index: 1;
+   background-image: url(../assets/images/dalmatian-print.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
  }
 
  @keyframes morpheus {

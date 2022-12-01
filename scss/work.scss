@@ -4,7 +4,8 @@
   justify-content: center;
   position: relative;
   padding-top: 7vh;
-  background-color: $site-white;
+  background-color: $secondary-dark;
+ 
   .page-header {
     padding: 10px 50px 5px;
     //  background-color: $neon;
@@ -39,7 +40,7 @@
     .work-link {
       width: 100%;
 
-      color: $site-black;
+      color: $site-gray;
       padding: 5px;
       text-align: center;
 font-size: 13px;
@@ -62,7 +63,7 @@ font-size: 13px;
     padding: 50px 0px;
     max-width: 75%;
     margin: 0 auto;
-  
+    z-index: 2;
     .work-col {
       max-width: 35%;
       padding: 0px;

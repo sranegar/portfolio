@@ -84,7 +84,7 @@ var columns = [
 
 var curProject = {};
 
-export function changePage(pageID, subPage, callback) {
+export function changePage(pageID, subPage, callback, callbackTwo) {
   //HOME
   if (pageID == "" || pageID == "home") {
     $.get(`pages/${pageID}/home.html`, function (data) {
@@ -95,6 +95,7 @@ export function changePage(pageID, subPage, callback) {
       $("#nav-bar").css("top", "");
       $("#nav-bar").css("bottom", "0");
     });
+    
   } else if (pageID == "work") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
@@ -104,7 +105,8 @@ export function changePage(pageID, subPage, callback) {
       $("#modal .fa-xmark").click(function () {
         $("#modal").css("visibility", "hidden");
       });
-
+      
+      
       let pageColumn = "";
 
       $.each(columns, (idx, col) => {
@@ -132,6 +134,8 @@ export function changePage(pageID, subPage, callback) {
 
       $(".work-wrapper").append(pageColumn);
       callback();
+      $("head").append('<script src="app/particles.js"></script>');
+       $("body").append(`<div id="particles-js"></div>`);
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
@@ -144,13 +148,14 @@ export function changePage(pageID, subPage, callback) {
       $("#nav-bar").css("bottom", "");
       $("#nav-bar").css("top", "0");
       $("#app").html(data);
-      callback();
+   
     });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
       $("#nav-bar").css("display", "flex");
     });
+   
   }
 }
 
