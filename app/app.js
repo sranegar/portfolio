@@ -14,7 +14,9 @@ function route() {
   } else if (pageID == "" || pageID == "home") {
     MODEL.changePage(pageID);
   } else if (pageID == "work") {
-    MODEL.changePage(pageID, subPageID, openModal );
+    MODEL.changePage(pageID, subPageID, openModal);
+    } else if (pageID == "contact") {
+    MODEL.changePage(pageID);
   } else {
     if (pageID === subPageID) {
       MODEL.changePage(pageID);
@@ -58,3 +60,4 @@ $(document).ready(function () {
 
 });
  
+

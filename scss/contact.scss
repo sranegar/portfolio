@@ -1,3 +1,182 @@
  #contact-section {
     background-color: $secondary-dark;
+    position: relative;
+    .contact-wrapper {
+
+      
+ 
+      
+      
+      
+      padding-top: 100px;
+    
+       .contact-form {
+        
+          width: 40%;
+          margin: 0 auto;
+          position: relative;
+          z-index: 10;
+           
+         
+h1 {
+      color: $site-white;
+      font-family: PoppinsReg;
+
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-underline-offset: 13px;
+      text-decoration-color: lighten($site-dark, 10%);
+   }
+
+   p {
+      text-align: center;
+      color: $site-blue;
+      font-family: PoppinsReg;
+      letter-spacing: .3px;
+      padding: 10px;
+      font-size: 13px;
+   }
+        
+
+          input {
+             width: 100%;
+             height: 50px;
+             padding: 10px;
+             font-family: PoppinsLight;
+               font-size: 10px;
+                  letter-spacing: 1px;
+             margin: 0px 0 2px;
+             background-color: $site-dark;
+             outline: none;
+             color: $site-blue;
+             border: none;
+          }
+
+          .no-outline:focus {
+             outline: none;
+          }
+
+          input:focus,
+          input:active,
+          textarea:focus,
+          textarea:active,
+          {
+          border-color: transparent;
+          border-bottom: 2px solid $site-pink;
+          background-color: $site-dark;
+       }
+
+       input[type=submit] {
+
+         
+          @include site-button($btnBorderColor: $site-white, $btnWidth: 130px);
+          background-color: $site-pink;
+          border: 2px solid $site-pink;
+         margin: 8px 5px;
+          float: right;
+         cursor: pointer;
+          &:hover {
+             background-color: transparent;
+             color: $site-pink;
+
+          }
+       }
+
+
+       ::-webkit-input-placeholder {
+          /* WebKit, Blink, Edge */
+          color: $secondary-white;
+       }
+
+       :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: $secondary-white;
+          opacity: 1;
+       }
+
+       ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: $secondary-white;
+          opacity: 1;
+       }
+
+       :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: $secondary-white;
+       }
+
+       ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: $secondary-white;
+       }
+
+       ::placeholder {
+          /* Most modern browsers support this now. */
+          color: $secondary-white;
+       }
+
+       textarea {
+          outline: none;
+          width: 100%;
+          height: 140px;
+          padding: 10px 10px;
+          font-family: PoppinsLight;
+         font-size: 10px;
+         letter-spacing: 1px;
+          margin: 0px 0 0;
+          background-color: $site-dark;
+          border: none;
+
+          resize: none;
+            color: $site-blue;
+       }
+
+    }
+    
  }
+ .blob {
+    width: 580px;
+    height: 580px;
+    margin-left: 300px;
+    position: absolute;
+    
+    transform: translate(-30%, -70%);
+    background-image: linear-gradient(45deg, #d422b9 0%, #ad22d4 60%, #8800ff 100%);
+   z-index: 5;
+    animation: morpheus 30s linear infinite;
+    opacity: 13%;
+   
+ }
+
+ @keyframes morpheus {
+
+    // tl tr br bl / lt rt rb lb
+    // top-left top-right bottom-right bottom-left / left-top right-top right-bottom left-bottom
+    0% {
+       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    20% {
+       border-radius: 60% 40% 40% 60% / 60% 25% 75% 40%;
+    }
+
+    40% {
+       border-radius: 70% 30% 65% 35% / 80% 45% 55% 20%;
+    }
+
+    60% {
+       border-radius: 30% 70% 70% 30% / 20% 30% 70% 80%;
+    }
+
+    80% {
+       border-radius: 40% 60% 40% 60% / 70% 55% 45% 30%;
+    }
+
+    100% {
+       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+ }
+ }
+
+ 

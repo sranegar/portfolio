@@ -132,6 +132,12 @@ export function changePage(pageID, subPage, callback) {
       $("#nav-bar").css("top", "0");
       $("#app").html(data);
     });
+      } else if (pageID == "contact") {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
+      $("#nav-bar").css("bottom", "");
+      $("#nav-bar").css("top", "0");
+      $("#app").html(data);
+    });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);

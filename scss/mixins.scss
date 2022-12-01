@@ -1,6 +1,6 @@
- @mixin site-button($btnBorderColor: $site-pink, $btnBorderWidth:0px) {
+ @mixin site-button($btnBorderColor: $site-pink, $btnBorderWidth:0px, $btnWidth: 150px) {
      color: $btnBorderColor;
-     width: 150px;
+     width: $btnWidth;
      height: 40px;
      font-family: PoppinsReg;
      text-transform: uppercase;
