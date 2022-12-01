@@ -42,7 +42,7 @@
       color: $site-black;
       padding: 5px;
       text-align: center;
-
+font-size: 13px;
       font-family: PoppinsMed;
       text-transform: uppercase;
       cursor: pointer;
@@ -60,24 +60,24 @@
     display: flex;
     justify-content: center;
     padding: 50px 0px;
+    max-width: 75%;
+    margin: 0 auto;
   
     .work-col {
-      max-width: 25%;
+      max-width: 35%;
       padding: 0px;
       // border: 1px solid $hr-color;
 
       .project-container {
-        border: 1px solid $site-dark;
-
+        // border: 15px solid $site-dark;
         width: 100%;
-
+        
         .image-container {
           position: relative;
           width: 100%;
-          max-height: 400px;
+          max-height: 310px;
           margin: 0 auto;
           overflow: hidden;
-
           transition: all 0.3s;
           display: flex;
           justify-content: center;

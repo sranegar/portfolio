@@ -1,6 +1,7 @@
 #modal {
   width: 100%;
   height: 100%;
+ 
   background-color: rgba(0, 0, 0, 0.836);
   position: fixed;
   z-index: 9999;
@@ -15,18 +16,23 @@ align-items: center;
     margin: 0 auto;
    max-height: 100%;
     width: 45%;
-    
- 
+      background-color: $site-white;
+border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     .slider {
-      
+      border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
       overflow: hidden;
-      border-bottom: 3px solid $site-dark;
+      border-bottom: 1px solid $site-dark;
 
       position: relative;
 
       img {
-        
-          max-height: 27em;
+          border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+          max-height: 24em;
       }
 
       .slick-prev {
@@ -45,7 +51,7 @@ align-items: center;
         background-position: center;
       }
       button {
-        padding: 25px;
+        padding: 20px;
 
         position: absolute;
         font-size: 0;
@@ -64,6 +70,7 @@ align-items: center;
       font-size: 40px;
       cursor: pointer;
       padding: 10px;
+     
       color: rgba(0, 0, 0, 0.212);
     }
     .fa-circle-chevron-left {
@@ -76,38 +83,43 @@ align-items: center;
       color: rgba(0, 0, 0, 0.212);
     }
 
-    .modal-bottom {
-       
-      padding: 10px;
+    .modal-bottom {   
+      position: relative;
+      padding: 5px 8px 0px;
       min-height: 100%;
       background-color: $site-gray;
       overflow: hidden;
+      border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
       h2 {
         font-family: PoppinsReg;
         letter-spacing: 1px;
         margin: 0px;
-        font-size: 1.1em;
+        font-size: 1em;
       }
       h4 {
         font-family: PoppinsLight;
         text-transform: uppercase;
         letter-spacing: 1px;
         color: rgb(117, 117, 117);
-        font-size: .9em;
+        font-size: .85em;
+        margin-top: 0px;
+        margin-bottom: 0px;
          
       }
       p {
-         min-height: 130px;
+         min-height: 120px;
          display: block;
          overflow-y: auto;
-        background-color: red;
-        font-family: PoppinsLight;
-        font-size: .8em;
-        
+       
+        font-family: PoppinsReg;
+        font-size: .75em;
+        line-height: 1.6em;
+        padding: 10px 10px;
       }
       button {
-        width: 150px;
-        height: 40px;
+        width: 120px;
+        height: 30px;
         font-family: PoppinsReg;
         text-transform: uppercase;
         background-color: $site-pink;
@@ -115,8 +127,8 @@ align-items: center;
         color: $site-white;
         letter-spacing: .5px;
         position: absolute;
-        left: 10px;
-        bottom: 10px;
+        top: 8px;
+        right: 5px;
         cursor: pointer;
         transition: all 0.3s;
         i{
@@ -133,11 +145,11 @@ align-items: center;
       .fa-xmark {
         position: absolute;
         right: 0;
-        padding: 10px 20px;
+        padding: 15px 25px;
         bottom: 0;
         font-size: 1.7em;
         cursor: pointer;
-        color: $site-dark;
+        color: $site-blue;
       }
     }
   }
@@ -213,10 +225,10 @@ align-items: center;
     border-bottom: 2px solid $header-color;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 8;
 
     a {
-      font-size: 16px;
+      font-size: 15px;
       color: $site-white;
       text-transform: uppercase;
 

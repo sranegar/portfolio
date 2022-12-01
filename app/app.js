@@ -12,7 +12,10 @@ function route() {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
     MODEL.changePage(pageID);
-  } else if (pageID == "work") {
+  } else if (pageID == "about") {
+    MODEL.changePage(pageID);
+  }
+   else if (pageID == "work") {
     MODEL.changePage(pageID, subPageID, openModal);
   } else if (pageID == "contact") {
     MODEL.changePage(pageID, subPageID, initFormListener);
