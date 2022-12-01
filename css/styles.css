@@ -1158,7 +1158,7 @@ section {
   transform: translate(-30%, -70%);
   background-image: linear-gradient(45deg, #d422b9 0%, #ad22d4 60%, #8800ff 100%);
   z-index: 5;
-  animation: morpheus 30s linear infinite;
+  animation: morpheus 24s linear infinite;
   opacity: 13%;
 }
 @keyframes morpheus {
@@ -1179,6 +1179,12 @@ section {
   }
   100% {
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact-section .contact-wrapper .contact-form {
+    width: 90%;
   }
 }
 

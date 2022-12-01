@@ -1,3 +1,5 @@
+var contactFormInfo = {}
+
 var columns = [
   {
     projects: [
@@ -18,7 +20,8 @@ var columns = [
         subtitle: "PHP, MySQL, JavaScript",
         img: "assets/images/game-planet2.jpg",
         subDetails: "E-Commerce Application and Design",
-        details: "GamePlanet is a database-driven CRUD application and design for a mock brand written in PHP and Javascript.",
+        details:
+          "GamePlanet is a database-driven CRUD application and design for a mock brand written in PHP and Javascript.",
         href: "https://gameplanet-mvc.herokuapp.com/",
         images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
@@ -32,7 +35,8 @@ var columns = [
         subtitle: "HTML, CSS, Mailchimp",
         img: "assets/images/mas1.jpg",
         subDetails: "Email Template",
-        details: "An email template designed for a university program that follows proper branding.",
+        details:
+          "An email template designed for a university program that follows proper branding.",
         href: "",
         images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
@@ -43,7 +47,8 @@ var columns = [
         subtitle: "Next.js",
         img: "assets/images/brighter-days.jpg",
         subDetails: "E-Commerce Design",
-        details: "Brighter Days is a front-end website design solution and mockup brand written in HTML and Javascript. The design and brand mockup was created in Adobe XD. ",
+        details:
+          "Brighter Days is a front-end website design solution and mockup brand written in HTML and Javascript. The design and brand mockup was created in Adobe XD. ",
         href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
         images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
@@ -57,7 +62,8 @@ var columns = [
         subtitle: "REST API / React.js",
         img: "assets/images/music-app.jpg",
         subDetails: "MP3 Player",
-        details: "A single page application client that consumes web service data provided by a music API written in PHP using RESTful API.",
+        details:
+          "A single page application client that consumes web service data provided by a music API written in PHP using RESTful API.",
         href: "",
         images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
@@ -67,7 +73,8 @@ var columns = [
         subtitle: "WordPress",
         img: "assets/images/hct.jpg",
         subDetails: "Website Re-design Solution",
-        details: "A website design overhaul in collaboration with a design team.",
+        details:
+          "A website design overhaul in collaboration with a design team.",
         href: "",
         images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
       },
@@ -132,11 +139,12 @@ export function changePage(pageID, subPage, callback) {
       $("#nav-bar").css("top", "0");
       $("#app").html(data);
     });
-      } else if (pageID == "contact") {
+  } else if (pageID == "contact") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#nav-bar").css("bottom", "");
       $("#nav-bar").css("top", "0");
       $("#app").html(data);
+      callback();
     });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
@@ -161,4 +169,8 @@ export function viewProject(projId) {
     $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
   }
+}
+
+export function setFormInputs(formInputs) {
+  contactFormInfo = formInputs;
 }
