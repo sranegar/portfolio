@@ -27,7 +27,11 @@ var columns = [
         details:
           "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. This was my first CRUD application that sits near and dear to my heart. You may login as username: admin, password: password to utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. You can't actually buy anything from my made up company, but you can have fun seeing all of the features. I also created the GamePlanet logo to really tie the room together.",
         href: "https://gameplanet-mvc.herokuapp.com/",
-        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
+        images: [
+          "assets/images/game-planet.jpg",
+          "assets/images/game-planet-1.jpg",
+          "assets/images/game-planet-3.jpg",
+        ],
       },
     ],
   },
@@ -72,12 +76,16 @@ var columns = [
         id: 4,
         title: "Music Player App",
         subtitle: "REST API / React.js, MySQL",
-        img: "assets/images/music-app.jpg",
+        img: "assets/images/project-cover.jpg",
         subDetails: "MP3 Player",
         details:
           "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a passion project that allowed me be equal parts developer and designer. I designed and made a relational database that stores music by artists, albums, collections, tracks, and genres. Check it out and see what I like to jam out to! Shoot me a message if you would like to collaborate on a music app.",
         href: "",
-        images: ["assets/images/mp3.jpg", "assets/images/mp3-1.jpg"],
+        images: [
+          "assets/images/mp3.jpg",
+          "assets/images/mp3-1.jpg",
+          "assets/images/mp3-2.jpg",
+        ],
       },
       {
         id: 5,
@@ -88,7 +96,11 @@ var columns = [
         details:
           "HCT Website and Social Media Overhaul 2022 was a project collaboration with a design team made of an array of skills including video production, 2D illustration, graphic design, web design, and web development. I served as the project manager and web developer / web designer. The delivered project updated HCT's web presence and provided them with resources to improve website and social media maintainability.",
         href: "",
-        images: ["assets/images/hct-1.jpg", "assets/images/slide1.JPG"],
+        images: [
+          "assets/images/hct-2.jpg",
+          "assets/images/hct.jpg",
+          "assets/images/hct.jpg",
+        ],
       },
     ],
   },
