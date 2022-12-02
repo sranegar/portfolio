@@ -14,7 +14,7 @@ var columns = [
         href: "https://driveimi.com/",
         images: [
           "assets/images/drive-imi.png",
-          "assets/images/drive-imi-2.png",
+          "assets/images/drive-imi--2.jpg",
           "assets/images/drive-imi-3.png",
         ],
       },
@@ -42,7 +42,11 @@ var columns = [
         details:
           "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. The template serves to provide the client with showcasing video content, images, and links. Compatible with light and dark mode email client settings. The MAS Newsletter logo header was designed in a light and dark version to hit perfection from every angle.",
         href: "",
-        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
+        images: [
+          "assets/images/newsletter.jpg",
+          "assets/images/newsletter2.jpg",
+          "assets/images/newsletter3.jpg",
+        ],
       },
 
       {
@@ -54,7 +58,11 @@ var columns = [
         details:
           "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript and focused on fast loading and design responsiveness. The design prototype was created in Adobe XD. This is my most favorable piece of work and it made me so extremely happy throughout the entire production process. Be sure to visit the live version hosted through GitHub and hover through all the buttons.",
         href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
-        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
+        images: [
+          "assets/images/cbd1.png",
+          "assets/images/cbd2.jpg",
+          "assets/images/cbd3.jpg",
+        ],
       },
     ],
   },
@@ -69,7 +77,7 @@ var columns = [
         details:
           "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a passion project that allowed me be equal parts developer and designer. I designed and made a relational database that stores music by artists, albums, collections, tracks, and genres. Check it out and see what I like to jam out to! Shoot me a message if you would like to collaborate on a music app.",
         href: "",
-        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
+        images: ["assets/images/mp3.jpg", "assets/images/mp3-1.jpg"],
       },
       {
         id: 5,
@@ -80,7 +88,7 @@ var columns = [
         details:
           "HCT Website and Social Media Overhaul 2022 was a project collaboration with a design team made of an array of skills including video production, 2D illustration, graphic design, web design, and web development. I served as the project manager and web developer / web designer. The delivered project updated HCT's web presence and provided them with resources to improve website and social media maintainability.",
         href: "",
-        images: ["assets/images/poster-truck.jpg", "assets/images/slide1.JPG"],
+        images: ["assets/images/hct-1.jpg", "assets/images/slide1.JPG"],
       },
     ],
   },
