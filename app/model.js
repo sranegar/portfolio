@@ -12,7 +12,11 @@ var columns = [
         details:
           "Drive IMI is a marketing design solution for Irving Materials Inc (often referred as imi). I collaborated with the development and marketing teams at imi to design a fully responsive landing page and developed it in Next.js. The page content changes depending on which state the user chooses from a dropdown list upon entry. The alterating page content challenged me how to focus on a design that could change effortlessly and still look look great. I utilized Semantic UI for styled components and found using their Grid extremely helpful for making content beautifully adaptive and responsive.",
         href: "https://driveimi.com/",
-        images: ["assets/images/imi1.jpg", "assets/images/poster-truck.JPG"],
+        images: [
+          "assets/images/drive-imi.png",
+          "assets/images/drive-imi-2.png",
+          "assets/images/drive-imi-3.png",
+        ],
       },
       {
         id: 1,
@@ -169,6 +173,7 @@ export function viewProject(projId) {
   if (curProject.id == projID) {
     $("#slide1").attr("src", slideImages[0]);
     $("#slide2").attr("src", slideImages[1]);
+    $("#slide3").attr("src", slideImages[2]);
     $("#modal-content a").attr("href", curProject.href);
     $("#modal-content h2").text(curProject.title);
     $("#modal-content h4").text(curProject.subDetails);

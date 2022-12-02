@@ -24,7 +24,7 @@
     position: relative;
     margin: 0 auto;
     max-height: 100%;
-    width: 45%;
+    width: 40%;
     background-color: $site-dark;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -41,7 +41,8 @@
       img {
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
-        max-height: 24em;
+        max-height: 23em;
+         
       }
 
       .slick-prev {
@@ -95,9 +96,9 @@
 
     .modal-bottom {
       position: relative;
-      padding: 5px 4px 0px;
+      padding: 8px 4px 0px;
       min-height: 100%;
-      background-color: darken($site-white, 15%);
+      background-color: $site-white;
       overflow: hidden;
       border-bottom-right-radius: 25px;
       border-bottom-left-radius: 25px;
@@ -146,7 +147,7 @@ padding-left: 10px;
         right: 12px;
         cursor: pointer;
         transition: all 0.3s;
-
+        
 
         &:hover {
           background-color: $site-white;

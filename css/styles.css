@@ -109,7 +109,7 @@ section {
   position: relative;
   margin: 0 auto;
   max-height: 100%;
-  width: 45%;
+  width: 40%;
   background-color: #222137;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -126,7 +126,7 @@ section {
 #modal #modal-content .slider img {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  max-height: 24em;
+  max-height: 23em;
 }
 #modal #modal-content .slider .slick-prev {
   left: 0;
@@ -172,9 +172,9 @@ section {
 }
 #modal #modal-content .modal-bottom {
   position: relative;
-  padding: 5px 4px 0px;
+  padding: 8px 4px 0px;
   min-height: 100%;
-  background-color: #d9d9d9;
+  background-color: #fff;
   overflow: hidden;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
