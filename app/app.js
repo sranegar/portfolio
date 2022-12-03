@@ -18,7 +18,7 @@ function route() {
    else if (pageID == "work") {
     MODEL.changePage(pageID, subPageID, openModal);
   } else if (pageID == "contact") {
-    MODEL.changePage(pageID, subPageID );
+    MODEL.changePage(pageID, subPageID, initFormListener );
   } else {
     if (pageID === subPageID) {
       MODEL.changePage(pageID);

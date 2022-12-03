@@ -173,7 +173,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
       $("#nav-bar").css("bottom", "");
       $("#nav-bar").css("top", "0");
       $("#app").html(data);
-   
+      callback();
     });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
