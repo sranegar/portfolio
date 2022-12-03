@@ -11,7 +11,7 @@
 #modal {
   width: 100%;
   height: 100%;
-  background-color: rgba(3, 3, 3, 0.736);
+  background-color: $secondary-dark;
   position: fixed;
   z-index: 9999;
   right: 0;
@@ -19,90 +19,106 @@
   visibility: hidden;
   display: flex;
   align-items: center;
-
+#modal-wrapper { 
+  
+  min-width: 100%;
+  padding: 0px 30px;
   #modal-content {
+  
     position: relative;
     margin: 0 auto;
     max-height: 100%;
-    width: 40%;
-    background-color: $site-dark;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    max-width: 550px;
+    background-color: $site-white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+      .fa-xmark {
+          position: absolute;
+          
+      
+          z-index: 2;
+          right: -24px;
+          bottom: 0;
+          font-size: 1.9em;
+          cursor: pointer;
+          color:$site-gray;
+          transition: all ease-in-out 0.2s;
+          
+      
+          &:hover {
+            color: $site-white;
+            transition: all ease-in-out 0.2s;
+          
+          }
+      
+        }
+
     .slider {
-      border-top-right-radius: 25px;
-      border-top-left-radius: 25px;
-      overflow: hidden;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+ 
       position: relative;
 
       img {
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
-        max-height: 23em;
-         
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        max-height: 26em;
+       
       }
 
       .slick-prev {
         left: 0;
         z-index: 1;
+        
         background-image: url(../assets/svg/arrow-left.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 10px;
         background-position: center;
+       
       }
 
       .slick-next {
         right: 0;
         background-image: url(../assets/svg/arrow-right.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 10px;
         background-position: center;
+    
       }
 
+  
+
       button {
-        padding: 20px;
+      
         position: absolute;
         font-size: 0;
         bottom: 0;
         cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.324);
+        background-color: $site-black;
         border: none;
+         height: 55px;
+         width: 40px;
+         
       }
     }
 
-    .fa-circle-chevron-right {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      font-size: 40px;
-      cursor: pointer;
-      padding: 10px;
-
-      color: rgba(0, 0, 0, 0.212);
-    }
-
-    .fa-circle-chevron-left {
-      position: absolute;
-      left: 0;
-      font-size: 40px;
-      bottom: 0;
-      cursor: pointer;
-      padding: 10px;
-      color: rgba(0, 0, 0, 0.212);
-    }
+  
 
     .modal-bottom {
       position: relative;
       padding: 8px 4px 0px;
       min-height: 100%;
-      background-color: $site-white;
-      overflow: hidden;
-      border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-
+     
+      background-color: $site-pink;
+   
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+  overflow: hidden;
+  border-top: 2px solid $site-dark;
       h2 {
         font-family: PoppinsReg;
         letter-spacing: 1px;
@@ -116,7 +132,7 @@
         font-family: PoppinsReg;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: $site-pink;
+        color: $site-white;
         font-size: .88em;
         margin-top: -4px;
         margin-bottom: 0px;
@@ -124,13 +140,17 @@ padding-left: 10px;
       }
 
       p {
-        min-height: 120px;
+    
         display: block;
         overflow-y: auto;
         font-family: PoppinsReg;
-        font-size: .75em;
-        line-height: 1.58em;
-        padding: 8px 10px;
+        font-size: .765em;
+        line-height: 1.65em;
+        padding: 5px 10px 16px;
+        max-height: 130px;
+        
+       
+       
       }
 
       button {
@@ -158,22 +178,10 @@ padding-left: 10px;
         }
       }
 
-      .fa-xmark {
-        position: absolute;
-        right: 0;
-        padding: 15px 25px;
-        bottom: 0;
-        font-size: 1.7em;
-        cursor: pointer;
-        color: rgb(181, 181, 181);
-              transition: all ease-in-out 0.2s;
-        &:hover {
-          color: rgb(142, 142, 142);
-              transition: all ease-in-out 0.2s;
-        }
-      }
+     
     }
   }
+    }
 }
 
 .site-container {
@@ -186,15 +194,15 @@ padding-left: 10px;
   #nav {
     height: 100vh;
     padding: 10px;
-    background-color: $secondary-dark;
+    background-color: $site-gray;
     margin: 0 auto;
-
+    
 
     svg {
       width: 100%;
       padding: 70px 50px 0px;
 
-      fill: rgba(255, 255, 255, 0.89);
+      fill: $site-white;
     }
 
     .filled-heading {
@@ -240,15 +248,18 @@ padding-left: 10px;
   }
 
   #nav-bar {
-    height: 7vh;
+    height: 8vh;
     display: flex;
     align-items: center;
-    background-color: $site-dark;
+    background-color: $secondary-dark;
     border-bottom: 0px solid $header-color;
     position: fixed;
     width: 100%;
     z-index: 8;
-
+      box-shadow: 0 5px 14px  rgba(0, 0, 0, 0.18);
+  nav {
+     
+    }
     a {
       font-size: 14px;
       color: $site-white;
@@ -264,15 +275,15 @@ padding-left: 10px;
       height: 100%;
 
       &:hover {
-        background-color: lighten($header-color, 20%);
-        color: $site-purple;
+        background-color: lighten($site-dark, 25%);
+      
         font-weight: 900;
 
       }
     }
 
     .active-link {
-      background-color: lighten($header-color, 15%);
+      background-color: lighten($site-gray, 15%);
 
     }
 
@@ -290,7 +301,7 @@ padding-left: 10px;
   h1 {
     font-family: Yeseva;
     font-size: 24px;
-    color: $site-black;
+    color: $site-dark;
     letter-spacing: 1px;
     font-weight: 100;
   }
@@ -298,77 +309,72 @@ padding-left: 10px;
   h2 {
     font-family: Poppins;
     font-size: 18px;
-    color: $subheader;
+    color: $site-gray;
     letter-spacing: 0.8px;
     margin: 0px;
   }
 
   hr {
-    border: 0.5px solid $hr-color;
+    border: 0.5px solid $secondary-gray;
     margin-bottom: 12px;
   }
 }
 
-//  }
-
-//  @media screen and (max-width: 768px) {
-//      .site-container {
-//          nav {
-//              min-width: 95px;
-
-//              .links-wrapper {
-//                  max-width: 100%;
-
-//                  a {
-//                      font-size: 12px;
-//                      letter-spacing: 0px;
-//                  }
-
-//                  .nav-logo {
-//                      display: none;
-//                  }
-
-//                  .logo {
-//                      position: absolute;
-//                      display: flex;
-//                      max-width: 75%;
-//                      top: 10px;
-//                      left: 5px;
-//                  }
-//              }
-//          }
-
-//          .scroll-section {
-//              padding: 40px 20px;
-//              margin-top: 0vh;
-//              height: 100vh;
-
-//          }
-//      }
-
-//  }
-
-//  @media screen and (max-width: 390px) {
-//      .site-container {
-//          nav {
-//              width: 0vw;
-
-//              .links-wrapper {
-//                  .logo {
-//                      width: 60px;
-//                  }
-
-//                  a {}
-//              }
-//          }
-
-//          .scroll-section {
-//              padding: 40px 5px;
-//          }
-//      }
-
-//  }
-
+@media screen and (max-width: 768px) {
+  #modal {
+    #modal-wrapper{
+    
+      #modal-content {
+        .fa-xmark {
+          right: -20px;
+          bottom: -18px;
+        }
+          img {
+              
+            }
+        .modal-bottom {
+          p {
+           
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  #modal {
+    min-width: 300px;
+    #modal-wrapper {
+        padding: 0px 10px;
+      #modal-content {
+        img {
+       
+        }
+        .fa-xmark {
+         top: -30px;
+       right: -5px;
+         z-index: 5;
+        
+          font-size: 1.96em;
+        
+          &:hover {
+               
+            transition: all ease-in-out 0.2s;
+        
+          }
+        
+        }
+        .modal-bottom {
+        
+          p {
+           
+          }
+        }
+      }
+    }
+  }
+}
+ 
 @keyframes slidebg {
   to {
     background-position: 80vw;

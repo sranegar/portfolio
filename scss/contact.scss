@@ -1,5 +1,5 @@
  #contact-section {
-    background-color: $secondary-dark;
+    background-color: $site-dark;
     position: relative;
 
     .contact-wrapper {
@@ -19,15 +19,12 @@
              font-family: PoppinsReg;
 
              text-align: center;
-             text-decoration: underline;
-             text-decoration-style: wavy;
-             text-underline-offset: 13px;
-             text-decoration-color: lighten($site-dark, 20%);
+           
           }
 
           p {
              text-align: center;
-             color: lighten($site-blue, 25%);
+             color: lighten($site-pink,  5%);
              font-family: PoppinsReg;
              letter-spacing: .4px;
              padding: 10px;
@@ -44,7 +41,7 @@
              font-size: 11px;
              letter-spacing: 1px;
              margin: 0px 0 3px;
-             background-color: darken($site-dark, 5%);
+             background-color:$secondary-dark;
              outline: none;
              color: lighten($site-pink, 33%);
            
@@ -62,7 +59,7 @@
           {
           border-color: transparent;
           border-bottom: 2px solid $site-pink;
-          background-color:darken($site-dark, 5%);
+          background-color:$secondary-dark;
        }
 
        input[type=submit] {
@@ -134,7 +131,7 @@
        
           letter-spacing: 1px;
           margin: 0px 0 0;
-          background-color: darken($site-dark, 5%);
+          background-color: $secondary-dark;
           border: none;
           resize: none;
          color: lighten($site-pink, 33%);
@@ -150,7 +147,7 @@
     margin-left: 300px;
     position: absolute;
     transform: translate(-30%, -70%);
-    background-image: linear-gradient(45deg, #d422b9 0%, #ad22d4 60%, #8800ff 100%);
+    background-image: linear-gradient(45deg, $site-pink 0%,   $site-purple 100%);
     z-index: 5;
     animation: morpheus 50s linear infinite;
     opacity: 18%;

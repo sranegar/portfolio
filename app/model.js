@@ -11,25 +11,25 @@ var columns = [
         subDetails: "Landing Page Marketing Solution",
         details:
           "Drive IMI is a marketing design solution for Irving Materials Inc (often referred as imi). I collaborated with the development and marketing teams at imi to design a fully responsive landing page and developed it in Next.js. The page content changes depending on which state the user chooses from a dropdown list upon entry. The alterating page content challenged me how to focus on a design that could change effortlessly and still look look great. I utilized Semantic UI for styled components and found using their Grid extremely helpful for making content beautifully adaptive and responsive.",
-        href: "https://driveimi.com/",
+        href: "https://drive-imi-master.vercel.app/",
         images: [
-          "assets/images/drive-imi.png",
-          "assets/images/drive-imi--2.jpg",
+          "assets/images/drive-imi-1.jpg",
+          "assets/images/drive-imi-2.jpg",
           "assets/images/drive-imi-3.png",
         ],
       },
       {
         id: 1,
-        title: "GamePlanet E-Commerice",
+        title: "GamePlanet Web App",
         subtitle: "PHP, JavaScript, MySQL",
         img: "assets/images/game-planet2.jpg",
-        subDetails: "GamePlanet CRUD App and Design",
+        subDetails: "Web app / E-commerce design",
         details:
           "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. This was my first CRUD application that sits near and dear to my heart. You may login as username: admin, password: password to utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. You can't actually buy anything from my made up company, but you can have fun seeing all of the features. I also created the GamePlanet logo to really tie the room together.",
-        href: "https://gameplanet-mvc.herokuapp.com/",
+        href: "",
         images: [
-          "assets/images/game-planet.jpg",
           "assets/images/game-planet-1.jpg",
+          "assets/images/game-planet-2.jpg",
           "assets/images/game-planet-3.jpg",
         ],
       },
@@ -39,8 +39,8 @@ var columns = [
     projects: [
       {
         id: 2,
-        title: "Newsletter",
-        subtitle: "HTML, CSS, Mailchimp",
+        title: "MAS Newsletter",
+        subtitle: "HTML, CSS",
         img: "assets/images/mas1.jpg",
         subDetails: "Email Template",
         details:
@@ -55,10 +55,10 @@ var columns = [
 
       {
         id: 3,
-        title: "Brighter Days CBD",
+        title: "Brighter Days",
         subtitle: "HTML, SCSS, JavaScript",
         img: "assets/images/brighter-days.jpg",
-        subDetails: "E-Commerce Design",
+        subDetails: "Front-end / brand development",
         details:
           "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript and focused on fast loading and design responsiveness. The design prototype was created in Adobe XD. This is my most favorable piece of work and it made me so extremely happy throughout the entire production process. Be sure to visit the live version hosted through GitHub and hover through all the buttons.",
         href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
@@ -90,7 +90,7 @@ var columns = [
       {
         id: 5,
         title: "Hendricks Civic Theatre",
-        subtitle: "WordPress, Divi Builder, Photoshop",
+        subtitle: "WordPress, Photoshop",
         img: "assets/images/hct.jpg",
         subDetails: "Website Re-design Solution",
         details:
@@ -130,6 +130,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
         $("#modal").css("visibility", "hidden");
       });
       
+  
       
       let pageColumn = "";
 
@@ -157,9 +158,9 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
       });
 
       $(".work-wrapper").append(pageColumn);
+      
       callback();
-       $("head").append('<script src="app/particles.js"></script>');
-       $("body").append(`<div id="particles-js"></div>`);
+  
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
@@ -190,6 +191,7 @@ export function viewProject(projId) {
   let projID = projIdArray[2];
   curProject = columns[colId].projects[projIndex];
   let slideImages = curProject.images;
+   
   if (curProject.id == projID) {
     $("#slide1").attr("src", slideImages[0]);
     $("#slide2").attr("src", slideImages[1]);
@@ -199,6 +201,8 @@ export function viewProject(projId) {
     $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
   }
+ 
+  
 }
 
 export function setFormInputs(formInputs) {
