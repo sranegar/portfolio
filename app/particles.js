@@ -12,7 +12,7 @@ $.getScript(
           },
         },
         color: {
-          value: "#2feabe",
+          value: "#000",
         },
         shape: {
           type: "star",
@@ -38,7 +38,7 @@ $.getScript(
           },
         },
         size: {
-          value: 3,
+          value: 4,
           random: true,
           anim: {
             enable: false,

@@ -1,5 +1,5 @@
  #contact-section {
-    background-color: $site-dark;
+    background-color: $secondary-dark;
     position: relative;
 
     .contact-wrapper {
@@ -15,16 +15,18 @@
 
 
           h1 {
-             color: $site-white;
-             font-family: PoppinsReg;
-
-             text-align: center;
+              
+            text-align: center;
+               font-size: 40px;
+             
+            color: $secondary-white;
+     
            
           }
 
           p {
              text-align: center;
-             color: lighten($site-pink,  5%);
+             color: $secondary-white;
              font-family: PoppinsReg;
              letter-spacing: .4px;
              padding: 10px;
@@ -41,9 +43,9 @@
              font-size: 11px;
              letter-spacing: 1px;
              margin: 0px 0 3px;
-             background-color:$secondary-dark;
+             background-color:$secondary-gray;
              outline: none;
-             color: lighten($site-pink, 33%);
+             color: $secondary-white;
            
              border: none;
           }
@@ -59,27 +61,35 @@
           {
           border-color: transparent;
           border-bottom: 2px solid $site-pink;
-          background-color:$secondary-dark;
+          background-color:$secondary-gray;
        }
 
        input[type=submit] {
 
 
-      font-family: PoppinsReg !important;
+ 
          font-size: 13px !important;
-         letter-spacing: .5px !important;
+      
          float: right;
           margin: 8px;
-            @include site-button($btnBorderColor: $site-white);
-            background-color: $site-pink;
-            cursor: pointer;
-            border: 2px solid $site-pink;
-         
-            &:hover {
+            height: 45px;
+               width: 175px;
+               text-transform: uppercase;
+               cursor: pointer;
                background-color: transparent;
-               color: $site-pink;
-         
-            }
+               color: $secondary-white;
+               font-family: PoppinsReg;
+               font-weight: 600px;
+               letter-spacing: .4px;
+               transition: ease-in-out .3s all;
+               border: 2.5px solid $secondary-white;
+            
+               &:hover {
+                  background-color: $site-pink;
+                  color: $site-white;
+                  border-color: $site-pink;
+                  transition: ease-in-out .3s all;
+               }
        }
 
 
@@ -131,74 +141,17 @@
        
           letter-spacing: 1px;
           margin: 0px 0 0;
-          background-color: $secondary-dark;
+          background-color: $secondary-gray;
           border: none;
           resize: none;
-         color: lighten($site-pink, 33%);
+         color: $secondary-white;
        }
 
     }
 
  }
 
- .blob {
-    width: 570px;
-    height: 570px;
-    margin-left: 300px;
-    position: absolute;
-    transform: translate(-30%, -70%);
-    background-image: linear-gradient(45deg, $site-pink 0%,   $site-purple 100%);
-    z-index: 5;
-    animation: morpheus 50s linear infinite;
-    opacity: 18%;
  
- }
- .blob2 {
-    width: 420px;
-    height: 420px;
-    right: 0;
-   
-    top:  500px;
-    position: absolute;
-    transform: translate(-65%, -70%);
-    
-    animation: morpheus 20s linear infinite;
-    opacity: 3%;
-    z-index: 1;
-   background-image: url(../assets/images/dalmatian-print.jpeg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
- }
-
- @keyframes morpheus {
-
-    // tl tr br bl / lt rt rb lb
-    // top-left top-right bottom-right bottom-left / left-top right-top right-bottom left-bottom
-    0% {
-       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-
-    20% {
-       border-radius: 60% 40% 40% 60% / 60% 25% 75% 40%;
-    }
-
-    40% {
-       border-radius: 70% 30% 65% 35% / 80% 45% 55% 20%;
-    }
-
-    60% {
-       border-radius: 30% 70% 70% 30% / 20% 30% 70% 80%;
-    }
-
-    80% {
-       border-radius: 40% 60% 40% 60% / 70% 55% 45% 30%;
-    }
-
-    100% {
-       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
- }
  }
 
  @media screen and (max-width: 768px) {

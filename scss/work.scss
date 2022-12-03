@@ -17,7 +17,7 @@
 
     .work-link {
       width: 100%;
-      background-color: lighten($header-color, 35%);
+  
       color: $secondary-dark;
       padding: 5px;
       text-align: center;
@@ -30,7 +30,7 @@
     }
 
     .active-work-link {
-      background-color: $header-color;
+
       color: $site-white;
     }
   }
@@ -41,7 +41,7 @@
     
     max-width: 100%;
     margin: 0 auto;
-    background-color: $site-black;
+    background-color: $secondary-white;
     padding-top: 8vh;
   
     .work-col {
@@ -81,12 +81,15 @@
             width: 100%;
          
               filter: grayscale(100%);
+              &:hover {
+                filter: grayscale(10%);
+              }
           }
         }
 
         .title-wrapper {
           position: absolute;
-          background-color: $site-black;
+          background-color: rgba(255, 255, 255, 0.824);
           width: 100%;
           height: 100%;
           display: flex;
@@ -100,7 +103,7 @@
             text-align: center;
             font-family: PoppinsMed;
             font-size: 1.3em;
-            color: $site-white;
+            color: $site-dark;
             display: none;
 
           }
@@ -113,29 +116,34 @@
             font-size: 1em;
 
             display: none;
-            color: lighten($site-pink, 15%);
+            color: $secondary-dark;
           }
 
           .work-btn-wrapper {
             width: 35%;
             margin: 0 auto;
             display: none;
-            padding: 20px 0px;
+            padding: 0px 0px;
 
             .work-btn {
-              @include site-button($btnBorderColor: $site-pink);
-              background-color: $site-pink;
-              color: $site-white;
+                height: 45px;
               width: 100%;
-              z-index: 9999;
-              border: 2px solid $site-pink;
-              cursor: pointer;
-
-              &:hover {
-                background-color: transparent;
-                color: lighten($site-pink, 5%);
-                border-color: lighten($site-pink, 5%);
-              }
+                  text-transform: uppercase;
+                  cursor: pointer;
+                  background-color: transparent;
+                  color: $site-gray;
+                  font-family: PoppinsReg;
+                  font-weight: 600px;
+                  letter-spacing: .4px;
+                  transition: ease-in-out .3s all;
+                  border: 2.5px solid $site-gray;
+                
+                  &:hover {
+                    background-color: $site-pink;
+                    color: $site-white;
+                    border-color: $site-pink;
+                    transition: ease-in-out .3s all;
+                  }
             }
           }
         }
