@@ -1,1 +1,1 @@
-https://in-info-web4.informatics.iupui.edu/~sranegar/stephanie-ranegar/index.html#work
+https://in-info-web4.informatics.iupui.edu/~sranegar/stephanie-ranegar/index.html
