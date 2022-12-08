@@ -217,6 +217,7 @@ section {
   padding: 0px;
   margin: 0px;
   position: relative;
+  background-color: #121212;
 }
 .site-container .home {
   height: 100vh;
@@ -278,15 +279,31 @@ section {
 }
 .site-container #nav-bar {
   height: 8vh;
-  display: flex;
-  align-items: center;
   background-color: #121212;
   position: fixed;
   width: 100%;
   z-index: 8;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.37);
 }
-.site-container #nav-bar a {
+.site-container #nav-bar label {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+.site-container #nav-bar #toggle {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+.site-container #nav-bar .links {
+  display: flex;
+}
+.site-container #nav-bar .links a {
   font-size: 14px;
   color: white;
   text-transform: uppercase;
@@ -299,7 +316,7 @@ section {
   padding: 0px 25px;
   height: 100%;
 }
-.site-container #nav-bar a:hover {
+.site-container #nav-bar .links a:hover {
   background-color: #525252;
   font-weight: 900;
 }
@@ -337,8 +354,53 @@ section {
     right: -20px;
     bottom: -18px;
   }
-  .home .home-btn {
+  .site-container .home .home-btn {
     min-width: 90%;
+  }
+  .site-container #nav-bar .links {
+    display: none;
+  }
+  .site-container #nav-bar label {
+    display: block;
+    cursor: pointer;
+  }
+  .site-container #nav-bar #toggle:checked + .links {
+    display: block;
+  }
+  .site-container #nav-bar #toggle ~ .links a {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+    font-size: 0px;
+  }
+  .site-container #nav-bar #toggle:checked ~ .links a {
+    border-bottom: 1px solid white;
+    height: 5vh;
+    font-size: 14px;
+    font-family: PoppinsReg;
+    padding: 30px;
+    background-color: #121212;
+    color: white;
+    text-transform: uppercase;
+    transition: height 200ms cubic-bezier(0.03, 1, 0.32, 1);
+  }
+  .site-container #nav-bar .links {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.37);
+    z-index: 9999;
+  }
+  .site-container #nav-bar .links a {
+    font-family: Caveat;
+    font-size: 16px;
+    color: #121212;
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (max-width: 390px) {
@@ -932,7 +994,7 @@ section {
   width: 45%;
   margin: 0 auto;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
 #contact-section .contact-wrapper .contact-form h1 {
   text-align: center;

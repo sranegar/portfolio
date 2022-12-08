@@ -115,6 +115,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     
       $("#app").html(data);
       $("#nav-bar").css("display", "none");
+    
       particlesJS("particles-js", {
         "particles": {
           "number": {

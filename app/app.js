@@ -78,7 +78,11 @@ function initFormListener() {
 
 function initApp() {
   $(window).on("hashchange", route);
-  
+    //Mobile nav-menu functionality
+    $(".links").on("click", function (e) {
+      $("#toggle").prop("checked", false);
+    });
+   
 }
 
 function initListeners() {
