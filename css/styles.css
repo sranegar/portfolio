@@ -221,7 +221,7 @@ section {
 }
 .site-container .home {
   max-height: 100vh;
-  background-color: #121212;
+  background-color: #181818;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,12 +263,12 @@ section {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #121212;
-  color: white;
+  color: #B3B3B3;
   font-family: PoppinsReg;
   font-weight: 600px;
   letter-spacing: 0.4px;
   transition: ease-in-out 0.3s all;
-  border: 2.5px solid white;
+  border: 2.5px solid #B3B3B3;
 }
 .site-container .home .home-btn button:hover {
   background-color: #2feabe;
@@ -362,7 +362,7 @@ section {
     font-size: 21px;
   }
   .site-container .home .home-btn {
-    min-width: 90%;
+    min-width: 85%;
   }
   .site-container #nav-bar .links {
     display: none;
@@ -588,6 +588,9 @@ section {
   font-weight: 300;
   color: #121212;
 }
+#about-page .mobile-row {
+  display: none;
+}
 
 @keyframes anim {
   100% {
@@ -595,6 +598,17 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  #about-page .mobile-row {
+    display: block;
+    padding: 25px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    font-family: PoppinsReg;
+  }
+  #about-page .mobile-row a {
+    text-decoration: none;
+    color: #404040;
+  }
   #about-page .section-title h1 {
     text-decoration: underline;
     text-underline-offset: 18px;
@@ -603,7 +617,7 @@ section {
   #about-page .section-row .text-row {
     text-align: center;
     min-width: 100%;
-    padding: 0px 5px;
+    padding: 0px 8px;
   }
   #about-page .about-btns-wrapper {
     width: 55%;
@@ -1023,7 +1037,7 @@ section {
   text-align: center;
   font-family: Yeseva;
   font-size: 42px;
-  color: #B3B3B3;
+  color: white;
 }
 #contact-section .contact-wrapper .contact-form p {
   text-align: center;

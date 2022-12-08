@@ -181,7 +181,7 @@ padding-left: 10px;
   
 .home {
   max-height: 100vh;
-  background-color: $site-dark;
+  background-color: $secondary-dark;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,12 +228,12 @@ padding-left: 10px;
       text-transform: uppercase;
       cursor: pointer;
       background-color: $site-dark;
-      color:  $site-white;
+      color:  $secondary-white;
       font-family: PoppinsReg;
       font-weight: 600px;
       letter-spacing: 0.4px;
       transition: ease-in-out 0.3s all;
-      border: 2.5px solid  $site-white;
+      border: 2.5px solid  $secondary-white;
       &:hover {
         background-color: $site-pink;
         color: $secondary-gray;
@@ -368,7 +368,7 @@ padding-left: 10px;
       }
       .home-btn {
       
-         min-width: 90%;
+         min-width: 85%;
       }
     }
     #nav-bar {

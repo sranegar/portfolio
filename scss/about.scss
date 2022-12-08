@@ -180,6 +180,9 @@
       }
     }
   }
+  .mobile-row {
+    display: none;
+  }
 }
 
 @keyframes anim {
@@ -190,6 +193,18 @@
 
 @media screen and (max-width: 768px) {
   #about-page {
+    .mobile-row {
+      display: block;
+      padding: 25px;
+      text-align: right;
+      letter-spacing: 0.4px;
+      font-family: PoppinsReg;
+      a {
+        text-decoration: none;
+        color: $site-gray;
+      }
+
+    }
     .section-title {
       h1 {
         text-decoration: underline;
@@ -201,7 +216,7 @@
       .text-row {
         text-align: center;
         min-width: 100%;
-        padding: 0px 5px;
+        padding: 0px 8px;
       }
     }
     .about-btns-wrapper {
@@ -232,6 +247,7 @@
       }
     }
   }
+ 
 }
 
 @media screen and (max-width: 390px) {
