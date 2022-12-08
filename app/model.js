@@ -114,7 +114,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     $.get(`pages/${pageID}/home.html`, function (data) {
     
       $("#app").html(data);
-      $("#nav-bar").css("display", "none");
+     
     
       particlesJS("particles-js", {
         "particles": {
@@ -227,13 +227,13 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
         "retina_detect": true
       });
      
-      callback()
+  
     });
     
   } else if (pageID == "work") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
-      $("#nav-bar").css("display", "flex");
+    
 
       $("#modal .fa-xmark").click(function () {
         $("#modal").css("visibility", "hidden");
@@ -273,12 +273,12 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-      $("#nav-bar").css("display", "flex");
+ 
       $("#app").html(data);
     });
   } else if (pageID == "contact") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-      $("#nav-bar").css("display", "flex");
+    
       $("#app").html(data);
       particlesJS("particles-js", {
         "particles": {
@@ -395,7 +395,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
-      $("#nav-bar").css("display", "flex");
+      
     });
    
   }

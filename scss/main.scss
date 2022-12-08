@@ -180,7 +180,7 @@ padding-left: 10px;
  background-color: $site-dark;
   
 .home {
-  height: 100vh;
+  max-height: 100vh;
   background-color: $site-dark;
   display: flex;
   flex-direction: column;
@@ -188,12 +188,12 @@ padding-left: 10px;
   align-items: center;
  
   h1 {
-    font-family: Yeseva;
+    font-family: PoppinsReg;
     color: $site-white;
     text-align: center;
     margin: 0;
     letter-spacing: .7px;
-    font-size: 42px;
+    font-size: 38px;
     span {
       color: $site-pink;
     }
@@ -250,7 +250,7 @@ padding-left: 10px;
     height: 8vh;
    
     background-color: $site-dark;
-
+    display: flex;
     position: fixed;
     width: 100%;
     z-index: 8;
@@ -259,7 +259,7 @@ padding-left: 10px;
         
         position: absolute;
         right: 20px;
-        top: 10px;
+        top: 5px;
         line-height: 50px;
         color: $site-white;
         font-size: 30px;
@@ -359,6 +359,13 @@ padding-left: 10px;
   }
   .site-container {
     .home {
+      
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 21px;
+      }
       .home-btn {
       
          min-width: 90%;
@@ -403,7 +410,7 @@ padding-left: 10px;
 
   .links {
       position: absolute;
-      top: 70px;
+      top: 50px;
       right: 0px;
       flex-direction: column;
       width: 100%;
@@ -437,8 +444,8 @@ padding-left: 10px;
        
         }
         .fa-xmark {
-         top: -30px;
-       right: -5px;
+      bottom: -35px;
+       right:  5px;
          z-index: 5;
         
           font-size: 1.96em;

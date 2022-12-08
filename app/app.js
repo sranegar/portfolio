@@ -11,7 +11,7 @@ function route() {
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
-    MODEL.changePage(pageID, subPageID, openSite);
+    MODEL.changePage(pageID);
   } else if (pageID == "about") {
     MODEL.changePage(pageID  );
   }
@@ -37,12 +37,7 @@ function openModal() {
   });
 }
 
-function openSite() {
-  $(".home .home-btn button").click(function (e) {
-    MODEL.changePage("about")
-    
-  })
-}
+ 
  
 
 function initFormListener() {

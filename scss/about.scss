@@ -201,10 +201,12 @@
       .text-row {
         text-align: center;
         min-width: 100%;
+        padding: 0px 5px;
       }
     }
     .about-btns-wrapper {
       width: 55%;
+      padding-bottom: 50px;
     }
     .skills-row {
       flex-direction: column;

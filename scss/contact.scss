@@ -3,7 +3,9 @@
     position: relative;
  
  
-justify-content: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 #particles-js {
    position: absolute;
    width: 100%;
@@ -12,7 +14,7 @@ justify-content: center;
  }
     .contact-wrapper {
 
-       padding-top: 200px;
+ 
      
       
        .contact-form {
@@ -167,7 +169,7 @@ justify-content: center;
  @media screen and (max-width: 768px) {
     #contact-section {
        .contact-wrapper {
-
+ 
           .contact-form {
              width: 90%;
 
