@@ -1,14 +1,23 @@
  #contact-section {
     background-color: $secondary-dark;
     position: relative;
-
+ 
+ 
+justify-content: center;
+#particles-js {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+ }
     .contact-wrapper {
 
-       padding-top: 100px;
-
+       padding-top: 200px;
+     
+      
        .contact-form {
 
-          width: 40%;
+          width: 45%;
           margin: 0 auto;
           position: relative;
           z-index: 10;
@@ -17,9 +26,10 @@
           h1 {
               
             text-align: center;
-               font-size: 40px;
-             
+            font-family: Yeseva;
+      font-size: 42px;
             color: $secondary-white;
+            
      
            
           }
@@ -29,8 +39,8 @@
              color: $secondary-white;
              font-family: PoppinsReg;
              letter-spacing: .4px;
-             padding: 10px;
-             font-size: 13px;
+            padding-bottom: 20px;
+             font-size: 15px;
           }
 
 
@@ -39,14 +49,13 @@
              height: 50px;
              padding: 10px;
       
-            font-family: PoppinsLight;
-             font-size: 11px;
+ 
+             font-size: 14px;
              letter-spacing: 1px;
              margin: 0px 0 3px;
              background-color:$secondary-gray;
              outline: none;
-             color: $secondary-white;
-           
+             color: $site-pink;
              border: none;
           }
 
@@ -57,7 +66,7 @@
           input:focus,
           input:active,
           textarea:focus,
-          textarea:active,
+          textarea:active
           {
           border-color: transparent;
           border-bottom: 2px solid $site-pink;
@@ -86,7 +95,8 @@
             
                &:hover {
                   background-color: $site-pink;
-                  color: $site-white;
+                  color: $secondary-gray;
+                  font-weight: 900;
                   border-color: $site-pink;
                   transition: ease-in-out .3s all;
                }
@@ -96,55 +106,55 @@
        ::-webkit-input-placeholder {
           /* WebKit, Blink, Edge */
           color: $secondary-white;
-         font-family: PoppinsThin;
+          font-family: PoppinsLight;
        }
 
        :-moz-placeholder {
           /* Mozilla Firefox 4 to 18 */
           color: $secondary-white;
           opacity: 1;
-         font-family: PoppinsThin;
+          font-family: PoppinsLight;
        }
 
        ::-moz-placeholder {
           /* Mozilla Firefox 19+ */
           color: $secondary-white;
           opacity: 1;
-         font-family: PoppinsThin;
+          font-family: PoppinsLight;
        }
 
        :-ms-input-placeholder {
           /* Internet Explorer 10-11 */
           color: $secondary-white;
-      font-family: PoppinsThin;
+          font-family: PoppinsLight;
        }
 
        ::-ms-input-placeholder {
           /* Microsoft Edge */
           color: $secondary-white;
-      font-family: PoppinsThin;
+          font-family: PoppinsLight;
        }
 
        ::placeholder {
           /* Most modern browsers support this now. */
           color: $secondary-white;
-         font-family: PoppinsThin;
+          font-family: PoppinsLight;
        }
 
        textarea {
           outline: none;
           width: 100%;
-          height: 140px;
+          height: 160px;
           padding: 10px 10px;
           font-family: PoppinsLight;
-          font-size: 11px;
+          font-size: 14px;
        
           letter-spacing: 1px;
           margin: 0px 0 0;
           background-color: $secondary-gray;
           border: none;
           resize: none;
-         color: $secondary-white;
+          color: $site-pink;
        }
 
     }
@@ -160,6 +170,11 @@
 
           .contact-form {
              width: 90%;
+
+             input[type=submit] {
+               margin: 8px 0px;
+               width: 100%;
+             }
           }
        }
     }

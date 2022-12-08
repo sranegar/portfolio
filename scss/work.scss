@@ -2,38 +2,7 @@
  
   position: relative;
    
- 
-   
 
-
-  .work-links-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0vh auto;
-    width: 50%;
-
-
-
-    .work-link {
-      width: 100%;
-  
-      color: $secondary-dark;
-      padding: 5px;
-      text-align: center;
-      font-size: 16px;
-      font-family: PoppinsMed;
-      text-transform: uppercase;
-      cursor: pointer;
-      white-space: nowrap;
-
-    }
-
-    .active-work-link {
-
-      color: $site-white;
-    }
-  }
 
   .work-wrapper {
     display: flex;
@@ -89,7 +58,7 @@
 
         .title-wrapper {
           position: absolute;
-          background-color: rgba(255, 255, 255, 0.824);
+          background-color: rgba(255, 255, 255, 0.938);
           width: 100%;
           height: 100%;
           display: flex;
@@ -101,22 +70,22 @@
           .title {
             margin: 0 auto;
             text-align: center;
-            font-family: PoppinsMed;
+            font-family: PoppinsReg;
             font-size: 1.3em;
             color: $site-dark;
             display: none;
-
+            letter-spacing: .5px;
           }
 
           .subtitle {
-            font-family: PoppinsReg;
+            font-family: PoppinsSemi;
             text-align: center;
 
             letter-spacing: 0.5px;
             font-size: 1em;
 
             display: none;
-            color: $secondary-dark;
+            color: darken($secondary-white, 25%);
           }
 
           .work-btn-wrapper {
@@ -140,7 +109,8 @@
                 
                   &:hover {
                     background-color: $site-pink;
-                    color: $site-white;
+                    color: $secondary-gray;
+                    font-weight: 900;
                     border-color: $site-pink;
                     transition: ease-in-out .3s all;
                   }

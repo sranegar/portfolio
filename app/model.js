@@ -10,7 +10,7 @@ var columns = [
         img: "assets/images/poster-truck.jpg",
         subDetails: "Landing Page Marketing Solution",
         details:
-          "Drive IMI is a marketing design solution for Irving Materials Inc (often referred as imi). I collaborated with the development and marketing teams at imi to design a fully responsive landing page and developed it in Next.js. The page content changes depending on which state the user chooses from a dropdown list upon entry. The alterating page content challenged me how to focus on a design that could change effortlessly and still look look great. I utilized Semantic UI for styled components and found using their Grid extremely helpful for making content beautifully adaptive and responsive.",
+          "Drive IMI is a marketing design solution for Irving Materials Inc. I collaborated with the development and marketing teams at imi to design a fully responsive landing page and developed it in Next.js. The page content changes depending on which state the user chooses from a dropdown list upon entry. The alterating page content challenged me how to focus on a design that could change effortlessly and still look look great. I utilized Semantic UI for styled components and found using their Grid extremely helpful for making content beautifully adaptive and responsive.",
         href: "https://drive-imi-master.vercel.app/",
         images: [
           "assets/images/drive-imi-1.jpg",
@@ -25,11 +25,11 @@ var columns = [
         img: "assets/images/game-planet2.jpg",
         subDetails: "Web app / E-commerce design",
         details:
-          "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. This was my first CRUD application that sits near and dear to my heart. You may login as username: admin, password: password to utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. You can't actually buy anything from my made up company, but you can have fun seeing all of the features. I also created the GamePlanet logo to really tie the room together.",
+          "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. Admin credentials utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. I developed and designed all web pages, as well as created the GamePlanet logo.",
         href: "",
         images: [
           "assets/images/game-planet-1.jpg",
-          "assets/images/game-planet-2.jpg",
+          "assets/images/game-planet-3.png",
           "assets/images/game-planet-3.jpg",
         ],
       },
@@ -41,10 +41,10 @@ var columns = [
         id: 2,
         title: "MAS Newsletter",
         subtitle: "HTML, CSS",
-        img: "assets/images/mas1.jpg",
+        img: "assets/images/newsletter.png",
         subDetails: "Email Template",
         details:
-          "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. The template serves to provide the client with showcasing video content, images, and links. Compatible with light and dark mode email client settings. The MAS Newsletter logo header was designed in a light and dark version to hit perfection from every angle.",
+          "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. The template serves to provide the client with showcasing video content, images, and links. Compatible with light and dark mode email client settings.",
         href: "",
         images: [
           "assets/images/newsletter.jpg",
@@ -57,10 +57,10 @@ var columns = [
         id: 3,
         title: "Brighter Days",
         subtitle: "HTML, SCSS, JavaScript",
-        img: "assets/images/brighter-days.jpg",
+        img: "assets/images/brighterdays.png",
         subDetails: "Front-end / brand development",
         details:
-          "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript and focused on fast loading and design responsiveness. The design prototype was created in Adobe XD. This is my most favorable piece of work and it made me so extremely happy throughout the entire production process. Be sure to visit the live version hosted through GitHub and hover through all the buttons.",
+          "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript with a focus on fast loading, design responsiveness, and CSS animations. The design prototype was created in Adobe XD.",
         href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
         images: [
           "assets/images/cbd1.png",
@@ -79,7 +79,7 @@ var columns = [
         img: "assets/images/project-cover.jpg",
         subDetails: "MP3 Player",
         details:
-          "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a passion project that allowed me be equal parts developer and designer. I designed and made a relational database that stores music by artists, albums, collections, tracks, and genres. Check it out and see what I like to jam out to! Shoot me a message if you would like to collaborate on a music app.",
+          "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a passion project that allowed me to expand my practice as a full stack developer and designer. I designed and made a relational database that stores music by artists, albums, collections, tracks, and genres.",
         href: "",
         images: [
           "assets/images/mp3.jpg",
@@ -98,8 +98,8 @@ var columns = [
         href: "",
         images: [
           "assets/images/hct-2.jpg",
-          "assets/images/hct.jpg",
-          "assets/images/hct.jpg",
+          "assets/images/hct-logo.png",
+          "assets/images/hct-3.png",
         ],
       },
     ],
@@ -112,19 +112,127 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
   //HOME
   if (pageID == "" || pageID == "home") {
     $.get(`pages/${pageID}/home.html`, function (data) {
-      // $("html, body").animate({
-      //   scrollTop: 0
-      // }, 200)
+    
       $("#app").html(data);
-      $("#nav-bar").css("top", "");
-      $("#nav-bar").css("bottom", "0");
+      $("#nav-bar").css("display", "none");
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 355,
+            "density": {
+              "enable": true,
+              "value_area": 789.1476416322727
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "star",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.48927153781200905,
+            "random": false,
+            "anim": {
+              "enable": true,
+              "speed": 0.2,
+              "opacity_min": 0,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 2,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 2,
+              "size_min": 0,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 0.2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "bubble"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 83.91608391608392,
+              "size": 1,
+              "duration": 3,
+              "opacity": 1,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+     
+      callback()
     });
     
   } else if (pageID == "work") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
-      $("#nav-bar").css("bottom", "");
-      $("#nav-bar").css("top", "0");
+      $("#nav-bar").css("display", "flex");
 
       $("#modal .fa-xmark").click(function () {
         $("#modal").css("visibility", "hidden");
@@ -164,15 +272,123 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-      $("#nav-bar").css("bottom", "");
-      $("#nav-bar").css("top", "0");
+      $("#nav-bar").css("display", "flex");
       $("#app").html(data);
     });
   } else if (pageID == "contact") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-      $("#nav-bar").css("bottom", "");
-      $("#nav-bar").css("top", "0");
+      $("#nav-bar").css("display", "flex");
       $("#app").html(data);
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 355,
+            "density": {
+              "enable": true,
+              "value_area": 789.1476416322727
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "star",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.48927153781200905,
+            "random": false,
+            "anim": {
+              "enable": true,
+              "speed": 0.2,
+              "opacity_min": 0,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 2,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 2,
+              "size_min": 0,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 0.2,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "bubble"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 83.91608391608392,
+              "size": 1,
+              "duration": 3,
+              "opacity": 1,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
       callback();
     });
   } else {
@@ -183,6 +399,8 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
    
   }
 }
+
+ 
 
 export function viewProject(projId) {
   let projIdArray = projId.split("");

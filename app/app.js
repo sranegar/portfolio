@@ -11,7 +11,7 @@ function route() {
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
-    MODEL.changePage(pageID );
+    MODEL.changePage(pageID, subPageID, openSite);
   } else if (pageID == "about") {
     MODEL.changePage(pageID  );
   }
@@ -27,9 +27,7 @@ function route() {
     }
   }
 }
-function removeParticles() {
-    $("#particles-js").remove();
-}
+ 
 
 function openModal() {
   $(".work-btn-wrapper button").click(function (e) {
@@ -38,6 +36,14 @@ function openModal() {
     $("#modal").css("visibility", "visible");
   });
 }
+
+function openSite() {
+  $(".home .home-btn button").click(function (e) {
+    MODEL.changePage("about")
+    
+  })
+}
+ 
 
 function initFormListener() {
   $("#submit").on("click", function (e) {
@@ -90,7 +96,7 @@ $(document).ready(function () {
   });
   initListeners();
   initApp();
-  
+ 
 });
  
  

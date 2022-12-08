@@ -29,7 +29,7 @@
  
   }
  
-
+ 
 
   //Fonts
   
@@ -51,6 +51,11 @@
       font-family: PoppinsMed;
       src: url(../assets/fonts/Poppins-Medium.ttf)
   }
+
+  @font-face {
+    font-family: PoppinsSemi;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf)
+}
 
   @font-face {
       font-family: PoppinsItalic;
