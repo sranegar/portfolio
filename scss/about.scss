@@ -195,7 +195,7 @@
   #about-page {
     .mobile-row {
       display: block;
-      padding: 25px;
+      padding: 35px 25px 35px;
       text-align: right;
       letter-spacing: 0.4px;
       font-family: PoppinsReg;
@@ -222,6 +222,9 @@
     .about-btns-wrapper {
       width: 55%;
       padding-bottom: 50px;
+      .contact-btn {
+        display: none;
+      }
     }
     .skills-row {
       flex-direction: column;

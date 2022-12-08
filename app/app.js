@@ -7,7 +7,7 @@ function route() {
 
   pageID = pageIDArray[0];
   let subPageID = pageIDArray[1];
- console.log(pageID)
+ 
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {

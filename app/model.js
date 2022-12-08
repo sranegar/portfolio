@@ -234,12 +234,13 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
     
+      $("html, body").animate({ scrollTop: 0 }, "slow");
 
       $("#modal .fa-xmark").click(function () {
         $("#modal").css("visibility", "hidden");
       });
       
-  
+      
       
       let pageColumn = "";
 
@@ -273,7 +274,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
- 
+   $("html, body").animate({ scrollTop: 0 }, "slow");
       $("#app").html(data);
     });
   } else if (pageID == "contact") {

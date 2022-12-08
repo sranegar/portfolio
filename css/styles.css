@@ -600,7 +600,7 @@ section {
 @media screen and (max-width: 768px) {
   #about-page .mobile-row {
     display: block;
-    padding: 25px;
+    padding: 35px 25px 35px;
     text-align: right;
     letter-spacing: 0.4px;
     font-family: PoppinsReg;
@@ -622,6 +622,9 @@ section {
   #about-page .about-btns-wrapper {
     width: 55%;
     padding-bottom: 50px;
+  }
+  #about-page .about-btns-wrapper .contact-btn {
+    display: none;
   }
   #about-page .skills-row {
     flex-direction: column;
@@ -987,7 +990,7 @@ section {
     cursor: pointer;
   }
   .work .work-wrapper .work-col .project-container .image-container:hover .title-wrapper {
-    opacity: 0%;
+    opacity: 100%;
   }
   .work .work-wrapper .work-col .project-container .image-container .image-wrapper img {
     max-width: 100%;
@@ -1028,7 +1031,7 @@ section {
   z-index: 1;
 }
 #contact-section .contact-wrapper .contact-form {
-  width: 45%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 5;
