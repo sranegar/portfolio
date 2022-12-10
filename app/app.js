@@ -46,25 +46,30 @@ function initFormListener() {
     let em = $("#email").val();
     let mg = $("#message").val();
 
-    if (fn == "") {
-      Swal.fire("Please complete all form fields.");
-    } else if (em == "") {
-      Swal.fire("Please complete all form fields.");
-    } else if (mg == "") {
-      Swal.fire("Please complete all form fields.");
-    } else {
-      let formInputs = {
-        fullName: fn,
-        email: em,
-        message: mg,
-      };
-      MODEL.setFormInputs(formInputs);
-      Swal.fire("Your message has been successfully sent.");
-    }
+    const submitAlert = Swal.mixin({
+      toast: true,
+      position: "top-start",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      background: "#2feabe",
+      color: "#181818",
+      iconColor: "#181818",
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
 
-    $("#name").val("");
-    $("#email").val("");
-    $("#message").val("");
+   if (fn == "" || em == "" || mg == "") {
+     submitAlert.fire({
+       title: "You've left a field empty!",
+       icon: "error",
+     });
+   } else {
+     $("#contactForm").submit();
+   }
+ 
   });
 }
 

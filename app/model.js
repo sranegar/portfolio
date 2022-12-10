@@ -6,31 +6,31 @@ var columns = [
       {
         id: 0,
         title: "Irving Materials Inc.",
-        subtitle: "Next.js, Figma",
-        img: "assets/images/poster-truck.jpg",
+        subtitle: "Next.js",
+        img: "assets/images/imi.jpg",
         subDetails: "Landing Page Marketing Solution",
         details:
           "Drive IMI is a marketing design solution for Irving Materials Inc. I collaborated with the development and marketing teams at imi to design a fully responsive landing page and developed it in Next.js. The page content changes depending on which state the user chooses from a dropdown list upon entry. The alterating page content challenged me how to focus on a design that could change effortlessly and still look look great. I utilized Semantic UI for styled components and found using their Grid extremely helpful for making content beautifully adaptive and responsive.",
         href: "https://drive-imi-master.vercel.app/",
         images: [
-          "assets/images/drive-imi-1.jpg",
-          "assets/images/drive-imi-2.jpg",
-          "assets/images/drive-imi-3.png",
+          "assets/images/slider-images/drive-imi-1.jpg",
+          "assets/images/slider-images/drive-imi-2.jpg",
+          "assets/images/slider-images/drive-imi-3.png",
         ],
       },
       {
         id: 1,
         title: "GamePlanet Web App",
         subtitle: "PHP, JavaScript, MySQL",
-        img: "assets/images/game-planet2.jpg",
+        img: "assets/images/gamePlanetBW.jpg",
         subDetails: "Web app / E-commerce design",
         details:
           "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. Admin credentials utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. I developed and designed all web pages, as well as created the GamePlanet logo.",
         href: "",
         images: [
-          "assets/images/game-planet-1.jpg",
-          "assets/images/game-planet-3.png",
-          "assets/images/game-planet-3.jpg",
+          "assets/images/slider-images/game-planet.jpeg",
+          "assets/images/slider-images/game-planet-3.jpg",
+          "assets/images/slider-images/game-planet-2.jpg",
         ],
       },
     ],
@@ -41,15 +41,15 @@ var columns = [
         id: 2,
         title: "MAS Newsletter",
         subtitle: "HTML, CSS",
-        img: "assets/images/newsletter.png",
+        img: "assets/images/masNewsletter.png",
         subDetails: "Email Template",
         details:
           "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. The template serves to provide the client with showcasing video content, images, and links. Compatible with light and dark mode email client settings.",
         href: "",
         images: [
-          "assets/images/newsletter.jpg",
-          "assets/images/newsletter2.jpg",
-          "assets/images/newsletter3.jpg",
+          "assets/images/slider-images/newsletter.jpg",
+          "assets/images/slider-images/newsletter2.jpg",
+          "assets/images/slider-images/newsletter3.jpg",
         ],
       },
 
@@ -57,15 +57,15 @@ var columns = [
         id: 3,
         title: "Brighter Days",
         subtitle: "HTML, SCSS, JavaScript",
-        img: "assets/images/brighterdays.png",
+        img: "assets/images/brighterDays.png",
         subDetails: "Front-end / brand development",
         details:
           "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript with a focus on fast loading, design responsiveness, and CSS animations. The design prototype was created in Adobe XD.",
         href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
         images: [
-          "assets/images/cbd1.png",
-          "assets/images/cbd2.jpg",
-          "assets/images/cbd3.jpg",
+          "assets/images/slider-images/cbd1.jpg",
+          "assets/images/slider-images/cbd2.jpg",
+          "assets/images/slider-images/cbd3.jpg",
         ],
       },
     ],
@@ -76,30 +76,30 @@ var columns = [
         id: 4,
         title: "Music Player App",
         subtitle: "REST API / React.js, MySQL",
-        img: "assets/images/project-cover.jpg",
+        img: "assets/images/musicPlayer.jpg",
         subDetails: "MP3 Player",
         details:
           "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a passion project that allowed me to expand my practice as a full stack developer and designer. I designed and made a relational database that stores music by artists, albums, collections, tracks, and genres.",
         href: "",
         images: [
-          "assets/images/mp3.jpg",
-          "assets/images/mp3-1.jpg",
-          "assets/images/mp3-2.jpg",
+          "assets/images/slider-images/mp3.jpg",
+          "assets/images/slider-images/mp3-2.jpg",
+          "assets/images/slider-images/mp3-3.jpeg",
         ],
       },
       {
         id: 5,
         title: "Hendricks Civic Theatre",
-        subtitle: "WordPress, Photoshop",
+        subtitle: "WordPress",
         img: "assets/images/hct.jpg",
         subDetails: "Website Re-design Solution",
         details:
           "HCT Website and Social Media Overhaul 2022 was a project collaboration with a design team made of an array of skills including video production, 2D illustration, graphic design, web design, and web development. I served as the project manager and web developer / web designer. The delivered project updated HCT's web presence and provided them with resources to improve website and social media maintainability.",
         href: "",
         images: [
-          "assets/images/hct-2.jpg",
-          "assets/images/hct-logo.png",
-          "assets/images/hct-3.png",
+          "assets/images/slider-images/hct.jpg",
+          "assets/images/slider-images/hct-2.png",
+          "assets/images/slider-images/hct-3.jpg",
         ],
       },
     ],
@@ -425,6 +425,6 @@ export function viewProject(projId) {
   
 }
 
-export function setFormInputs(formInputs) {
-  contactFormInfo = formInputs;
+export function setFormInputs() {
+  $("#contactForm").submit();
 }
