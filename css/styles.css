@@ -384,6 +384,9 @@ section {
     height: auto;
     text-align: center;
   }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
+    color: #2feabe;
+  }
   .site-container .home h1 {
     font-size: 30px;
   }
