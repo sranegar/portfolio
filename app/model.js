@@ -45,7 +45,7 @@ var columns = [
         subDetails: "Email Template",
         details:
           "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. The template serves to provide the client with showcasing video content, images, and links. Compatible with light and dark mode email client settings.",
-        href: "",
+        href: "https://sranegar.github.io/masNewsletter/",
         images: [
           "assets/images/slider-images/newsletter.jpg",
           "assets/images/slider-images/newsletter2.jpg",
