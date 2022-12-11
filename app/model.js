@@ -15,7 +15,7 @@ var columns = [
         images: [
           "assets/images/slider-images/drive-imi-1.jpg",
           "assets/images/slider-images/drive-imi-2.jpg",
-          "assets/images/slider-images/drive-imi-3.png",
+          "assets/images/slider-images/drive-imi-3.jpg",
         ],
       },
       {
@@ -28,7 +28,7 @@ var columns = [
           "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. Admin credentials utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. I developed and designed all web pages, as well as created the GamePlanet logo.",
         href: "",
         images: [
-          "assets/images/slider-images/game-planet.jpeg",
+          "assets/images/slider-images/game-planet.jpg",
           "assets/images/slider-images/game-planet-3.jpg",
           "assets/images/slider-images/game-planet-2.jpg",
         ],
@@ -84,7 +84,7 @@ var columns = [
         images: [
           "assets/images/slider-images/mp3.jpg",
           "assets/images/slider-images/mp3-2.jpg",
-          "assets/images/slider-images/mp3-3.jpeg",
+          "assets/images/slider-images/mp3-3.jpg",
         ],
       },
       {
@@ -420,8 +420,13 @@ export function viewProject(projId) {
     $("#modal-content h2").text(curProject.title);
     $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
+    
   }
- 
+  if (curProject.href == "") {
+    $(".modal-bottom a").css("display", "none");
+  } else {
+    $(".modal-bottom a").css("display", "block");
+ }
   
 }
 

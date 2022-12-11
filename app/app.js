@@ -1,5 +1,5 @@
 import * as MODEL from "./model.js";
-  
+
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -7,18 +7,17 @@ function route() {
 
   pageID = pageIDArray[0];
   let subPageID = pageIDArray[1];
- 
+
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
     MODEL.changePage(pageID);
   } else if (pageID == "about") {
     MODEL.changePage(pageID);
-  }
-   else if (pageID == "work") {
+  } else if (pageID == "work") {
     MODEL.changePage(pageID, subPageID, openModal);
   } else if (pageID == "contact") {
-    MODEL.changePage(pageID, subPageID, initFormListener );
+    MODEL.changePage(pageID, subPageID, initFormListener);
   } else {
     if (pageID === subPageID) {
       MODEL.changePage(pageID);
@@ -27,7 +26,6 @@ function route() {
     }
   }
 }
- 
 
 function openModal() {
   $(".work-btn-wrapper button").click(function (e) {
@@ -37,9 +35,6 @@ function openModal() {
   });
 }
 
- 
- 
-
 function initFormListener() {
   $("#submit").on("click", function (e) {
     let fn = $("#name").val();
@@ -47,48 +42,46 @@ function initFormListener() {
     let mg = $("#message").val();
 
     const submitAlert = Swal.mixin({
-      toast: true,
-      position: "top-start",
+      padding: "1em",
+      icon: "error",
+      backdrop: `
+    rgba(0,0,0,0.6)
+    url("assets/images/gif/load.gif")
+  
+    50% 90% / 150px 150px
+    no-repeat 
+   
+  `,
+      confirmButtonColor: "#2feabe",
+      showCloseButton: true,
+
       showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-      background: "#2feabe",
-      color: "#181818",
-      iconColor: "#181818",
-      didOpen: (toast) => {
-        toast.addEventListener("mouseenter", Swal.stopTimer);
-        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      customClass: {
+        fontFamily: "PoppinsReg",
       },
     });
 
-   if (fn == "" || em == "" || mg == "") {
-     submitAlert.fire({
-       title: "You've left a field empty!",
-       icon: "error",
-     });
-   } else {
-     $("#contactForm").submit();
-   }
- 
+    if (fn == "" || em == "" || mg == "") {
+      submitAlert.fire({
+        text: "Please fill out all fields.",
+        html: '<span class="alert-text">Please fill out all fields.</span>',
+      });
+    } else {
+      $("#contactForm").submit();
+    }
   });
 }
 
-
-
-
 function initApp() {
   $(window).on("hashchange", route);
-    //Mobile nav-menu functionality
-    $(".links").on("click", function (e) {
-      $("#toggle").prop("checked", false);
-    });
-   
+  //Mobile nav-menu functionality
+  $(".links").on("click", function (e) {
+    $("#toggle").prop("checked", false);
+  });
 }
 
 function initListeners() {
   $(window).on("load", route);
-
- 
 }
 
 $(document).ready(function () {
@@ -100,7 +93,4 @@ $(document).ready(function () {
   });
   initListeners();
   initApp();
- 
 });
- 
- 

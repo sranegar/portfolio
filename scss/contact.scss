@@ -1,22 +1,24 @@
  #contact-section {
     background-color: $secondary-dark;
     position: relative;
- 
- 
- display: flex;
- justify-content: center;
- align-items: center;
-#particles-js {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   z-index: 1;
- }
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #particles-js {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       z-index: 1;
+    }
+
     .contact-wrapper {
 
- 
-     
-      
+
+
+
        .contact-form {
 
           width: 100%;
@@ -26,14 +28,14 @@
 
 
           h1 {
-              
-            text-align: center;
-            font-family: Yeseva;
-      font-size: 42px;
-            color: $site-white;
-            
-     
-           
+
+             text-align: center;
+             font-family: Yeseva;
+             font-size: 42px;
+             color: $site-white;
+
+
+
           }
 
           p {
@@ -41,7 +43,7 @@
              color: $secondary-white;
              font-family: PoppinsReg;
              letter-spacing: .4px;
-            padding-bottom: 20px;
+             padding-bottom: 20px;
              font-size: 15px;
           }
 
@@ -50,12 +52,12 @@
              width: 100%;
              height: 50px;
              padding: 10px;
-      
- 
+
+
              font-size: 14px;
              letter-spacing: 1px;
              margin: 0px 0 3px;
-             background-color:$secondary-gray;
+             background-color: $secondary-gray;
              outline: none;
              color: $site-pink;
              border: none;
@@ -68,114 +70,111 @@
           input:focus,
           input:active,
           textarea:focus,
-          textarea:active
-          {
-          border-color: transparent;
-          border-bottom: 2px solid $site-pink;
-          background-color:$secondary-gray;
-       }
+          textarea:active {
+             border-color: transparent;
+             border-bottom: 2px solid $site-pink;
+             background-color: $secondary-gray;
+          }
 
-       .submit-btn {
+          .submit-btn {
+             font-size: 13px;
+             float: right;
+             margin: 8px;
+             height: 45px;
+             width: 175px;
+             text-transform: uppercase;
+             cursor: pointer;
+             background-color: transparent;
+             color: $secondary-white;
+             font-family: PoppinsReg;
+             font-weight: 600px;
+             letter-spacing: .4px;
+             text-align: center;
+             padding: 9px;
+             transition: ease-in-out .3s all;
+             border: 2.5px solid $secondary-white;
 
-
- 
-         font-size: 13px !important;
-      
-         float: right;
-          margin: 8px;
-            height: 45px;
-               width: 175px;
-               text-transform: uppercase;
-               cursor: pointer;
-               background-color: transparent;
-               color: $secondary-white;
-               font-family: PoppinsReg;
-               font-weight: 600px;
-               letter-spacing: .4px;
-               transition: ease-in-out .3s all;
-               border: 2.5px solid $secondary-white;
-            
-               &:hover {
-                  background-color: $site-pink;
-                  color: $secondary-gray;
-                  font-weight: 900;
-                  border-color: $site-pink;
-                  transition: ease-in-out .3s all;
-               }
-       }
+             &:hover {
+                background-color: $site-pink;
+                color: $secondary-gray;
+                font-weight: 900;
+                border-color: $site-pink;
+                transition: ease-in-out .3s all;
+             }
+          }
 
 
-       ::-webkit-input-placeholder {
-          /* WebKit, Blink, Edge */
-          color: $secondary-white;
-          font-family: PoppinsLight;
-       }
+          ::-webkit-input-placeholder {
+             /* WebKit, Blink, Edge */
+             color: $secondary-white;
+             font-family: PoppinsLight;
+          }
 
-       :-moz-placeholder {
-          /* Mozilla Firefox 4 to 18 */
-          color: $secondary-white;
-          opacity: 1;
-          font-family: PoppinsLight;
-       }
+          :-moz-placeholder {
+             /* Mozilla Firefox 4 to 18 */
+             color: $secondary-white;
+             opacity: 1;
+             font-family: PoppinsLight;
+          }
 
-       ::-moz-placeholder {
-          /* Mozilla Firefox 19+ */
-          color: $secondary-white;
-          opacity: 1;
-          font-family: PoppinsLight;
-       }
+          ::-moz-placeholder {
+             /* Mozilla Firefox 19+ */
+             color: $secondary-white;
+             opacity: 1;
+             font-family: PoppinsLight;
+          }
 
-       :-ms-input-placeholder {
-          /* Internet Explorer 10-11 */
-          color: $secondary-white;
-          font-family: PoppinsLight;
-       }
+          :-ms-input-placeholder {
+             /* Internet Explorer 10-11 */
+             color: $secondary-white;
+             font-family: PoppinsLight;
+          }
 
-       ::-ms-input-placeholder {
-          /* Microsoft Edge */
-          color: $secondary-white;
-          font-family: PoppinsLight;
-       }
+          ::-ms-input-placeholder {
+             /* Microsoft Edge */
+             color: $secondary-white;
+             font-family: PoppinsLight;
+          }
 
-       ::placeholder {
-          /* Most modern browsers support this now. */
-          color: $secondary-white;
-          font-family: PoppinsLight;
-       }
+          ::placeholder {
+             /* Most modern browsers support this now. */
+             color: $secondary-white;
+             font-family: PoppinsLight;
+          }
 
-       textarea {
-          outline: none;
-          width: 100%;
-          height: 160px;
-          padding: 10px 10px;
-          font-family: PoppinsLight;
-          font-size: 14px;
-       
-          letter-spacing: 1px;
-          margin: 0px 0 0;
-          background-color: $secondary-gray;
-          border: none;
-          resize: none;
-          color: $site-pink;
+          textarea {
+             outline: none;
+             width: 100%;
+             height: 160px;
+             padding: 10px 10px;
+             font-family: PoppinsLight;
+             font-size: 14px;
+
+             letter-spacing: 1px;
+             margin: 0px 0 0;
+             background-color: $secondary-gray;
+             border: none;
+             resize: none;
+             color: $site-pink;
+          }
+
        }
 
     }
 
- }
 
- 
  }
 
  @media screen and (max-width: 768px) {
     #contact-section {
        .contact-wrapper {
- 
+
           .contact-form {
              width: 90%;
 
              input[type=submit] {
-               margin: 8px 0px;
-               width: 100%;
+                margin: 8px 0px;
+                width: 100%;
              }
           }
        }

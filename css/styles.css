@@ -23,6 +23,16 @@ section {
   min-height: 100vh;
 }
 
+.swal2-title {
+  font-family: PoppinsLight;
+  letter-spacing: 1px;
+}
+
+.alert-text {
+  font-family: PoppinsLight;
+  letter-spacing: 1px;
+}
+
 @font-face {
   font-family: PoppinsReg;
   src: url(../assets/fonts/Poppins-Regular.ttf);
@@ -162,7 +172,11 @@ section {
   overflow: hidden;
   border-top: 2px solid #121212;
 }
-#modal #modal-wrapper #modal-content .modal-bottom h2 {
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
   font-family: PoppinsReg;
   letter-spacing: 1px;
   margin: 0px;
@@ -180,6 +194,34 @@ section {
   margin-bottom: 0px;
   padding-left: 10px;
 }
+#modal #modal-wrapper #modal-content .modal-bottom a .mobile {
+  display: none;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button {
+  height: 30px;
+  font-family: PoppinsReg;
+  text-transform: uppercase;
+  color: #404040;
+  padding: 0px 10px;
+  border: 3px solid #B3B3B3;
+  letter-spacing: 0.5px;
+  background-color: #B3B3B3;
+  cursor: pointer;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button i {
+  color: #404040;
+  margin-left: 4px;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button:hover {
+  background-color: #2feabe;
+  border: 3px solid #2feabe;
+  color: white;
+  transition: all 0.3s;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button:hover i {
+  color: white;
+  transition: all 0.3s;
+}
 #modal #modal-wrapper #modal-content .modal-bottom p {
   display: block;
   overflow-y: auto;
@@ -188,27 +230,6 @@ section {
   line-height: 1.65em;
   padding: 8px 10px 16px;
   max-height: 160px;
-}
-#modal #modal-wrapper #modal-content .modal-bottom button {
-  width: 30px;
-  height: 30px;
-  font-family: PoppinsReg;
-  text-transform: uppercase;
-  background-color: #2feabe;
-  border: 2px solid #2feabe;
-  color: white;
-  letter-spacing: 0.5px;
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-#modal #modal-wrapper #modal-content .modal-bottom button:hover {
-  background-color: white;
-  border: 2px solid #2feabe;
-  color: #2feabe;
-  transition: all 0.3s;
 }
 
 .site-container {
@@ -288,7 +309,7 @@ section {
 }
 .site-container #nav-bar label {
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 5px;
   line-height: 50px;
   color: white;
@@ -354,6 +375,18 @@ section {
   #modal #modal-wrapper #modal-content .fa-xmark {
     right: -20px;
     bottom: -18px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
+    display: none;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
+    display: block;
+    padding: 0px;
+    height: auto;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
   }
   .site-container .home h1 {
     font-size: 30px;
@@ -1074,7 +1107,7 @@ section {
   background-color: #282828;
 }
 #contact-section .contact-wrapper .contact-form .submit-btn {
-  font-size: 13px !important;
+  font-size: 13px;
   float: right;
   margin: 8px;
   height: 45px;
@@ -1086,6 +1119,8 @@ section {
   font-family: PoppinsReg;
   font-weight: 600px;
   letter-spacing: 0.4px;
+  text-align: center;
+  padding: 9px;
   transition: ease-in-out 0.3s all;
   border: 2.5px solid #B3B3B3;
 }
