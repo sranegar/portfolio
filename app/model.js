@@ -57,7 +57,7 @@ var columns = [
         id: 3,
         title: "Brighter Days",
         subtitle: "HTML, SCSS, JavaScript",
-        img: "assets/images/brighterDays.png",
+        img: "assets/images/brighter-days.jpg",
         subDetails: "Front-end / brand development",
         details:
           "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript with a focus on fast loading, design responsiveness, and CSS animations. The design prototype was created in Adobe XD.",
