@@ -99,7 +99,7 @@ var columns = [
         images: [
           "assets/images/slider-images/hct.jpg",
           "assets/images/slider-images/hct-2.png",
-          "assets/images/slider-images/hct-3.jpg",
+          "assets/images/slider-images/hct-3.png",
         ],
       },
     ],
