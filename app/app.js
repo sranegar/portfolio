@@ -78,6 +78,15 @@ function initApp() {
   $(".links").on("click", function (e) {
     $("#toggle").prop("checked", false);
   });
+  
+  let logo = $("canvas").attr('id');
+
+   new rive.Rive({
+     src: "./assets/images/sr_logo.riv",
+     // Or the path to a local Rive asset
+     // src: './example.riv',
+     canvas: logo,
+   });
 }
 
 function initListeners() {

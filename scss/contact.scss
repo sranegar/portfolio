@@ -84,7 +84,7 @@
              width: 175px;
              text-transform: uppercase;
              cursor: pointer;
-             background-color: transparent;
+             background-color: $secondary-dark;
              color: $secondary-white;
              font-family: PoppinsReg;
              font-weight: 600px;
@@ -172,7 +172,7 @@
           .contact-form {
              width: 90%;
 
-             input[type=submit] {
+             .submit-btn {
                 margin: 8px 0px;
                 width: 100%;
              }

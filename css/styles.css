@@ -199,12 +199,12 @@ section {
 }
 #modal #modal-wrapper #modal-content .modal-bottom a button {
   height: 30px;
-  font-family: PoppinsReg;
+  font-family: PoppinsMed;
   text-transform: uppercase;
   color: #404040;
   padding: 0px 10px;
-  border: 3px solid #B3B3B3;
-  letter-spacing: 0.5px;
+  border: 2px solid #B3B3B3;
+  letter-spacing: 0.4px;
   background-color: #B3B3B3;
   cursor: pointer;
 }
@@ -214,13 +214,8 @@ section {
 }
 #modal #modal-wrapper #modal-content .modal-bottom a button:hover {
   background-color: #2feabe;
-  border: 3px solid #2feabe;
-  color: white;
-  transition: all 0.3s;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a button:hover i {
-  color: white;
-  transition: all 0.3s;
+  border: 2px solid #404040;
+  transition: ease-in-out 0.3s;
 }
 #modal #modal-wrapper #modal-content .modal-bottom p {
   display: block;
@@ -249,12 +244,11 @@ section {
   align-items: center;
 }
 .site-container .home h1 {
-  font-family: PoppinsReg;
+  font-family: Yeseva;
   color: white;
   text-align: center;
   margin: 0;
-  letter-spacing: 0.7px;
-  font-size: 38px;
+  font-size: 42px;
 }
 .site-container .home h1 span {
   color: #2feabe;
@@ -521,9 +515,9 @@ section {
 }
 #about-page .about-btns-wrapper button:hover {
   background-color: #2feabe;
-  color: #282828;
+  color: #404040;
   font-weight: 900;
-  border-color: #2feabe;
+  border-color: #404040;
   transition: ease-in-out 0.3s all;
 }
 #about-page .skills-title {
@@ -988,9 +982,9 @@ section {
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
   background-color: #2feabe;
-  color: #282828;
+  color: #404040;
   font-weight: 900;
-  border-color: #2feabe;
+  border-color: #404040;
   transition: ease-in-out 0.3s all;
 }
 
@@ -1114,7 +1108,7 @@ section {
   width: 175px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #181818;
   color: #B3B3B3;
   font-family: PoppinsReg;
   font-weight: 600px;
@@ -1182,7 +1176,7 @@ section {
   #contact-section .contact-wrapper .contact-form {
     width: 90%;
   }
-  #contact-section .contact-wrapper .contact-form input[type=submit] {
+  #contact-section .contact-wrapper .contact-form .submit-btn {
     margin: 8px 0px;
     width: 100%;
   }

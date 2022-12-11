@@ -61,9 +61,9 @@
       border: 2.5px solid $site-gray;
       &:hover {
         background-color: $site-pink;
-        color: $secondary-gray;
+        color: $site-gray;
         font-weight: 900;
-        border-color: $site-pink;
+        border-color: $site-gray;
         transition: ease-in-out 0.3s all;
       }
     }

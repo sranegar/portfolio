@@ -95,7 +95,7 @@ var columns = [
         subDetails: "Website Re-design Solution",
         details:
           "HCT Website and Social Media Overhaul 2022 was a project collaboration with a design team made of an array of skills including video production, 2D illustration, graphic design, web design, and web development. I served as the project manager and web developer / web designer. The delivered project updated HCT's web presence and provided them with resources to improve website and social media maintainability.",
-        href: "",
+        href: "https://www.hendrickscivic.com",
         images: [
           "assets/images/slider-images/hct.jpg",
           "assets/images/slider-images/hct-2.png",
