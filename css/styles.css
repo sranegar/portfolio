@@ -376,7 +376,7 @@ section {
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button i {
     color: #404040;
     font-size: 1.26em;
-    margin-top: 4px;
+    margin-top: 3px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
     display: block;
@@ -386,6 +386,7 @@ section {
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
     color: #2feabe;
+    font-size: 1.5em;
   }
   .site-container .home h1 {
     font-size: 30px;
