@@ -46,10 +46,8 @@ function initFormListener() {
       icon: "error",
       backdrop: `
     rgba(0,0,0,0.6)
-    url("assets/images/gif/load.gif")
-  
-    50% 90% / 150px 150px
-    no-repeat 
+    
+   
    
   `,
       confirmButtonColor: "#2feabe",
@@ -78,15 +76,15 @@ function initApp() {
   $(".links").on("click", function (e) {
     $("#toggle").prop("checked", false);
   });
-  
-  let logo = $("canvas").attr('id');
 
-   new rive.Rive({
-     src: "./assets/images/sr_logo.riv",
-     // Or the path to a local Rive asset
-     // src: './example.riv',
-     canvas: logo,
-   });
+  let logo = $("canvas").attr("id");
+
+  new rive.Rive({
+    src: "./assets/images/sr_logo.riv",
+    // Or the path to a local Rive asset
+    // src: './example.riv',
+    canvas: logo,
+  });
 }
 
 function initListeners() {
