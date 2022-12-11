@@ -61,7 +61,7 @@ var columns = [
         subDetails: "Front-end / brand development",
         details:
           "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript with a focus on fast loading, design responsiveness, and CSS animations. The design prototype was created in Adobe XD.",
-        href: "https://in-info-web4.informatics.iupui.edu/~sranegar/e-commerce-cbd/index.html",
+        href: "https://sranegar.github.io/e-commerce-cbd/",
         images: [
           "assets/images/slider-images/cbd1.jpg",
           "assets/images/slider-images/cbd2.jpg",
