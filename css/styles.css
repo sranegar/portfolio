@@ -305,9 +305,9 @@ section {
 }
 .site-container #nav-bar label {
   position: absolute;
-  left: 20px;
+  left: 10px;
   top: 5px;
-  line-height: 50px;
+  line-height: 40px;
   color: white;
   font-size: 30px;
   display: none;
@@ -316,7 +316,7 @@ section {
   display: none;
   position: absolute;
   right: 20px;
-  top: 30px;
+  top: 22px;
 }
 .site-container #nav-bar .links {
   display: flex;
@@ -364,17 +364,25 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
+    justify-content: start;
+  }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
     display: none;
+    margin-left: 6px;
+    background-color: white;
+    border: 0px solid #404040;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button i {
+    color: #404040;
+    font-size: 1.26em;
+    margin-top: 4px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
     display: block;
-    padding: 0px;
+    padding: 0px 1px;
     height: auto;
-    width: 32px;
-    height: 32px;
     text-align: center;
-    border-radius: 50%;
   }
   .site-container .home h1 {
     font-size: 30px;
@@ -638,7 +646,7 @@ section {
   #about-page .section-row .text-row {
     text-align: center;
     min-width: 100%;
-    padding: 0px 8px;
+    padding: 0px 10px;
   }
   #about-page .about-btns-wrapper {
     width: 55%;
@@ -1186,7 +1194,7 @@ footer .copyright {
   text-align: center;
 }
 footer .copyright p {
-  color: #404040;
+  color: #B3B3B3;
   font-family: PoppinsLight;
   padding: 0px;
   margin: 0px;

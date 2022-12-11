@@ -111,7 +111,7 @@ var curProject = {};
 export function changePage(pageID, subPage, callback, callbackTwo) {
   //HOME
   if (pageID == "" || pageID == "home") {
-    $.get(`pages/${pageID}/home.html`, function (data) {
+    $.get(`pages/home/home.html`, function (data) {
     
       $("#app").html(data);
      
