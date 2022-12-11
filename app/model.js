@@ -154,7 +154,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
             }
           },
           "size": {
-            "value": 2,
+            "value": 2.3,
             "random": true,
             "anim": {
               "enable": true,
@@ -319,7 +319,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
             }
           },
           "size": {
-            "value": 2,
+            "value": 2.3,
             "random": true,
             "anim": {
               "enable": true,
