@@ -111,7 +111,7 @@ var curProject = {};
 export function changePage(pageID, subPage, callback, callbackTwo) {
   //HOME
   if (pageID == "" || pageID == "home") {
-    $.get(`../pages/home/home.html`, function (data) {
+    $.get(`pages/home/home.html`, function (data) {
     
       $("#app").html(data);
      
@@ -231,7 +231,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     });
     
   } else if (pageID == "work") {
-    $.get(`../pages/${pageID}/${pageID}.html`, function (data) {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
     
       $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -273,12 +273,12 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
   
     });
   } else if (pageID == "about") {
-    $.get(`../pages/${pageID}/${pageID}.html`, function (data) {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
    $("html, body").animate({ scrollTop: 0 }, "slow");
       $("#app").html(data);
     });
   } else if (pageID == "contact") {
-    $.get(`../pages/${pageID}/${pageID}.html`, function (data) {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
     
       $("#app").html(data);
       particlesJS("particles-js", {
@@ -394,7 +394,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
       callback();
     });
   } else {
-    $.get(`../pages/${pageID}/${pageID}.html`, function (data) {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
       
     });
