@@ -279,7 +279,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
     });
   } else if (pageID == "contact") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-    
+      $("html, body").animate({ scrollTop: 0 }, "slow");
       $("#app").html(data);
       particlesJS("particles-js", {
         "particles": {

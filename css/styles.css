@@ -273,7 +273,7 @@ section {
 .site-container .home .home-btn {
   width: 13%;
   height: 30px;
-  z-index: 9999;
+  z-index: 4;
 }
 .site-container .home .home-btn button {
   height: 45px;
