@@ -7,7 +7,7 @@ function route() {
 
   pageID = pageIDArray[0];
   let subPageID = pageIDArray[1];
-
+console.log(pageID)
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
@@ -76,10 +76,6 @@ function initApp() {
   $(".links").on("click", function (e) {
     $("#toggle").prop("checked", false);
   });
-
-  
-
- 
 }
 
 function initListeners() {
