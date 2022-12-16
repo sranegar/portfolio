@@ -82,13 +82,15 @@ function initListeners() {
   $(window).on("load", route);
 }
 
-$(document).ready(function () {
+
+ 
   $(".slider").slick({
     slidesToScroll: 1,
     arrows: true,
     fade: true,
     cssEase: "linear",
-  });
+  })
+ 
   initListeners();
   initApp();
-});
+ 
