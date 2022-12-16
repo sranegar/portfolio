@@ -18,6 +18,8 @@ function route() {
     MODEL.changePage(pageID, subPageID, openModal);
   } else if (pageID == "contact") {
     MODEL.changePage(pageID, subPageID, initFormListener);
+  } else if (pageID == "resume") {
+    MODEL.changePage(pageID);
   } else {
     if (pageID === subPageID) {
       MODEL.changePage(pageID);

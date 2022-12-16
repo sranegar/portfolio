@@ -393,6 +393,12 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
       });
       callback();
     });
+  } else if (pageID == "resume") {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
+    
+      $("#app").html(data);
+    
+    });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
