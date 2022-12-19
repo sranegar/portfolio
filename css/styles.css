@@ -417,7 +417,7 @@ section {
     min-width: 85%;
   }
   .site-container #nav-bar {
-    justify-content: right;
+    justify-content: flex-end;
   }
   .site-container #nav-bar .links {
     display: none;
