@@ -320,11 +320,6 @@ section {
   right: 20px;
   top: 22px;
 }
-.site-container #nav-bar .right-links {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-}
 .site-container #nav-bar .right-links a {
   font-size: 14px;
   color: white;
@@ -420,6 +415,9 @@ section {
   }
   .site-container .home .home-btn {
     min-width: 85%;
+  }
+  .site-container #nav-bar {
+    justify-content: right;
   }
   .site-container #nav-bar .links {
     display: none;

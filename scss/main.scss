@@ -303,13 +303,13 @@
 
      .right-links {
  
-          width: 100%;
-            display: flex;
-            justify-content: right;
+ 
+          
         a {
             font-size: 14px;
             color: $site-white;
             text-transform: uppercase;
+             
         
             cursor: pointer;
             font-family: PoppinsLight;
@@ -457,12 +457,13 @@
      }
 
      #nav-bar {
+      justify-content: right;
        .links {
          display: none;
        }
 
        .right-links {
-    
+        
         
         a {
             font-size: 12px;
