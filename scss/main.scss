@@ -302,7 +302,10 @@
      }
 
      .right-links {
-     
+ 
+          width: 100%;
+            display: flex;
+            justify-content: right;
         a {
             font-size: 14px;
             color: $site-white;
@@ -459,9 +462,7 @@
        }
 
        .right-links {
-        width: 100%;
-        display: flex;
-        justify-content: right;
+    
         
         a {
             font-size: 12px;
