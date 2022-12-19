@@ -300,6 +300,7 @@ section {
   background-color: #121212;
   display: flex;
   position: fixed;
+  justify-content: space-between;
   width: 100%;
   z-index: 8;
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.37);
@@ -318,6 +319,23 @@ section {
   position: absolute;
   right: 20px;
   top: 22px;
+}
+.site-container #nav-bar .right-links a {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: PoppinsLight;
+  letter-spacing: 1.4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0px 25px;
+  height: 100%;
+}
+.site-container #nav-bar .right-links a:hover {
+  background-color: #525252;
+  font-weight: 900;
 }
 .site-container #nav-bar .links {
   display: flex;
@@ -400,6 +418,15 @@ section {
   }
   .site-container #nav-bar .links {
     display: none;
+  }
+  .site-container #nav-bar .right-links {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  .site-container #nav-bar .right-links a {
+    font-size: 12px;
+    padding: 0px 18px;
   }
   .site-container #nav-bar label {
     display: block;
