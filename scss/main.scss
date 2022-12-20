@@ -89,7 +89,7 @@
            font-size: 0;
            bottom: 0;
            cursor: pointer;
-           background-color: #1212121e;
+           background-color: #1212123f;
            border: none;
            height: 55px;
            width: 40px;
@@ -403,19 +403,27 @@
       #modal-content {
       display: flex;
         max-height: 100vh;
-        width: 600px;
+      
         background-color: $site-dark;
         .fa-xmark {
           right: -26px;
           bottom: -23px;
         }
         .slider {
-          max-width: 64%;
+          max-width: 60%;
           display: flex;
           align-items: center;
           img {
-      max-height: 20em;
+        
  
+          }
+          button {
+            height: 100%;
+            background-color:  #12121218;
+            width: 32px;
+         
+           
+         
           }
         }
         .modal-bottom {
@@ -427,6 +435,18 @@
           .modal-bottom-top-row {
             h2 {
               line-height: 19px;
+            }
+
+            a {
+              button {
+                display: none;
+                 
+              }
+            }
+
+            .mobile {
+              display: block;
+               
             }
             
           }

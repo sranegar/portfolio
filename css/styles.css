@@ -158,7 +158,7 @@ section {
   font-size: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: rgba(18, 18, 18, 0.1176470588);
+  background-color: rgba(18, 18, 18, 0.2470588235);
   border: none;
   height: 55px;
   width: 40px;
@@ -386,7 +386,6 @@ section {
   #modal #modal-wrapper #modal-content {
     display: flex;
     max-height: 100vh;
-    width: 600px;
     background-color: #121212;
   }
   #modal #modal-wrapper #modal-content .fa-xmark {
@@ -394,12 +393,14 @@ section {
     bottom: -23px;
   }
   #modal #modal-wrapper #modal-content .slider {
-    max-width: 64%;
+    max-width: 60%;
     display: flex;
     align-items: center;
   }
-  #modal #modal-wrapper #modal-content .slider img {
-    max-height: 20em;
+  #modal #modal-wrapper #modal-content .slider button {
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.0941176471);
+    width: 32px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom {
     border-top: none;
@@ -409,6 +410,12 @@ section {
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
     line-height: 19px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
+    display: none;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row .mobile {
+    display: block;
   }
   #modal #modal-wrapper #modal-content .modal-bottom h4 {
     line-height: 15px;
