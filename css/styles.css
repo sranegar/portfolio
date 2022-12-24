@@ -683,8 +683,8 @@ section {
   color: white;
   position: absolute;
   background-color: #181818;
-  padding: 4px 10px;
-  min-width: 6%;
+  padding: 4px 5px;
+  min-width: 8%;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress {
   width: 100%;
@@ -787,7 +787,7 @@ section {
     padding-right: 0px;
   }
   #about-page .skills-row .skills-col1 .dev-skills label {
-    padding: 3.3px 10px;
+    padding: 4px 10px;
     min-width: 25%;
   }
   #about-page .skills-row .skills-col2 .circle {
