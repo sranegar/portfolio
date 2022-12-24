@@ -283,6 +283,7 @@ section {
   font-family: PoppinsReg;
   font-weight: 600px;
   letter-spacing: 0.5px;
+  font-size: 0.86em;
   transition: ease-in-out 0.3s all;
   border: 1px solid #B3B3B3;
 }
@@ -625,6 +626,7 @@ section {
   font-family: PoppinsReg;
   font-weight: 600px;
   letter-spacing: 0.4px;
+  font-size: 0.86em;
   transition: ease-in-out 0.3s all;
   border: 2px solid #404040;
 }
