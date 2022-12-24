@@ -445,7 +445,7 @@ section {
     right: -24px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom h4 {
-    margin-top: 4px;
+    margin: 4px 0px 10px;
     line-height: 1em;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
