@@ -1,20 +1,17 @@
 .work {
- 
   position: relative;
    
-
-
   .work-wrapper {
     display: flex;
     justify-content: center;
-    
     max-width: 100%;
     margin: 0 auto;
-    background-color: $secondary-white;
+    background-color: $secondary-dark;
     padding-top: 8vh;
-  
+    overflow: hidden;
+
     .work-col {
-    
+    min-width: 35%;
       .project-container {
         width: 100%;
         margin: 0 auto !important;
@@ -96,7 +93,7 @@
 
             .work-btn {
                 height: 45px;
-              width: 100%;
+              min-width: 100%;
                   text-transform: uppercase;
                   cursor: pointer;
                   background-color: transparent;
@@ -104,15 +101,18 @@
                   font-family: PoppinsReg;
                   font-weight: 600px;
                   letter-spacing: .4px;
+                  padding: 0px 5px;
+                  line-height: 1.2em;
                   transition: ease-in-out .3s all;
                   border: 2.5px solid $site-gray;
                 
                   &:hover {
-                    background-color: $site-pink;
-                    color: $site-gray;
-                    font-weight: 900;
-                    border-color: $site-gray;
-                    transition: ease-in-out .3s all;
+              background-color: $site-pink;
+                  color: darken($site-pink, 45%);
+                font-family: PoppinsMed;
+                border: 2.36px solid darken($site-pink, 25%);
+                font-size: .9em;
+                transition: ease-in-out 0.3s all;
                   }
             }
           }
@@ -159,7 +159,7 @@
                 .title,
                 .subtitle,
                 .work-btn-wrapper {
-                
+                 
                 }
               }
             }
@@ -173,7 +173,7 @@
 
 
             .title-wrapper {
-              background-color: rgba(12, 12, 12, 0.836);
+              background-color: rgba(12, 12, 12, 0.80);
               opacity: 100%;
           
 
@@ -184,7 +184,7 @@
               }
 
               .subtitle {
-                color: $secondary-white;
+                color: darken($site-pink, 10%);
                 display: block;
 
               }
@@ -193,9 +193,11 @@
                 display: block;
 
                 .work-btn {
+                  transform: scale(1.1);
                   color: $site-white;
                  background-color: $secondary-gray;
-                  border: 2.5px solid $site-white;
+                  border: 1.5px solid $site-white;
+                  letter-spacing: 1.4px;
                 }
               }
             }
@@ -209,4 +211,5 @@
  
 @media screen and (max-width: 390px) {
   #modal {}
+        
 }

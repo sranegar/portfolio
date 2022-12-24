@@ -5,31 +5,40 @@
   .section-title {
     h1 {
       font-family: Yeseva;
-      font-size: 34px;
-
+      font-size: 2em;
       margin: 0 auto;
-
       text-align: center;
- 
       padding: 30px 0px;
     }
   }
+
+  .skills-title {
+    color: lighten($secondary-white, 5%);
+  }
+
   .section-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 6px;
 
     .text-row {
       font-family: PoppinsReg;
-      font-size: 15px;
+      font-size: 1em;
       max-width: 60%;
       color: #000;
       margin: 0 auto;
-      padding: 0px 50px 0px;
-      line-height: 25px;
-      text-align: center;
-      padding-bottom: 20px;
+      line-height: 1.6em;
+      letter-spacing: .3px;
+      border-left: 3px solid $secondary-dark;
+      padding-left: 20px;
+    }
+    .text-row-two {
+      text-align: right;
+      min-width: 60%;
+      border-right: 3px solid $secondary-dark;
+      padding-right: 20px;
     }
 
     .row-two {
@@ -38,14 +47,14 @@
   }
 
   .about-btns-wrapper {
-    max-width: 25%;
-    margin: 0 auto;
+    max-width: 28%;
+    margin: 30px auto 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 100px;
-
     align-items: center;
+    padding-bottom: 5%;
+
     button {
       height: 45px;
       width: 175px;
@@ -58,35 +67,40 @@
       font-weight: 600px;
       letter-spacing: 0.4px;
       transition: ease-in-out 0.3s all;
-      border: 2.5px solid $site-gray;
+      border: 2px solid $site-gray;
+
       &:hover {
         background-color: $site-pink;
-        color: $site-gray;
-        font-weight: 900;
-        border-color: $site-gray;
+        color: darken($site-pink, 45%);
+        font-family: PoppinsMed;
+        border: 2.36px solid darken($site-pink, 25%);
+        font-size: .9em;
         transition: ease-in-out 0.3s all;
       }
     }
   }
+
   .skills-title {
-    background-color: $secondary-white;
-    padding-top: 20px;
+    background-color: $secondary-gray;
     text-align: center;
+    border-bottom: 1px solid $site-pink;
   }
+
   .skills-row {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     height: auto;
     background-color: $secondary-white;
-    padding: 0px 100px 80px;
+    padding: 30px 100px 80px;
 
     h3 {
       font-family: PoppinsReg;
-      font-size: 18px;
+      font-size: 1.2em;
+      padding: 40px 0px 30px;
       color: $site-dark;
       text-transform: uppercase;
-       text-align: center;
+      text-align: center;
       letter-spacing: 0.5px;
       width: 100%;
     }
@@ -99,9 +113,9 @@
     .skills-col1 {
       min-width: 50%;
       border-right: 2px solid $site-dark;
-      padding-top: 18px;
+
       padding-right: 50px;
-   
+
 
       .dev-skills {
         display: flex;
@@ -109,16 +123,28 @@
         max-width: 90%;
         margin: 0 auto;
         padding: 8px;
-
+ 
         label {
           font-family: PoppinsLight;
-          font-size: 13px;
-          color: $site-dark;
+          font-size: .8em;
+          color: $site-white;
+        
+          position: absolute;
+          background-color: $secondary-dark;
+          padding: 4px 10px;
+          min-width: 6%;
         }
 
         progress {
           width: 100%;
           -webkit-appearance: none;
+             
+        }
+
+        progress#file {
+          height: 28px;
+          margin-bottom: 10px;
+        
         }
 
         progress::-webkit-progress-bar {
@@ -129,8 +155,7 @@
           background-color: $site-gray;
         }
 
-        progress::-moz-progress-bar {
-        }
+        progress::-moz-progress-bar {}
       }
     }
 
@@ -153,15 +178,19 @@
         background: $site-white;
         overflow: hidden;
       }
+
       .circle.per-85 {
-        background-image: conic-gradient($site-gray 88%, $site-white 0);
+        background-image: conic-gradient($site-gray 86%, $site-white 0);
       }
+
       .circle.per-90 {
         background-image: conic-gradient($site-gray 93%, $site-white 0);
       }
+
       .circle.per-75 {
-        background-image: conic-gradient($site-gray 84%, $site-white 0);
+        background-image: conic-gradient($site-gray 80%, $site-white 0);
       }
+
       .circle .inner {
         display: flex;
         justify-content: center;
@@ -174,12 +203,12 @@
         height: 115px;
         background: $secondary-white;
         border-radius: 50%;
-        font-size: 15px;
-        font-weight: 300;
+        font-size: .8em;
         color: $site-dark;
       }
     }
   }
+
   .mobile-row {
     display: none;
   }
@@ -199,50 +228,55 @@
       text-align: right;
       letter-spacing: 0.4px;
       font-family: PoppinsReg;
+
       a {
         text-decoration: none;
         color: $site-gray;
       }
 
     }
+
     .section-title {
-      h1 {
-        text-decoration: underline;
-        text-underline-offset: 18px;
-        text-decoration-thickness: 2px;
-      }
+      h1 {}
     }
+
     .section-row {
       .text-row {
         text-align: center;
-        min-width: 100%;
+        max-width: 100%;
         padding: 0px 10px;
       }
     }
+
     .about-btns-wrapper {
       width: 55%;
       padding-bottom: 50px;
+
       .contact-btn {
         display: none;
       }
     }
+
     .skills-row {
       flex-direction: column;
       padding: 0px 20px 80px;
 
-      h3 {
-   
-  
-        
-      }
+      h3 {}
+
       .skills-col1 {
         border-right: none;
         border-bottom: 2px solid $site-dark;
         padding-bottom: 50px;
-        padding-right:  0px;
+        padding-right: 0px;
+        .dev-skills {
+          label {
+             min-width: 25%;
+          }
+        }
       }
+
       .skills-col2 {
-        padding-top: 50px;
+
 
         .circle {
           margin: 1.5rem;
@@ -250,7 +284,7 @@
       }
     }
   }
- 
+
 }
 
 @media screen and (max-width: 390px) {

@@ -90,14 +90,15 @@
              font-weight: 600px;
              letter-spacing: .4px;
              text-align: center;
-             padding: 9px;
+             padding: 11px;
              transition: ease-in-out .3s all;
-             border: 2.5px solid $secondary-white;
+             border: 1px solid $secondary-white;
 
              &:hover {
                 background-color: $site-pink;
                 color: $secondary-gray;
-                font-weight: 900;
+               font-family: PoppinsMed;
+               font-size: .9em;
                 border-color: $site-pink;
                 transition: ease-in-out .3s all;
              }

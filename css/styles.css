@@ -121,16 +121,14 @@ section {
 #modal #modal-wrapper #modal-content .fa-xmark {
   position: absolute;
   z-index: 1;
-  right: -25px;
-  bottom: 3px;
+  right: -30px;
+  bottom: 0px;
   font-size: 1.9em;
   cursor: pointer;
   color: #B3B3B3;
-  transition: all ease-in-out 0.2s;
 }
 #modal #modal-wrapper #modal-content .fa-xmark:hover {
   color: #737373;
-  transition: all ease-in-out 0.2s;
 }
 #modal #modal-wrapper #modal-content .slider {
   position: relative;
@@ -203,25 +201,24 @@ section {
   font-family: PoppinsMed;
   text-transform: uppercase;
   color: white;
-  padding: 0px 10px;
-  border: 2.5px solid #ea2f9f;
+  padding: 0px 8px;
+  font-size: 0.75em;
+  border: 2.5px solid #15d1a5;
   letter-spacing: 0.4px;
-  background-color: #ea2f9f;
+  background-color: #15d1a5;
   cursor: pointer;
 }
 #modal #modal-wrapper #modal-content .modal-bottom a button i {
   color: white;
-  margin-left: 4px;
+  margin-left: 5px;
 }
 #modal #modal-wrapper #modal-content .modal-bottom a button:hover {
-  background-color: white;
-  border: 2.5px solid #ea2f9f;
-  color: #ea2f9f;
-  transition: ease-in-out 0.3s;
+  background-color: #10a380;
+  border: 2.3px solid #10a380;
+  color: white;
 }
 #modal #modal-wrapper #modal-content .modal-bottom a button:hover i {
-  color: #ea2f9f;
-  transition: ease-in-out 0.3s;
+  color: white;
 }
 #modal #modal-wrapper #modal-content .modal-bottom p {
   display: block;
@@ -251,7 +248,8 @@ section {
   color: white;
   text-align: center;
   margin: 0;
-  font-size: 42px;
+  font-size: 2.4em;
+  padding-bottom: 8px;
 }
 .site-container .home h1 span {
   color: #2feabe;
@@ -260,9 +258,9 @@ section {
   font-family: PoppinsLight;
   color: #B3B3B3;
   text-align: center;
-  letter-spacing: 0.7px;
+  letter-spacing: 1.5px;
   padding-bottom: 20px;
-  font-size: 24px;
+  font-size: 1.4em;
 }
 .site-container .home #particles-js {
   position: absolute;
@@ -284,14 +282,15 @@ section {
   color: #B3B3B3;
   font-family: PoppinsReg;
   font-weight: 600px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   transition: ease-in-out 0.3s all;
-  border: 2.5px solid #B3B3B3;
+  border: 1px solid #B3B3B3;
 }
 .site-container .home .home-btn button:hover {
   background-color: #2feabe;
   color: #282828;
-  font-weight: 900;
+  font-family: PoppinsMed;
+  font-size: 0.9em;
   border-color: #2feabe;
   transition: ease-in-out 0.3s all;
 }
@@ -303,7 +302,7 @@ section {
   justify-content: space-between;
   width: 100%;
   z-index: 8;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.37);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.291);
 }
 .site-container #nav-bar label {
   position: absolute;
@@ -321,7 +320,7 @@ section {
   top: 22px;
 }
 .site-container #nav-bar .right-links a {
-  font-size: 14px;
+  font-size: 0.8em;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
@@ -330,18 +329,22 @@ section {
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 0px 25px;
+  padding: 0px 35px;
   height: 100%;
+  border-left: 1px solid #404040;
+  transition: ease-in-out 0.2s all;
 }
 .site-container #nav-bar .right-links a:hover {
-  background-color: #525252;
-  font-weight: 900;
+  transition: ease-in-out 0.2s all;
+  background-color: #15d1a5;
+  color: #121212;
+  font-weight: 800;
 }
 .site-container #nav-bar .links {
   display: flex;
 }
 .site-container #nav-bar .links a {
-  font-size: 14px;
+  font-size: 0.8em;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
@@ -352,10 +355,13 @@ section {
   align-items: center;
   padding: 0px 25px;
   height: 100%;
+  transition: ease-in-out 0.2s all;
 }
 .site-container #nav-bar .links a:hover {
-  background-color: #525252;
-  font-weight: 900;
+  background-color: #383838;
+  font-weight: 800;
+  transition: ease-in-out 0.2s all;
+  color: #2feabe;
 }
 .site-container #nav-bar .active-link {
   background-color: #666666;
@@ -393,7 +399,7 @@ section {
     bottom: -23px;
   }
   #modal #modal-wrapper #modal-content .slider {
-    max-width: 60%;
+    max-width: 55%;
     display: flex;
     align-items: center;
   }
@@ -410,27 +416,34 @@ section {
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
     line-height: 19px;
+    padding-left: 5px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
     display: none;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row .mobile {
     display: block;
+    padding: 0px 3px;
+    height: 25px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom h4 {
     line-height: 15px;
-    margin-top: 8px;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 15px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom p {
     line-height: 1.65em;
-    padding: 15px 10px 16px;
-    max-height: 220px;
+    padding: 0px 5px 16px;
   }
   .site-container #nav-bar {
     height: 15vh;
   }
 }
 @media screen and (max-width: 768px) {
+  #modal #modal-wrapper #modal-content .fa-xmark {
+    right: -24px;
+  }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
     justify-content: start;
   }
@@ -452,7 +465,7 @@ section {
     text-align: center;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
-    color: #ea2f9f;
+    color: #13ba92;
     font-size: 1.5em;
   }
   .site-container .home h1 {
@@ -530,9 +543,6 @@ section {
     z-index: 5;
     font-size: 1.96em;
   }
-  #modal #modal-wrapper #modal-content .fa-xmark:hover {
-    transition: all ease-in-out 0.2s;
-  }
 }
 @keyframes slidebg {
   to {
@@ -545,39 +555,49 @@ section {
 }
 #about-page .section-title h1 {
   font-family: Yeseva;
-  font-size: 34px;
+  font-size: 2em;
   margin: 0 auto;
   text-align: center;
   padding: 30px 0px;
+}
+#about-page .skills-title {
+  color: silver;
 }
 #about-page .section-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px 6px;
 }
 #about-page .section-row .text-row {
   font-family: PoppinsReg;
-  font-size: 15px;
+  font-size: 1em;
   max-width: 60%;
   color: #000;
   margin: 0 auto;
-  padding: 0px 50px 0px;
-  line-height: 25px;
-  text-align: center;
-  padding-bottom: 20px;
+  line-height: 1.6em;
+  letter-spacing: 0.3px;
+  border-left: 3px solid #181818;
+  padding-left: 20px;
+}
+#about-page .section-row .text-row-two {
+  text-align: right;
+  min-width: 60%;
+  border-right: 3px solid #181818;
+  padding-right: 20px;
 }
 #about-page .section-row .row-two {
   border-left: 1px solid #282828;
 }
 #about-page .about-btns-wrapper {
-  max-width: 25%;
-  margin: 0 auto;
+  max-width: 28%;
+  margin: 30px auto 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 100px;
   align-items: center;
+  padding-bottom: 5%;
 }
 #about-page .about-btns-wrapper button {
   height: 45px;
@@ -591,19 +611,20 @@ section {
   font-weight: 600px;
   letter-spacing: 0.4px;
   transition: ease-in-out 0.3s all;
-  border: 2.5px solid #404040;
+  border: 2px solid #404040;
 }
 #about-page .about-btns-wrapper button:hover {
   background-color: #2feabe;
-  color: #404040;
-  font-weight: 900;
-  border-color: #404040;
+  color: #052f25;
+  font-family: PoppinsMed;
+  border: 2.36px solid #0e8b6e;
+  font-size: 0.9em;
   transition: ease-in-out 0.3s all;
 }
 #about-page .skills-title {
-  background-color: #B3B3B3;
-  padding-top: 20px;
+  background-color: #282828;
   text-align: center;
+  border-bottom: 1px solid #2feabe;
 }
 #about-page .skills-row {
   margin: 0 auto;
@@ -611,11 +632,12 @@ section {
   justify-content: space-between;
   height: auto;
   background-color: #B3B3B3;
-  padding: 0px 100px 80px;
+  padding: 30px 100px 80px;
 }
 #about-page .skills-row h3 {
   font-family: PoppinsReg;
-  font-size: 18px;
+  font-size: 1.2em;
+  padding: 40px 0px 30px;
   color: #121212;
   text-transform: uppercase;
   text-align: center;
@@ -629,7 +651,6 @@ section {
 #about-page .skills-row .skills-col1 {
   min-width: 50%;
   border-right: 2px solid #121212;
-  padding-top: 18px;
   padding-right: 50px;
 }
 #about-page .skills-row .skills-col1 .dev-skills {
@@ -641,12 +662,20 @@ section {
 }
 #about-page .skills-row .skills-col1 .dev-skills label {
   font-family: PoppinsLight;
-  font-size: 13px;
-  color: #121212;
+  font-size: 0.8em;
+  color: white;
+  position: absolute;
+  background-color: #181818;
+  padding: 4px 10px;
+  min-width: 6%;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress {
   width: 100%;
   -webkit-appearance: none;
+}
+#about-page .skills-row .skills-col1 .dev-skills progress#file {
+  height: 28px;
+  margin-bottom: 10px;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-bar {
   background-color: white;
@@ -671,13 +700,13 @@ section {
   overflow: hidden;
 }
 #about-page .skills-row .skills-col2 .circle.per-85 {
-  background-image: conic-gradient(#404040 88%, white 0);
+  background-image: conic-gradient(#404040 86%, white 0);
 }
 #about-page .skills-row .skills-col2 .circle.per-90 {
   background-image: conic-gradient(#404040 93%, white 0);
 }
 #about-page .skills-row .skills-col2 .circle.per-75 {
-  background-image: conic-gradient(#404040 84%, white 0);
+  background-image: conic-gradient(#404040 80%, white 0);
 }
 #about-page .skills-row .skills-col2 .circle .inner {
   display: flex;
@@ -691,8 +720,7 @@ section {
   height: 115px;
   background: #B3B3B3;
   border-radius: 50%;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 0.8em;
   color: #121212;
 }
 #about-page .mobile-row {
@@ -716,14 +744,9 @@ section {
     text-decoration: none;
     color: #404040;
   }
-  #about-page .section-title h1 {
-    text-decoration: underline;
-    text-underline-offset: 18px;
-    text-decoration-thickness: 2px;
-  }
   #about-page .section-row .text-row {
     text-align: center;
-    min-width: 100%;
+    max-width: 100%;
     padding: 0px 10px;
   }
   #about-page .about-btns-wrapper {
@@ -743,8 +766,8 @@ section {
     padding-bottom: 50px;
     padding-right: 0px;
   }
-  #about-page .skills-row .skills-col2 {
-    padding-top: 50px;
+  #about-page .skills-row .skills-col1 .dev-skills label {
+    min-width: 25%;
   }
   #about-page .skills-row .skills-col2 .circle {
     margin: 1.5rem;
@@ -763,8 +786,12 @@ section {
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #B3B3B3;
+  background-color: #181818;
   padding-top: 8vh;
+  overflow: hidden;
+}
+.work .work-wrapper .work-col {
+  min-width: 35%;
 }
 .work .work-wrapper .work-col .project-container {
   width: 100%;
@@ -835,7 +862,7 @@ section {
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn {
   height: 45px;
-  width: 100%;
+  min-width: 100%;
   text-transform: uppercase;
   cursor: pointer;
   background-color: transparent;
@@ -843,14 +870,17 @@ section {
   font-family: PoppinsReg;
   font-weight: 600px;
   letter-spacing: 0.4px;
+  padding: 0px 5px;
+  line-height: 1.2em;
   transition: ease-in-out 0.3s all;
   border: 2.5px solid #404040;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
   background-color: #2feabe;
-  color: #404040;
-  font-weight: 900;
-  border-color: #404040;
+  color: #052f25;
+  font-family: PoppinsMed;
+  border: 2.36px solid #0e8b6e;
+  font-size: 0.9em;
   transition: ease-in-out 0.3s all;
 }
 
@@ -890,7 +920,7 @@ section {
     padding: 0px;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper {
-    background-color: rgba(12, 12, 12, 0.836);
+    background-color: rgba(12, 12, 12, 0.8);
     opacity: 100%;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .title {
@@ -898,16 +928,18 @@ section {
     display: block;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .subtitle {
-    color: #B3B3B3;
+    color: #15d1a5;
     display: block;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper {
     display: block;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn {
+    transform: scale(1.1);
     color: white;
     background-color: #282828;
-    border: 2.5px solid white;
+    border: 1.5px solid white;
+    letter-spacing: 1.4px;
   }
 }
 #contact-section {
@@ -980,14 +1012,15 @@ section {
   font-weight: 600px;
   letter-spacing: 0.4px;
   text-align: center;
-  padding: 9px;
+  padding: 11px;
   transition: ease-in-out 0.3s all;
-  border: 2.5px solid #B3B3B3;
+  border: 1px solid #B3B3B3;
 }
 #contact-section .contact-wrapper .contact-form .submit-btn:hover {
   background-color: #2feabe;
   color: #282828;
-  font-weight: 900;
+  font-family: PoppinsMed;
+  font-size: 0.9em;
   border-color: #2feabe;
   transition: ease-in-out 0.3s all;
 }
