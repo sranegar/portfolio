@@ -515,11 +515,11 @@ section {
   }
   .site-container #nav-bar .links {
     position: absolute;
-    top: 50px;
+    top: 8vh;
     right: 0px;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.568);
+    box-shadow: 0 8px 16px rgba(47, 234, 190, 0.1215686275), 0 400px 0px rgba(18, 18, 18, 0.8549019608);
     z-index: 9999;
   }
   .site-container #nav-bar .links a {
