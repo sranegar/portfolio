@@ -172,7 +172,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
           },
           "move": {
             "enable": true,
-            "speed": 0.2,
+            "speed": 0.3,
             "direction": "none",
             "random": true,
             "straight": false,
@@ -337,7 +337,7 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
           },
           "move": {
             "enable": true,
-            "speed": 0.2,
+            "speed": 0.3,
             "direction": "none",
             "random": true,
             "straight": false,
