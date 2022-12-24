@@ -444,8 +444,15 @@ section {
   #modal #modal-wrapper #modal-content .fa-xmark {
     right: -24px;
   }
+  #modal #modal-wrapper #modal-content .modal-bottom h4 {
+    margin-top: 4px;
+    line-height: 1em;
+  }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
     justify-content: start;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
+    line-height: 1em;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
     display: none;
@@ -460,10 +467,12 @@ section {
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
     display: block;
+    height: auto;
     text-align: center;
     color: #14c89d;
     border: none;
     font-size: 0.84em;
+    white-space: nowrap;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
     color: #15d1a5;

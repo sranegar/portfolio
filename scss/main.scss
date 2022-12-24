@@ -498,9 +498,16 @@
          img {}
 
          .modal-bottom {
+            h4 {
+                margin-top: 4px;
+                line-height: 1em;
+              }
            .modal-bottom-top-row {
              justify-content: start;
-
+             h2 {
+              line-height: 1em;
+             }
+           
              a {
                button {
                  display: none;
@@ -518,12 +525,12 @@
                .mobile {
                  display: block;
                
-                
+                height: auto;
                  text-align: center;
                  color: darken($site-pink, 12%);
                  border: none;
                 font-size: .84em;
-
+                white-space: nowrap;
                  i {
                    color: darken($site-pink, 10%);
                      
