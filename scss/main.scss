@@ -288,7 +288,7 @@
 
        position: absolute;
        left: 10px;
-       top: 5px;
+       top: 10px;
        line-height: 40px;
        color: $site-white;
        font-size: 30px;
@@ -299,7 +299,7 @@
        display: none;
        position: absolute;
        right: 20px;
-       top: 22px;
+       top: 24px;
      }
 
      .right-links {
@@ -565,7 +565,6 @@
 
 
          a {
-           font-size: 12px;
            padding: 0px 18px;
          }
        }
@@ -591,8 +590,8 @@
 
 
        #toggle:checked~.links a {
-         border-bottom: 1px solid $site-gray;
-         height: 15vh;
+         border-bottom: 3px solid $site-dark;
+         height: 16vh;
          font-size: 14px;
          font-family: PoppinsReg;
          padding: 30px;
@@ -604,10 +603,10 @@
 
        }
 
-
+     
        .links {
          position: absolute;
-         top: 8vh;
+         top: 7vh;
          right: 0px;
          flex-direction: column;
          width: 100%;
@@ -622,7 +621,7 @@
            display: flex;
            align-items: center;
          }
-
+       
 
        }
      }
