@@ -56,7 +56,7 @@ var columns = [
       {
         id: 3,
         title: "Brighter Days",
-        subtitle: "HTML, SCSS, JavaScript",
+        subtitle: "HTML, Sass, JavaScript",
         img: "assets/images/brighter-days.jpg",
         subDetails: "Front-end / brand development",
         details:
@@ -75,7 +75,7 @@ var columns = [
       {
         id: 4,
         title: "Music Player App",
-        subtitle: "REST API / React.js, MySQL",
+        subtitle: "RESTful API, PHP, ReactJS, MySQL",
         img: "assets/images/musicPlayer.jpg",
         subDetails: "MP3 Player",
         details:
