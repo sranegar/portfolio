@@ -528,7 +528,7 @@ section {
     right: 0px;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0 8px 16px rgba(47, 234, 190, 0.1215686275), 0 400px 0px rgba(18, 18, 18, 0.8549019608);
+    box-shadow: 0 8px 16px rgba(47, 234, 190, 0.07), 0 400px 0px rgba(18, 18, 18, 0.85);
     z-index: 9999;
   }
   .site-container #nav-bar .links a {
