@@ -767,6 +767,7 @@ section {
     padding-right: 0px;
   }
   #about-page .skills-row .skills-col1 .dev-skills label {
+    padding: 3.3px 10px;
     min-width: 25%;
   }
   #about-page .skills-row .skills-col2 .circle {
