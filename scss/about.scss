@@ -33,12 +33,19 @@
       letter-spacing: .3px;
       border-left: 3px solid $secondary-dark;
       padding-left: 20px;
+            text-align: left;
     }
     .text-row-two {
       text-align: right;
       min-width: 60%;
+      border-left: none;
       border-right: 3px solid $secondary-dark;
       padding-right: 20px;
+      margin-top: 20px;
+      .contact-link {
+        text-decoration: none;
+        color: #000;
+      }
     }
 
     .row-two {
@@ -242,10 +249,17 @@
 
     .section-row {
       .text-row {
-        text-align: center;
+  
         max-width: 100%;
         padding: 0px 10px;
       }
+      .text-row-two {
+          .contact-link {
+              text-decoration: underline;
+              color: darken($secondary-white, 25%);
+            }
+      }
+      
     }
 
     .about-btns-wrapper {

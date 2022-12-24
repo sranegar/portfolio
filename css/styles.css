@@ -580,12 +580,19 @@ section {
   letter-spacing: 0.3px;
   border-left: 3px solid #181818;
   padding-left: 20px;
+  text-align: left;
 }
 #about-page .section-row .text-row-two {
   text-align: right;
   min-width: 60%;
+  border-left: none;
   border-right: 3px solid #181818;
   padding-right: 20px;
+  margin-top: 20px;
+}
+#about-page .section-row .text-row-two .contact-link {
+  text-decoration: none;
+  color: #000;
 }
 #about-page .section-row .row-two {
   border-left: 1px solid #282828;
@@ -745,9 +752,12 @@ section {
     color: #404040;
   }
   #about-page .section-row .text-row {
-    text-align: center;
     max-width: 100%;
     padding: 0px 10px;
+  }
+  #about-page .section-row .text-row-two .contact-link {
+    text-decoration: underline;
+    color: #737373;
   }
   #about-page .about-btns-wrapper {
     width: 55%;
