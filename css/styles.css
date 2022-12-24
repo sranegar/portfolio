@@ -460,13 +460,13 @@ section {
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
     display: block;
-    padding: 0px 1px;
-    height: auto;
     text-align: center;
+    color: #14c89d;
+    border: none;
+    font-size: 0.84em;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
-    color: #13ba92;
-    font-size: 1.5em;
+    color: #15d1a5;
   }
   .site-container .home h1 {
     font-size: 30px;
