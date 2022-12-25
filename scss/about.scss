@@ -245,8 +245,8 @@
     .section-title {}
 
     .section-row {
-      .text-row {
 
+      .text-row {
         max-width: 100%;
         padding: 0px 10px;
       }
@@ -255,6 +255,12 @@
         .contact-link {
           text-decoration: underline;
           color: darken($site-pink, 20%);
+          transition: ease-in-out 0.2s all;
+
+          &:hover {
+            color: darken($site-pink, 13%);
+            transition: ease-in-out 0.2s all;
+          }
         }
       }
 

@@ -90,11 +90,11 @@ var columns = [
       {
         id: 5,
         title: "Hendricks Civic Theatre",
-        subtitle: "WordPress",
+        subtitle: "WordPress, Adobe Software",
         img: "assets/images/hct.jpg",
         subDetails: "Website Re-design Solution",
         details:
-          "Collaborated with a design team to solve client's problems by creating web and new media solutions. I was the project manager, web developer, and web designer for this project. The solution led to the client selling out of all remaining 2022 theatre shows for the first time in several years. The final delivery included a website redesign including improved functionality to meet client's needs, content creation for social media marketing, and resources to improve website and social media maintainability.",
+          "Collaborated with a design team to solve client's problems by creating web and new media solutions. I was the project manager, web developer, and web designer for this project. The solution led to the client selling out of all remaining 2022 theatre shows for the first time in several years. The final delivery included a website redesign with improved functionality to meet client's needs, content creation for social media marketing, and resources to improve website and social media maintainability.",
         href: "https://www.hendrickscivic.com",
         images: [
           "assets/images/slider-images/hct.jpg",
