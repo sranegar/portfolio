@@ -33,8 +33,9 @@
       letter-spacing: .3px;
       border-left: 3px solid $secondary-dark;
       padding-left: 20px;
-            text-align: left;
+      text-align: left;
     }
+
     .text-row-two {
       text-align: right;
       min-width: 60%;
@@ -42,6 +43,7 @@
       border-right: 3px solid $secondary-dark;
       padding-right: 20px;
       margin-top: 20px;
+
       .contact-link {
         text-decoration: none;
         color: #000;
@@ -81,7 +83,7 @@
         background-color: $site-pink;
         color: darken($site-pink, 45%);
         font-family: PoppinsMed;
-        border: 2.36px solid darken($site-pink, 25%);
+        border: 2px solid darken($site-pink, 25%);
         font-size: .9em;
         transition: ease-in-out 0.3s all;
       }
@@ -131,12 +133,11 @@
         max-width: 90%;
         margin: 0 auto;
         padding: 8px;
- 
+
         label {
           font-family: PoppinsLight;
           font-size: .8em;
           color: $site-white;
-        
           position: absolute;
           background-color: $secondary-dark;
           padding: 4px 5px;
@@ -146,13 +147,13 @@
         progress {
           width: 100%;
           -webkit-appearance: none;
-             
+
         }
 
         progress#file {
           height: 28px;
           margin-bottom: 10px;
-        
+
         }
 
         progress::-webkit-progress-bar {
@@ -169,12 +170,9 @@
 
     .skills-col2 {
       min-width: 50%;
-
       display: flex;
-
       flex-wrap: wrap;
       justify-content: center;
-
       font-family: PoppinsReg;
 
       .circle {
@@ -244,23 +242,22 @@
 
     }
 
-    .section-title {
-      h1 {}
-    }
+    .section-title {}
 
     .section-row {
       .text-row {
-  
+
         max-width: 100%;
         padding: 0px 10px;
       }
+
       .text-row-two {
-          .contact-link {
-              text-decoration: underline;
-              color: darken($site-pink, 20%);
-            }
+        .contact-link {
+          text-decoration: underline;
+          color: darken($site-pink, 20%);
+        }
       }
-      
+
     }
 
     .about-btns-wrapper {
@@ -276,17 +273,18 @@
       flex-direction: column;
       padding: 0px 20px 80px;
 
-      h3 {}
+
 
       .skills-col1 {
         border-right: none;
         border-bottom: 2px solid $site-dark;
         padding-bottom: 50px;
         padding-right: 0px;
+
         .dev-skills {
           label {
-             padding: 4px 10px;
-             min-width: 25%;
+            padding: 4px 10px;
+            min-width: 25%;
           }
         }
       }

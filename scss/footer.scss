@@ -1,14 +1,13 @@
 footer {
     max-height: 25vh;
     background-color: $site-dark;
-
     padding: 50px 0px 14px;
+
     .copyright {
-          
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-            
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
         p {
             color: $secondary-white;
             font-family: PoppinsLight;
@@ -17,14 +16,14 @@ footer {
             font-size: 14px;
         }
     }
-    .icons-wrapper {
-        
 
+    .icons-wrapper {
         margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 35px;
+
         .icon {
             width: 40px;
             height: 40px;
@@ -34,20 +33,23 @@ footer {
             justify-content: center;
             margin: 0px 10px;
             text-decoration: none;
-transition: ease-in-out .3s all;
+            transition: ease-in-out .3s all;
+
             i {
                 font-size: 1.3em;
                 color: $secondary-white;
                 transition: ease-in-out .3s all;
             }
+
             &:hover {
                 background-color: $site-pink;
                 cursor: pointer;
                 transition: ease-in-out .3s all;
+
                 i {
                     color: $site-dark;
                     transition: ease-in-out .3s all;
-                    
+
                 }
             }
         }

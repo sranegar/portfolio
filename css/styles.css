@@ -634,7 +634,7 @@ section {
   background-color: #2feabe;
   color: #052f25;
   font-family: PoppinsMed;
-  border: 2.36px solid #0e8b6e;
+  border: 2px solid #0e8b6e;
   font-size: 0.9em;
   transition: ease-in-out 0.3s all;
 }
@@ -889,20 +889,19 @@ section {
   background-color: transparent;
   color: #404040;
   font-family: PoppinsReg;
-  font-weight: 600px;
-  font-size: 0.85em;
-  letter-spacing: 0.4px;
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
   padding: 0px 5px;
   line-height: 1.2em;
   transition: ease-in-out 0.3s all;
-  border: 2.5px solid #404040;
+  border: 2px solid #404040;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
   background-color: #2feabe;
   color: #052f25;
   font-family: PoppinsMed;
-  border: 2.36px solid #0e8b6e;
-  font-size: 0.9em;
+  border: 2px solid #0e8b6e;
+  font-size: 0.84em;
   transition: ease-in-out 0.3s all;
 }
 
@@ -957,14 +956,16 @@ section {
     display: block;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn {
-    transform: scale(1.1);
-    color: white;
+    color: #B3B3B3;
     background-color: #121212;
     border: 1px solid #B3B3B3;
-    letter-spacing: 1.4px;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn:hover {
-    font-size: 0.85em;
+    background-color: #B3B3B3;
+    font-family: PoppinsMed;
+    font-size: 0.84em;
+    border: 1px solid #B3B3B3;
+    color: #121212;
   }
 }
 #contact-section {
@@ -1024,7 +1025,7 @@ section {
   background-color: #282828;
 }
 #contact-section .contact-wrapper .contact-form .submit-btn {
-  font-size: 13px;
+  font-size: 0.86em;
   float: right;
   margin: 8px;
   height: 45px;
@@ -1034,8 +1035,7 @@ section {
   background-color: #181818;
   color: #B3B3B3;
   font-family: PoppinsReg;
-  font-weight: 600px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   text-align: center;
   padding: 11px;
   transition: ease-in-out 0.3s all;

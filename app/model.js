@@ -6,11 +6,11 @@ var columns = [
       {
         id: 0,
         title: "Irving Materials Inc.",
-        subtitle: "Next.js",
+        subtitle: "Next.js, Semantic UI, Figma",
         img: "assets/images/imi.jpg",
         subDetails: "Landing Page Marketing Solution",
         details:
-          "Drive IMI is a marketing design solution for Irving Materials Inc. I collaborated with the development and marketing teams at imi to design a fully responsive landing page and developed it in Next.js. The page content changes depending on which state the user chooses from a dropdown list upon entry. The alterating page content challenged me how to focus on a design that could change effortlessly and still look look great. I utilized Semantic UI for styled components and found using their Grid extremely helpful for making content beautifully adaptive and responsive.",
+          "Drive IMI is a marketing design solution for Irving Materials Inc. I collaborated with the development and marketing teams at IMI and to design a fully responsive landing page utalizing Semantic UI's component library and Next.js for development. I took full ownership of this project from conception to deployment and contributed to design, architecture, and software decisions. The pages are programmed dynamically to alter content for each state's job opportunities and services. This project challenged me how to focus on a design that could alter effortlessly and cohesively on all devices to accomdate the dynamic content. I utilized Semantic UI for styled components and found using their grid extremely helpful for responsiveness.",
         href: "https://drive-imi-master.vercel.app/",
         images: [
           "assets/images/slider-images/drive-imi-1.jpg",
@@ -25,7 +25,7 @@ var columns = [
         img: "assets/images/gamePlanetBW.jpg",
         subDetails: "Web app / E-commerce design",
         details:
-          "GamePlanet is a database-driven CRUD application and design written in PHP,  Javascript, MySQL, HTML, and CSS. Admin credentials utilize the CRUD features. The shopping cart functions to store items when clicked from the individual items page. I developed and designed all web pages, as well as created the GamePlanet logo.",
+          "GamePlanet is a database-driven CRUD application designed with MVC written in PHP, Javascript, MySQL, HTML, and CSS. Admin credentials utilize the CRUD features. I developed and designed all web pages, designed the GamePlanet logo, and created a relational database to store data. This project was a form of personal practice for me to expand on my full stack development skills. Note: I lost deployment of this site due to herokus deprecation of free services.",
         href: "",
         images: [
           "assets/images/slider-images/game-planet.jpg",
@@ -44,7 +44,7 @@ var columns = [
         img: "assets/images/masNewsletter.png",
         subDetails: "Email Template",
         details:
-          "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. The template serves to provide the client with showcasing video content, images, and links. Compatible with light and dark mode email client settings.",
+          "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. I completed this project from start to finish by designing the template to meet the client's needs and developing to be fully responsive and compatible with light mode and dark mode email client settings. In addition, I created the page header graphic in two different color versions to add a unique touch while still maintaining brand guidelines.",
         href: "https://sranegar.github.io/masNewsletter/",
         images: [
           "assets/images/slider-images/newsletter.jpg",
@@ -58,9 +58,9 @@ var columns = [
         title: "Brighter Days",
         subtitle: "HTML, Sass, JavaScript",
         img: "assets/images/brighter-days.jpg",
-        subDetails: "Front-end / brand development",
+        subDetails: "Front-end design / brand development",
         details:
-          "Brighter Days is a front-end website design solution and mockup brand written in HTML, SCSS and Javascript with a focus on fast loading, design responsiveness, and CSS animations.",
+          "Brighter Days is a front-end website design template and brand identity written in HTML, Sass, and Javascript with a focus on fast loading, design responsiveness, and CSS animations. This was purely made out of joy and allowed me to practice my front-end skills and embrace creativity. I started this project in Adobe XD and developed clean code by utilizing reusable components via Mixins.",
         href: "https://sranegar.github.io/e-commerce-cbd/",
         images: [
           "assets/images/slider-images/cbd1.jpg",
@@ -79,7 +79,7 @@ var columns = [
         img: "assets/images/musicPlayer.jpg",
         subDetails: "MP3 Player",
         details:
-          "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a passion project that allowed me to expand my practice as a full stack developer and designer. I designed and made a relational database that stores music by artists, albums, collections, tracks, and genres.",
+          "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a solo passion project that allowed me to expand my practice as a full stack developer to understand all processes of backend and frontend development. I built the music API using PHP and a relational database that stored all data. The client successfully pulls all data and plays music. The music player also has a progress bar that animates along with the music. Note: I am having trouble deploying this on my own. If you feel like you can help- please contact me!",
         href: "",
         images: [
           "assets/images/slider-images/mp3.jpg",
@@ -94,7 +94,7 @@ var columns = [
         img: "assets/images/hct.jpg",
         subDetails: "Website Re-design Solution",
         details:
-          "HCT Website and Social Media Overhaul 2022 was a project collaboration with a design team made of an array of skills including video production, 2D illustration, graphic design, web design, and web development. I served as the project manager and web developer / web designer. The delivered project updated HCT's web presence and provided them with resources to improve website and social media maintainability.",
+          "Collaborated with a design team to solve client's problems by creating web and new media solutions. I was the project manager, web developer, and web designer for this project. The solution led to the client selling out of all remaining 2022 theatre shows for the first time in several years. The final delivery included a website redesign including improved functionality to meet client's needs, content creation for social media marketing, and resources to improve website and social media maintainability.",
         href: "https://www.hendrickscivic.com",
         images: [
           "assets/images/slider-images/hct.jpg",

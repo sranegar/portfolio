@@ -217,7 +217,7 @@
        text-align: center;
        margin: 0;
        font-size: 2.4em;
-  padding-bottom: 8px;
+       padding-bottom: 8px;
 
        span {
          color: $site-pink;
@@ -257,7 +257,7 @@
          font-family: PoppinsReg;
          font-weight: 600px;
          letter-spacing: 0.5px;
-        font-size: .86em;
+         font-size: .86em;
          transition: ease-in-out 0.3s all;
          border: 1px solid $secondary-white;
 
@@ -276,7 +276,6 @@
 
    #nav-bar {
      height: 8vh;
-
      background-color: $site-dark;
      display: flex;
      position: fixed;
@@ -286,7 +285,6 @@
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.291);
 
      label {
-
        position: absolute;
        left: 10px;
        top: 10px;
@@ -452,8 +450,8 @@
 
              .mobile {
                display: block;
-              padding: 0px 3px;
-              height: 25px;
+               padding: 0px 3px;
+               height: 25px;
              }
 
            }
@@ -461,8 +459,8 @@
            h4 {
              line-height: 15px;
              margin-top: 5px;
-            padding-left: 5px;
-            margin-bottom: 15px;
+             padding-left: 5px;
+             margin-bottom: 15px;
            }
 
            p {
@@ -470,7 +468,7 @@
 
              line-height: 1.65em;
              padding: 0px 5px 16px;
-          
+
            }
          }
        }
@@ -492,23 +490,25 @@
        #modal-content {
 
          .fa-xmark {
-                    right: -24px;
-                    
+           right: -24px;
+
          }
 
          img {}
 
          .modal-bottom {
-            h4 {
-              margin: 4px 0px 10px;
-                line-height: 1em;
-              }
+           h4 {
+             margin: 4px 0px 10px;
+             line-height: 1em;
+           }
+
            .modal-bottom-top-row {
              justify-content: start;
+
              h2 {
-              line-height: 1em;
+               line-height: 1em;
              }
-           
+
              a {
                button {
                  display: none;
@@ -525,16 +525,17 @@
 
                .mobile {
                  display: block;
-               
-                height: auto;
+
+                 height: auto;
                  text-align: center;
                  color: darken($site-pink, 12%);
                  border: none;
-                font-size: .84em;
-                white-space: nowrap;
+                 font-size: .84em;
+                 white-space: nowrap;
+
                  i {
                    color: darken($site-pink, 10%);
-                     
+
                  }
                }
              }
@@ -612,17 +613,17 @@
 
        }
 
-     
+
        .links {
          position: absolute;
          top: 7vh;
          right: 0px;
          flex-direction: column;
          width: 100%;
-        box-shadow: 0 8px 16px rgb(47 234 190 / 7%),
-          0 400px 0px rgb(18 18 18 / 85%);
+         box-shadow: 0 8px 16px rgb(47 234 190 / 7%),
+           0 400px 0px rgb(18 18 18 / 85%);
          z-index: 9999;
-    
+
 
          a {
            font-family: Caveat;
@@ -631,7 +632,7 @@
            display: flex;
            align-items: center;
          }
-       
+
 
        }
      }

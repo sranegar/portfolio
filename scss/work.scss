@@ -79,10 +79,8 @@
           .subtitle {
             font-family: PoppinsSemi;
             text-align: center;
-
             letter-spacing: 0.5px;
             font-size: 1em;
-
             display: none;
             color: darken($secondary-white, 25%);
           }
@@ -101,20 +99,19 @@
               background-color: transparent;
               color: $site-gray;
               font-family: PoppinsReg;
-              font-weight: 600px;
-              font-size: .85em;
-              letter-spacing: .4px;
+              font-size: .8em;
+              letter-spacing: .5px;
               padding: 0px 5px;
               line-height: 1.2em;
               transition: ease-in-out .3s all;
-              border: 2.5px solid $site-gray;
+              border: 2px solid $site-gray;
 
               &:hover {
                 background-color: $site-pink;
                 color: darken($site-pink, 45%);
                 font-family: PoppinsMed;
-                border: 2.36px solid darken($site-pink, 25%);
-                font-size: .9em;
+                border: 2px solid darken($site-pink, 25%);
+                font-size: .84em;
                 transition: ease-in-out 0.3s all;
               }
             }
@@ -196,16 +193,18 @@
                 display: block;
 
                 .work-btn {
-                  transform: scale(1.1);
-                  color: $site-white;
+
+                  color: $secondary-white;
                   background-color: $site-dark;
                   border: 1px solid $secondary-white;
-                  letter-spacing: 1.4px;
+
 
                   &:hover {
-
-                    font-size: .85em;
-
+                    background-color: $secondary-white;
+                    font-family: PoppinsMed;
+                    font-size: .84em;
+                    border: 1px solid $secondary-white;
+                    color: $site-dark;
                   }
                 }
               }
