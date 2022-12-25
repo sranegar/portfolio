@@ -990,12 +990,17 @@ section {
   #modal #modal-wrapper #modal-content .modal-bottom h4 {
     margin: 8px 0px 2px;
     line-height: 1em;
+    padding-left: 0px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom p {
+    padding: 8px 0px 16px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
     justify-content: start;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
     line-height: 1em;
+    padding-left: 0px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
     display: none;

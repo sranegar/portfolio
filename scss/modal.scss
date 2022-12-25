@@ -253,9 +253,15 @@
                  .fa-xmark {}
 
                  .modal-bottom {
+                
                      h4 {
                          margin: 8px 0px 2px;
                          line-height: 1em;
+                        padding-left: 0px;
+                     }
+
+                     p {
+                            padding: 8px 0px 16px;
                      }
 
                      .modal-bottom-top-row {
@@ -263,6 +269,7 @@
 
                          h2 {
                              line-height: 1em;
+                             padding-left: 0px;
                          }
 
                          a {
