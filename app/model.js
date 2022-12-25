@@ -1,4 +1,4 @@
-var contactFormInfo = {}
+var contactFormInfo = {};
 
 var columns = [
   {
@@ -112,136 +112,129 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
   //HOME
   if (pageID == "" || pageID == "home") {
     $.get(`pages/home/home.html`, function (data) {
-    
       $("#app").html(data);
-     
-    
+
       particlesJS("particles-js", {
-        "particles": {
-          "number": {
-            "value": 355,
-            "density": {
-              "enable": true,
-              "value_area": 789.1476416322727
-            }
-          },
-          "color": {
-            "value": "#ffffff"
-          },
-          "shape": {
-            "type": "star",
-            "stroke": {
-              "width": 0,
-              "color": "#000000"
+        particles: {
+          number: {
+            value: 355,
+            density: {
+              enable: true,
+              value_area: 789.1476416322727,
             },
-            "polygon": {
-              "nb_sides": 5
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "star",
+            stroke: {
+              width: 0,
+              color: "#000000",
             },
-            "image": {
-              "src": "img/github.svg",
-              "width": 100,
-              "height": 100
-            }
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
           },
-          "opacity": {
-            "value": 0.48927153781200905,
-            "random": false,
-            "anim": {
-              "enable": true,
-              "speed": 0.2,
-              "opacity_min": 0,
-              "sync": false
-            }
+          opacity: {
+            value: 0.48927153781200905,
+            random: false,
+            anim: {
+              enable: true,
+              speed: 0.2,
+              opacity_min: 0,
+              sync: false,
+            },
           },
-          "size": {
-            "value": 2.3,
-            "random": true,
-            "anim": {
-              "enable": true,
-              "speed": 2,
-              "size_min": 0,
-              "sync": false
-            }
+          size: {
+            value: 2.3,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 2,
+              size_min: 0,
+              sync: false,
+            },
           },
-          "line_linked": {
-            "enable": false,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
+          line_linked: {
+            enable: false,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
           },
-          "move": {
-            "enable": true,
-            "speed": 0.3,
-            "direction": "none",
-            "random": true,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
+          move: {
+            enable: true,
+            speed: 0.3,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
         },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "bubble"
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "bubble",
             },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
+            onclick: {
+              enable: true,
+              mode: "push",
             },
-            "resize": true
+            resize: true,
           },
-          "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
-              }
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
             },
-            "bubble": {
-              "distance": 83.91608391608392,
-              "size": 1,
-              "duration": 3,
-              "opacity": 1,
-              "speed": 3
+            bubble: {
+              distance: 83.91608391608392,
+              size: 1,
+              duration: 3,
+              opacity: 1,
+              speed: 3,
             },
-            "repulse": {
-              "distance": 200,
-              "duration": 0.4
+            repulse: {
+              distance: 200,
+              duration: 0.4,
             },
-            "push": {
-              "particles_nb": 4
+            push: {
+              particles_nb: 4,
             },
-            "remove": {
-              "particles_nb": 2
-            }
-          }
+            remove: {
+              particles_nb: 2,
+            },
+          },
         },
-        "retina_detect": true
+        retina_detect: true,
       });
-     
-  
     });
-    
   } else if (pageID == "work") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
-    
+
       $("html, body").animate({ scrollTop: 0 }, "slow");
 
       $("#modal .fa-xmark").click(function () {
         $("#modal").css("visibility", "hidden");
       });
-      
-      
-      
+
       let pageColumn = "";
 
       $.each(columns, (idx, col) => {
@@ -268,13 +261,12 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
       });
 
       $(".work-wrapper").append(pageColumn);
-      
+
       callback();
-  
     });
   } else if (pageID == "about") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-   $("html, body").animate({ scrollTop: 0 }, "slow");
+      $("html, body").animate({ scrollTop: 0 }, "slow");
       $("#app").html(data);
     });
   } else if (pageID == "contact") {
@@ -282,133 +274,127 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
       $("html, body").animate({ scrollTop: 0 }, "slow");
       $("#app").html(data);
       particlesJS("particles-js", {
-        "particles": {
-          "number": {
-            "value": 355,
-            "density": {
-              "enable": true,
-              "value_area": 789.1476416322727
-            }
-          },
-          "color": {
-            "value": "#ffffff"
-          },
-          "shape": {
-            "type": "star",
-            "stroke": {
-              "width": 0,
-              "color": "#000000"
+        particles: {
+          number: {
+            value: 355,
+            density: {
+              enable: true,
+              value_area: 789.1476416322727,
             },
-            "polygon": {
-              "nb_sides": 5
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "star",
+            stroke: {
+              width: 0,
+              color: "#000000",
             },
-            "image": {
-              "src": "img/github.svg",
-              "width": 100,
-              "height": 100
-            }
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
           },
-          "opacity": {
-            "value": 0.48927153781200905,
-            "random": false,
-            "anim": {
-              "enable": true,
-              "speed": 0.2,
-              "opacity_min": 0,
-              "sync": false
-            }
+          opacity: {
+            value: 0.48927153781200905,
+            random: false,
+            anim: {
+              enable: true,
+              speed: 0.2,
+              opacity_min: 0,
+              sync: false,
+            },
           },
-          "size": {
-            "value": 2.3,
-            "random": true,
-            "anim": {
-              "enable": true,
-              "speed": 2,
-              "size_min": 0,
-              "sync": false
-            }
+          size: {
+            value: 2.3,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 2,
+              size_min: 0,
+              sync: false,
+            },
           },
-          "line_linked": {
-            "enable": false,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
+          line_linked: {
+            enable: false,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
           },
-          "move": {
-            "enable": true,
-            "speed": 0.3,
-            "direction": "none",
-            "random": true,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
+          move: {
+            enable: true,
+            speed: 0.3,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
         },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "bubble"
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "bubble",
             },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
+            onclick: {
+              enable: true,
+              mode: "push",
             },
-            "resize": true
+            resize: true,
           },
-          "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
-              }
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
             },
-            "bubble": {
-              "distance": 83.91608391608392,
-              "size": 1,
-              "duration": 3,
-              "opacity": 1,
-              "speed": 3
+            bubble: {
+              distance: 83.91608391608392,
+              size: 1,
+              duration: 3,
+              opacity: 1,
+              speed: 3,
             },
-            "repulse": {
-              "distance": 200,
-              "duration": 0.4
+            repulse: {
+              distance: 200,
+              duration: 0.4,
             },
-            "push": {
-              "particles_nb": 4
+            push: {
+              particles_nb: 4,
             },
-            "remove": {
-              "particles_nb": 2
-            }
-          }
+            remove: {
+              particles_nb: 2,
+            },
+          },
         },
-        "retina_detect": true
+        retina_detect: true,
       });
       callback();
     });
   } else if (pageID == "resume") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-    
       $("#app").html(data);
-    
     });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
-      
     });
-   
   }
 }
-
- 
 
 export function viewProject(projId) {
   let projIdArray = projId.split("");
@@ -417,7 +403,7 @@ export function viewProject(projId) {
   let projID = projIdArray[2];
   curProject = columns[colId].projects[projIndex];
   let slideImages = curProject.images;
-   
+
   if (curProject.id == projID) {
     $("#slide1").attr("src", slideImages[0]);
     $("#slide2").attr("src", slideImages[1]);
@@ -426,13 +412,13 @@ export function viewProject(projId) {
     $("#modal-content h2").text(curProject.title);
     $("#modal-content h4").text(curProject.subDetails);
     $("#modal-content p").text(curProject.details);
-    
   }
+
   if (curProject.href == "") {
     $(".modal-bottom a").css("display", "none");
   } else {
     $(".modal-bottom a").css("display", "block");
- }
+  }
   
 }
 

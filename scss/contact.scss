@@ -16,7 +16,6 @@
 
 
        .contact-form {
-
           width: 100%;
           margin: 0 auto;
           position: relative;
@@ -48,8 +47,6 @@
              width: 100%;
              height: 50px;
              padding: 10px;
-
-
              font-size: 14px;
              letter-spacing: 1px;
              margin: 0px 0 3px;
@@ -76,26 +73,13 @@
              font-size: .86em;
              float: right;
              margin: 8px;
-             height: 45px;
              width: 175px;
-             text-transform: uppercase;
-             cursor: pointer;
-             background-color: $secondary-dark;
-             color: $secondary-white;
-             font-family: PoppinsReg;
-             letter-spacing: .5px;
              text-align: center;
              padding: 11px;
-             transition: ease-in-out .3s all;
-             border: 1px solid $secondary-white;
+             @include site-button();
 
-             &:hover {
-                background-color: $site-pink;
-                color: $secondary-gray;
-                font-family: PoppinsMed;
-                font-size: .9em;
-                border-color: $site-pink;
-                transition: ease-in-out .3s all;
+             &:hover {    
+                font-size: .9em;     
              }
           }
 

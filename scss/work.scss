@@ -92,27 +92,17 @@
             padding: 0px 0px;
 
             .work-btn {
-              height: 45px;
               min-width: 100%;
-              text-transform: uppercase;
-              cursor: pointer;
-              background-color: transparent;
-              color: $site-gray;
-              font-family: PoppinsReg;
               font-size: .8em;
-              letter-spacing: .5px;
               padding: 0px 5px;
-              line-height: 1.2em;
-              transition: ease-in-out .3s all;
-              border: 2px solid $site-gray;
+              white-space: nowrap;
+              @include site-button($btnBorderColor: $site-gray, $btnBgColor: transparent, $btnFontColor: $site-gray, $btnBorderWidth: 2px);
 
               &:hover {
-                background-color: $site-pink;
                 color: darken($site-pink, 45%);
-                font-family: PoppinsMed;
                 border: 2px solid darken($site-pink, 25%);
                 font-size: .84em;
-                transition: ease-in-out 0.3s all;
+
               }
             }
           }
@@ -193,16 +183,10 @@
                 display: block;
 
                 .work-btn {
-
-                  color: $secondary-white;
-                  background-color: $site-dark;
-                  border: 1px solid $secondary-white;
-
+                  @include site-button($btnBorderColor: $secondary-white, $btnBgColor: $site-dark, $btnFontColor: $secondary-white);
 
                   &:hover {
                     background-color: $secondary-white;
-                    font-family: PoppinsMed;
-                    font-size: .84em;
                     border: 1px solid $secondary-white;
                     color: $site-dark;
                   }
@@ -217,7 +201,3 @@
 }
 
 
-@media screen and (max-width: 390px) {
-  #modal {}
-
-}

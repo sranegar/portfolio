@@ -1,16 +1,22 @@
- @mixin site-button($btnBorderColor: $site-pink, $btnBorderWidth:0px, $btnWidth: 150px) {
-     color: $btnBorderColor;
-     width: $btnWidth;
-     height: 40px;
-     font-family: PoppinsReg;
+ @mixin site-button($btnBorderColor: $secondary-white, $btnBgColor: $site-dark, $btnHeight: 45px, $btnFontFam: PoppinsReg, $btnLetterSpacing: .5px, $btnFontColor: $secondary-white, $btnBorderWidth: 1px) {
+     color: $btnFontColor;
+     background-color: $btnBgColor;
+     height: $btnHeight;
+     font-family: $btnFontFam;
      text-transform: uppercase;
      transition: all 0.3s;
      position: relative;
-     overflow: hidden;
-     z-index: 1;
      border: $btnBorderWidth solid $btnBorderColor;
-    letter-spacing: .5px;
+     letter-spacing: $btnLetterSpacing;
+     cursor: pointer;
 
+     &:hover {
+         background-color: $site-pink;
+         color: $secondary-gray;
+         font-family: PoppinsMed;
+        border-color: $site-pink;
+            transition: all 0.3s;
+     }
  }
 
  //Site button animation
@@ -26,7 +32,7 @@
          height: 100%;
          background-color: lighten($btnBgColor, 20%);
          z-index: -2;
-         
+
      }
 
      &:before {

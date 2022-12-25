@@ -65,27 +65,15 @@
     padding-bottom: 5%;
 
     button {
-      height: 45px;
       width: 175px;
       margin-top: 10px;
-      text-transform: uppercase;
-      cursor: pointer;
-      background-color: transparent;
-      color: $site-gray;
-      font-family: PoppinsReg;
-      font-weight: 600px;
-      letter-spacing: 0.4px;
       font-size: .86em;
-      transition: ease-in-out 0.3s all;
-      border: 2px solid $site-gray;
+      @include site-button($btnBorderColor: $site-gray, $btnBgColor: transparent, $btnFontColor: $site-gray, $btnBorderWidth: 2px);
 
       &:hover {
-        background-color: $site-pink;
         color: darken($site-pink, 45%);
-        font-family: PoppinsMed;
         border: 2px solid darken($site-pink, 25%);
         font-size: .9em;
-        transition: ease-in-out 0.3s all;
       }
     }
   }
@@ -139,7 +127,7 @@
           font-size: .8em;
           color: $site-white;
           position: absolute;
-          background-color: $secondary-dark;
+          background-color: lighten($secondary-dark, 5%);
           padding: 4px 5px;
           min-width: 8%;
         }

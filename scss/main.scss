@@ -1,679 +1,360 @@
- #modal {
-   width: 100%;
-   height: 100%;
-   background-color: #121212dc;
-
-   position: fixed;
-   z-index: 9999;
-   right: 0;
-   left: 0;
-   visibility: hidden;
-   display: flex;
-
-   align-items: center;
-
-   #modal-wrapper {
-
-     min-width: 100%;
-     padding: 0px 30px;
-
-
-     #modal-content {
-
-       position: relative;
-       margin: 0 auto;
-       max-height: 100%;
-       max-width: 550px;
-       background-color: $site-white;
-
-
-       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-       .fa-xmark {
-         position: absolute;
-
-
-         z-index: 1;
-         right: -30px;
-         bottom: 0px;
-         font-size: 1.9em;
-         cursor: pointer;
-         color: $secondary-white;
-
-
-         &:hover {
-           color: darken($secondary-white, 25%);
-
-         }
-
-       }
-
-       .slider {
-
-
-         position: relative;
-
-         img {
-
-           max-height: 26em;
-
-         }
-
-         .slick-prev {
-           left: 0;
-           z-index: 1;
-
-           background-image: url(../assets/svg/arrow-left.svg);
-           background-repeat: no-repeat;
-           background-size: 10px;
-           background-position: center;
-
-         }
-
-         .slick-next {
-           right: 0;
-           background-image: url(../assets/svg/arrow-right.svg);
-           background-repeat: no-repeat;
-           background-size: 10px;
-           background-position: center;
-
-         }
-
-
-
-         button {
-
-           position: absolute;
-           font-size: 0;
-           bottom: 0;
-           cursor: pointer;
-           background-color: #1212123f;
-           border: none;
-           height: 55px;
-           width: 40px;
-
-         }
-       }
-
-
-
-       .modal-bottom {
-
-         position: relative;
-         padding: 8px 4px 0px;
-         min-height: 100%;
-
-         background-color: $site-white;
-
-         border-bottom-right-radius: 15px;
-         border-bottom-left-radius: 15px;
-         overflow: hidden;
-         border-top: 2px solid $site-dark;
-
-         .modal-bottom-top-row {
-           display: flex;
-           justify-content: space-between;
-
-           h2 {
-             font-family: PoppinsReg;
-             letter-spacing: 1px;
-             margin: 0px;
-             font-size: 1.185em;
-             padding-left: 10px;
-             margin-top: 1px;
-           }
-         }
-
-
-
-         h4 {
-           font-family: PoppinsSemi;
-           text-transform: uppercase;
-           letter-spacing: 1px;
-           color: darken($secondary-white, 25%);
-           font-size: .9em;
-           margin-top: -4px;
-           margin-bottom: 0px;
-           padding-left: 10px;
-         }
-
-         a {
-
-           .mobile {
-             display: none;
-           }
-
-           button {
-             height: 30px;
-             font-family: PoppinsMed;
-             text-transform: uppercase;
-             color: $site-white;
-             padding: 0px 8px;
-             font-size: .75em;
-             border: 2.5px solid darken($site-pink, 10%);
-             letter-spacing: .4px;
-             background-color: darken($site-pink, 10%);
-             cursor: pointer;
-
-             i {
-               color: $site-white;
-               margin-left: 5px;
-             }
-
-             &:hover {
-               background-color: darken($site-pink, 20%);
-               border: 2.3px solid darken($site-pink, 20%);
-               color: $site-white;
-
-
-               i {
-                 color: $site-white;
-
-
-               }
-             }
-           }
-         }
-
-         p {
-
-           display: block;
-           overflow-y: auto;
-           font-family: PoppinsReg;
-           font-size: .88em;
-           line-height: 1.65em;
-           padding: 8px 10px 16px;
-           max-height: 145px;
-
-
-
-         }
-
-
-
-
-       }
-     }
-   }
- }
-
- .site-container {
-   max-width: 100vw;
-   max-height: 99vh;
-   position: relative;
-   background-color: $site-dark;
-
-   .home {
-
-     background-color: $secondary-dark;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-
-     h1 {
-       font-family: Yeseva;
-       color: $site-white;
-       text-align: center;
-       margin: 0;
-       font-size: 2.4em;
-       padding-bottom: 8px;
-
-       span {
-         color: $site-pink;
-       }
-     }
-
-     p {
-       font-family: PoppinsLight;
-       color: $secondary-white;
-       text-align: center;
-       letter-spacing: 1.5px;
-       padding-bottom: 20px;
-       font-size: 1.4em;
-     }
-
-     #particles-js {
-       position: absolute;
-       width: 100%;
-       height: 100%;
-       z-index: 1;
-     }
-
-     .home-btn {
-
-       width: 13%;
-       height: 30px;
-
-       z-index: 4;
-
-       button {
-         height: 45px;
-         width: 100%;
-         text-transform: uppercase;
-         cursor: pointer;
-         background-color: $site-dark;
-         color: $secondary-white;
-         font-family: PoppinsReg;
-         font-weight: 600px;
-         letter-spacing: 0.5px;
-         font-size: .86em;
-         transition: ease-in-out 0.3s all;
-         border: 1px solid $secondary-white;
-
-         &:hover {
-           background-color: $site-pink;
-           color: $secondary-gray;
-           font-family: PoppinsMed;
-           font-size: .9em;
-           border-color: $site-pink;
-           transition: ease-in-out 0.3s all;
-         }
-       }
-     }
-   }
-
-
-   #nav-bar {
-     height: 8vh;
-     background-color: $site-dark;
-     display: flex;
-     position: fixed;
-     justify-content: space-between;
-     width: 100%;
-     z-index: 8;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.291);
-
-     label {
-       position: absolute;
-       left: 10px;
-       top: 10px;
-       line-height: 40px;
-       color: $site-white;
-       font-size: 30px;
-       display: none;
-     }
-
-     #toggle {
-       display: none;
-       position: absolute;
-       right: 20px;
-       top: 24px;
-     }
-
-     .right-links {
-
-
-
-       a {
-         font-size: .8em;
-         color: $site-white;
-         text-transform: uppercase;
-
-
-         cursor: pointer;
-         font-family: PoppinsLight;
-         letter-spacing: 1.4px;
-         text-decoration: none;
-         display: flex;
-         align-items: center;
-         padding: 0px 35px;
-         height: 100%;
-         border-left: 1px solid $site-gray;
-         transition: ease-in-out 0.2s all;
-
-         &:hover {
-
-           transition: ease-in-out 0.2s all;
-           background-color: darken($site-pink, 10%);
-           color: $site-black;
-           font-weight: 800;
-
-         }
-       }
-     }
-
-     .links {
-       display: flex;
-
-       a {
-         font-size: .8em;
-         color: $site-white;
-         text-transform: uppercase;
-
-         cursor: pointer;
-         font-family: PoppinsLight;
-         letter-spacing: 1.4px;
-         text-decoration: none;
-         display: flex;
-         align-items: center;
-         padding: 0px 25px;
-         height: 100%;
-         transition: ease-in-out 0.2s all;
-
-         &:hover {
-           background-color: lighten($site-dark, 15%);
-           font-weight: 800;
-           transition: ease-in-out 0.2s all;
-           color: $site-pink;
-         }
-       }
-
-     }
-
-     .active-link {
-       background-color: lighten($site-gray, 15%);
-
-     }
-
-     .links-toggle {
-       top: 0;
-     }
-   }
-
-
-
-
-   h1 {
-     font-family: Yeseva;
-     font-size: 24px;
-     color: $site-dark;
-     letter-spacing: 1px;
-     font-weight: 100;
-   }
-
-   h2 {
-     font-family: Poppins;
-     font-size: 18px;
-     color: $site-gray;
-     letter-spacing: 0.8px;
-     margin: 0px;
-   }
-
-   hr {
-     border: 0.5px solid $secondary-gray;
-     margin-bottom: 12px;
-   }
- }
-
- @media only screen and (max-height: 575.98px) and (orientation: landscape) {
-   #modal {
-
-     #modal-wrapper {
-
-       #modal-content {
-         display: flex;
-         max-height: 100vh;
-
-         background-color: $site-dark;
-
-         .fa-xmark {
-           right: -26px;
-           bottom: -23px;
-         }
-
-         .slider {
-           max-width: 55%;
-           display: flex;
-           align-items: center;
-
-           img {}
-
-           button {
-             height: 100%;
-             background-color: #12121218;
-             width: 32px;
-
-
-
-           }
-         }
-
-         .modal-bottom {
-           border-top: none;
-           border-left: 2px solid $site-dark;
-           border-bottom-right-radius: 0px;
-           border-bottom-left-radius: 0px;
-
-           .modal-bottom-top-row {
-             h2 {
-               line-height: 19px;
-               padding-left: 5px;
-             }
-
-             a {
-               button {
-                 display: none;
-
-               }
-             }
-
-             .mobile {
-               display: block;
-               padding: 0px 3px;
-               height: 25px;
-             }
-
-           }
-
-           h4 {
-             line-height: 15px;
-             margin-top: 5px;
-             padding-left: 5px;
-             margin-bottom: 15px;
-           }
-
-           p {
-
-
-             line-height: 1.65em;
-             padding: 0px 5px 16px;
-
-           }
-         }
-       }
-     }
-   }
-
-   .site-container {
-     #nav-bar {
-       height: 15vh;
-
-     }
-   }
- }
-
- @media screen and (max-width: 768px) {
-   #modal {
-     #modal-wrapper {
-
-       #modal-content {
-
-         .fa-xmark {
-           right: -24px;
-
-         }
-
-         img {}
-
-         .modal-bottom {
-           h4 {
-             margin: 4px 0px 10px;
-             line-height: 1em;
-           }
-
-           .modal-bottom-top-row {
-             justify-content: start;
-
-             h2 {
-               line-height: 1em;
-             }
-
-             a {
-               button {
-                 display: none;
-                 margin-left: 6px;
-                 background-color: $site-white;
-                 border: 0px solid $site-gray;
-
-                 i {
-                   color: $site-gray;
-                   font-size: 1.26em;
-                   margin-top: 3px;
-                 }
-               }
-
-               .mobile {
-                 display: block;
-
-                 height: auto;
-                 text-align: center;
-                 color: darken($site-pink, 12%);
-                 border: none;
-                 font-size: .84em;
-                 white-space: nowrap;
-
-                 i {
-                   color: darken($site-pink, 10%);
-
-                 }
-               }
-             }
-           }
-
-           p {}
-         }
-       }
-     }
-   }
-
-   .site-container {
-     .home {
-
-       h1 {
-         font-size: 30px;
-       }
-
-       p {
-         font-size: 21px;
-       }
-
-       .home-btn {
-
-         min-width: 85%;
-       }
-     }
-
-     #nav-bar {
-       justify-content: flex-end;
-
-       .links {
-         display: none;
-       }
-
-       .right-links {
-
-
-         a {
-           padding: 0px 18px;
-         }
-       }
-
-       label {
-         display: block;
-         cursor: pointer;
-       }
-
-       #toggle:checked+.links {
-         display: block;
-       }
-
-       #toggle~.links a {
-         height: 0;
-         margin: 0;
-         padding: 0;
-         border: 0;
-         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-         font-size: 0px;
-
-       }
-
-
-       #toggle:checked~.links a {
-         border-bottom: 3px solid $site-dark;
-         height: 16vh;
-         font-size: 14px;
-         font-family: PoppinsReg;
-         padding: 30px;
-
-         background-color: $site-dark;
-         color: $site-white;
-         text-transform: uppercase;
-         transition: height 400ms cubic-bezier(0.03, 1, 0.32, 1);
-
-       }
-
-
-       .links {
-         position: absolute;
-         top: 7vh;
-         right: 0px;
-         flex-direction: column;
-         width: 100%;
-         box-shadow: 0 8px 16px rgb(47 234 190 / 7%),
-           0 400px 0px rgb(18 18 18 / 85%);
-         z-index: 9999;
-
-
-         a {
-           font-family: Caveat;
-           font-size: 16px;
-           color: $site-black;
-           display: flex;
-           align-items: center;
-         }
-
-
-       }
-     }
-
-   }
-
-
- }
-
- @media screen and (max-width: 390px) {
-   #modal {
-     min-width: 300px;
-
-     #modal-wrapper {
-       padding: 0px 10px;
-
-       #modal-content {
-         img {}
-
-         .fa-xmark {
-           bottom: -35px;
-           right: 5px;
-           z-index: 5;
-
-           font-size: 1.96em;
-
-           &:hover {}
-
-         }
-
-         .modal-bottom {
-
-           p {}
-         }
-       }
-     }
-   }
- }
-
- @keyframes slidebg {
-   to {
-     background-position: 80vw;
-   }
- }
+.site-container {
+  max-width: 100vw;
+  max-height: 99vh;
+  position: relative;
+  background-color: $site-dark;
+
+  .home {
+    background-color: $secondary-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-family: Yeseva;
+      color: $site-white;
+      text-align: center;
+      margin: 0;
+      font-size: 2.4em;
+      padding-bottom: 8px;
+
+      span {
+        color: $site-pink;
+      }
+    }
+
+    p {
+      font-family: PoppinsLight;
+      color: $secondary-white;
+      text-align: center;
+      letter-spacing: 1.5px;
+      padding-bottom: 20px;
+      font-size: 1.4em;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .home-btn {
+      width: 13%;
+      height: 30px;
+      z-index: 4;
+
+      button {
+        width: 100%;
+        font-size: .86em;
+        @include site-button();
+
+        &:hover {
+          font-size: .88em;
+        }
+      }
+    }
+  }
+
+  #nav-bar {
+    height: 8vh;
+    background-color: $site-dark;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.291);
+
+    label {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      line-height: 40px;
+      color: $site-white;
+      font-size: 30px;
+      display: none;
+    }
+
+    #toggle {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 24px;
+    }
+
+    a {
+      font-size: .8em;
+      color: $site-white;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: PoppinsLight;
+      letter-spacing: 1.4px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 0px 35px;
+      height: 100%;
+      transition: all 0.3s;
+    }
+
+    .right-links {
+      a {
+
+        &:hover {
+          transition: all 0.3s;
+          background-color: darken($site-pink, 5%);
+          color: $site-black;
+          font-weight: 800;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+
+      a {
+        &:hover {
+          background-color: lighten($site-dark, 15%);
+          font-weight: 800;
+          transition: all 0.3s;
+          color: $site-pink;
+        }
+      }
+    }
+
+    .active-link {
+      background-color: lighten($site-gray, 15%);
+    }
+
+    .links-toggle {
+      top: 0;
+    }
+
+  }
+
+  h1 {
+    font-family: Yeseva;
+    font-size: 24px;
+    color: $site-dark;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-family: Poppins;
+    font-size: 18px;
+    color: $site-gray;
+    letter-spacing: 0.8px;
+    margin: 0px;
+  }
+
+  hr {
+    border: 0.5px solid $secondary-gray;
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .site-container {
+    #nav-bar {
+      height: 15vh;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #modal {
+    #modal-wrapper {
+
+      #modal-content {
+
+        .fa-xmark {
+          right: -24px;
+
+        }
+
+        img {}
+
+        .modal-bottom {
+          h4 {
+            margin: 4px 0px 10px;
+            line-height: 1em;
+          }
+
+          .modal-bottom-top-row {
+            justify-content: start;
+
+            h2 {
+              line-height: 1em;
+            }
+
+            a {
+              button {
+                display: none;
+                margin-left: 6px;
+                background-color: $site-white;
+                border: 0px solid $site-gray;
+
+                i {
+                  color: $site-gray;
+                  font-size: 1.26em;
+                  margin-top: 3px;
+                }
+              }
+
+              .mobile {
+                display: block;
+
+                height: auto;
+                text-align: center;
+                color: darken($site-pink, 12%);
+                border: none;
+                font-size: .84em;
+                white-space: nowrap;
+
+                i {
+                  color: darken($site-pink, 10%);
+
+                }
+              }
+            }
+          }
+
+          p {}
+        }
+      }
+    }
+  }
+
+  .site-container {
+    .home {
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 21px;
+      }
+
+      .home-btn {
+
+        min-width: 85%;
+      }
+    }
+
+    #nav-bar {
+      justify-content: flex-end;
+
+      .links {
+        display: none;
+      }
+
+      .right-links {
+
+
+        a {
+          padding: 0px 18px;
+        }
+      }
+
+      label {
+        display: block;
+        cursor: pointer;
+      }
+
+      #toggle:checked+.links {
+        display: block;
+      }
+
+      #toggle~.links a {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        font-size: 0px;
+
+      }
+
+
+      #toggle:checked~.links a {
+        border-bottom: 3px solid $site-dark;
+        height: 16vh;
+        font-size: 14px;
+        font-family: PoppinsReg;
+        padding: 30px;
+
+        background-color: $site-dark;
+        color: $site-white;
+        text-transform: uppercase;
+        transition: height 400ms cubic-bezier(0.03, 1, 0.32, 1);
+
+      }
+
+
+      .links {
+        position: absolute;
+        top: 7vh;
+        right: 0px;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: 0 8px 16px rgb(47 234 190 / 7%),
+          0 400px 0px rgb(18 18 18 / 85%);
+        z-index: 9999;
+
+
+        a {
+          font-family: Caveat;
+          font-size: 16px;
+          color: $site-black;
+          display: flex;
+          align-items: center;
+        }
+
+
+      }
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width: 390px) {
+  #modal {
+    min-width: 300px;
+
+    #modal-wrapper {
+      padding: 0px 10px;
+
+      #modal-content {
+        img {}
+
+        .fa-xmark {
+          bottom: -35px;
+          right: 5px;
+          z-index: 5;
+
+          font-size: 1.96em;
+
+          &:hover {}
+
+        }
+
+        .modal-bottom {
+
+          p {}
+        }
+      }
+    }
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 80vw;
+  }
+}

@@ -94,142 +94,6 @@ section {
   z-index: 1;
 }
 
-#modal {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(18, 18, 18, 0.862745098);
-  position: fixed;
-  z-index: 9999;
-  right: 0;
-  left: 0;
-  visibility: hidden;
-  display: flex;
-  align-items: center;
-}
-#modal #modal-wrapper {
-  min-width: 100%;
-  padding: 0px 30px;
-}
-#modal #modal-wrapper #modal-content {
-  position: relative;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 550px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-#modal #modal-wrapper #modal-content .fa-xmark {
-  position: absolute;
-  z-index: 1;
-  right: -30px;
-  bottom: 0px;
-  font-size: 1.9em;
-  cursor: pointer;
-  color: #B3B3B3;
-}
-#modal #modal-wrapper #modal-content .fa-xmark:hover {
-  color: #737373;
-}
-#modal #modal-wrapper #modal-content .slider {
-  position: relative;
-}
-#modal #modal-wrapper #modal-content .slider img {
-  max-height: 26em;
-}
-#modal #modal-wrapper #modal-content .slider .slick-prev {
-  left: 0;
-  z-index: 1;
-  background-image: url(../assets/svg/arrow-left.svg);
-  background-repeat: no-repeat;
-  background-size: 10px;
-  background-position: center;
-}
-#modal #modal-wrapper #modal-content .slider .slick-next {
-  right: 0;
-  background-image: url(../assets/svg/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: 10px;
-  background-position: center;
-}
-#modal #modal-wrapper #modal-content .slider button {
-  position: absolute;
-  font-size: 0;
-  bottom: 0;
-  cursor: pointer;
-  background-color: rgba(18, 18, 18, 0.2470588235);
-  border: none;
-  height: 55px;
-  width: 40px;
-}
-#modal #modal-wrapper #modal-content .modal-bottom {
-  position: relative;
-  padding: 8px 4px 0px;
-  min-height: 100%;
-  background-color: white;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  overflow: hidden;
-  border-top: 2px solid #121212;
-}
-#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
-  display: flex;
-  justify-content: space-between;
-}
-#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
-  font-family: PoppinsReg;
-  letter-spacing: 1px;
-  margin: 0px;
-  font-size: 1.185em;
-  padding-left: 10px;
-  margin-top: 1px;
-}
-#modal #modal-wrapper #modal-content .modal-bottom h4 {
-  font-family: PoppinsSemi;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #737373;
-  font-size: 0.9em;
-  margin-top: -4px;
-  margin-bottom: 0px;
-  padding-left: 10px;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a .mobile {
-  display: none;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a button {
-  height: 30px;
-  font-family: PoppinsMed;
-  text-transform: uppercase;
-  color: white;
-  padding: 0px 8px;
-  font-size: 0.75em;
-  border: 2.5px solid #15d1a5;
-  letter-spacing: 0.4px;
-  background-color: #15d1a5;
-  cursor: pointer;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a button i {
-  color: white;
-  margin-left: 5px;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a button:hover {
-  background-color: #10a380;
-  border: 2.3px solid #10a380;
-  color: white;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a button:hover i {
-  color: white;
-}
-#modal #modal-wrapper #modal-content .modal-bottom p {
-  display: block;
-  overflow-y: auto;
-  font-family: PoppinsReg;
-  font-size: 0.88em;
-  line-height: 1.65em;
-  padding: 8px 10px 16px;
-  max-height: 145px;
-}
-
 .site-container {
   max-width: 100vw;
   max-height: 99vh;
@@ -274,26 +138,28 @@ section {
   z-index: 4;
 }
 .site-container .home .home-btn button {
-  height: 45px;
   width: 100%;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #121212;
-  color: #B3B3B3;
-  font-family: PoppinsReg;
-  font-weight: 600px;
-  letter-spacing: 0.5px;
   font-size: 0.86em;
-  transition: ease-in-out 0.3s all;
+  color: #B3B3B3;
+  background-color: #121212;
+  height: 45px;
+  font-family: PoppinsReg;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
   border: 1px solid #B3B3B3;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 .site-container .home .home-btn button:hover {
   background-color: #2feabe;
   color: #282828;
   font-family: PoppinsMed;
-  font-size: 0.9em;
   border-color: #2feabe;
-  transition: ease-in-out 0.3s all;
+  transition: all 0.3s;
+}
+.site-container .home .home-btn button:hover {
+  font-size: 0.88em;
 }
 .site-container #nav-bar {
   height: 8vh;
@@ -320,7 +186,7 @@ section {
   right: 20px;
   top: 24px;
 }
-.site-container #nav-bar .right-links a {
+.site-container #nav-bar a {
   font-size: 0.8em;
   color: white;
   text-transform: uppercase;
@@ -332,36 +198,21 @@ section {
   align-items: center;
   padding: 0px 35px;
   height: 100%;
-  border-left: 1px solid #404040;
-  transition: ease-in-out 0.2s all;
+  transition: all 0.3s;
 }
 .site-container #nav-bar .right-links a:hover {
-  transition: ease-in-out 0.2s all;
-  background-color: #15d1a5;
+  transition: all 0.3s;
+  background-color: #18e8b7;
   color: #121212;
   font-weight: 800;
 }
 .site-container #nav-bar .links {
   display: flex;
 }
-.site-container #nav-bar .links a {
-  font-size: 0.8em;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: PoppinsLight;
-  letter-spacing: 1.4px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  padding: 0px 25px;
-  height: 100%;
-  transition: ease-in-out 0.2s all;
-}
 .site-container #nav-bar .links a:hover {
   background-color: #383838;
   font-weight: 800;
-  transition: ease-in-out 0.2s all;
+  transition: all 0.3s;
   color: #2feabe;
 }
 .site-container #nav-bar .active-link {
@@ -390,53 +241,6 @@ section {
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
-  #modal #modal-wrapper #modal-content {
-    display: flex;
-    max-height: 100vh;
-    background-color: #121212;
-  }
-  #modal #modal-wrapper #modal-content .fa-xmark {
-    right: -26px;
-    bottom: -23px;
-  }
-  #modal #modal-wrapper #modal-content .slider {
-    max-width: 55%;
-    display: flex;
-    align-items: center;
-  }
-  #modal #modal-wrapper #modal-content .slider button {
-    height: 100%;
-    background-color: rgba(18, 18, 18, 0.0941176471);
-    width: 32px;
-  }
-  #modal #modal-wrapper #modal-content .modal-bottom {
-    border-top: none;
-    border-left: 2px solid #121212;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
-    line-height: 19px;
-    padding-left: 5px;
-  }
-  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
-    display: none;
-  }
-  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row .mobile {
-    display: block;
-    padding: 0px 3px;
-    height: 25px;
-  }
-  #modal #modal-wrapper #modal-content .modal-bottom h4 {
-    line-height: 15px;
-    margin-top: 5px;
-    padding-left: 5px;
-    margin-bottom: 15px;
-  }
-  #modal #modal-wrapper #modal-content .modal-bottom p {
-    line-height: 1.65em;
-    padding: 0px 5px 16px;
-  }
   .site-container #nav-bar {
     height: 15vh;
   }
@@ -616,27 +420,31 @@ section {
   padding-bottom: 5%;
 }
 #about-page .about-btns-wrapper button {
-  height: 45px;
   width: 175px;
   margin-top: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: transparent;
-  color: #404040;
-  font-family: PoppinsReg;
-  font-weight: 600px;
-  letter-spacing: 0.4px;
   font-size: 0.86em;
-  transition: ease-in-out 0.3s all;
+  color: #404040;
+  background-color: transparent;
+  height: 45px;
+  font-family: PoppinsReg;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
   border: 2px solid #404040;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 #about-page .about-btns-wrapper button:hover {
   background-color: #2feabe;
-  color: #052f25;
+  color: #282828;
   font-family: PoppinsMed;
+  border-color: #2feabe;
+  transition: all 0.3s;
+}
+#about-page .about-btns-wrapper button:hover {
+  color: #052f25;
   border: 2px solid #0e8b6e;
   font-size: 0.9em;
-  transition: ease-in-out 0.3s all;
 }
 #about-page .skills-title {
   background-color: #282828;
@@ -682,7 +490,7 @@ section {
   font-size: 0.8em;
   color: white;
   position: absolute;
-  background-color: #181818;
+  background-color: #252525;
   padding: 4px 5px;
   min-width: 8%;
 }
@@ -887,27 +695,32 @@ section {
   padding: 0px 0px;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn {
-  height: 45px;
   min-width: 100%;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: transparent;
-  color: #404040;
-  font-family: PoppinsReg;
   font-size: 0.8em;
-  letter-spacing: 0.5px;
   padding: 0px 5px;
-  line-height: 1.2em;
-  transition: ease-in-out 0.3s all;
+  white-space: nowrap;
+  color: #404040;
+  background-color: transparent;
+  height: 45px;
+  font-family: PoppinsReg;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
   border: 2px solid #404040;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
   background-color: #2feabe;
-  color: #052f25;
+  color: #282828;
   font-family: PoppinsMed;
+  border-color: #2feabe;
+  transition: all 0.3s;
+}
+.work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
+  color: #052f25;
   border: 2px solid #0e8b6e;
   font-size: 0.84em;
-  transition: ease-in-out 0.3s all;
 }
 
 @media screen and (max-width: 768px) {
@@ -963,14 +776,260 @@ section {
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn {
     color: #B3B3B3;
     background-color: #121212;
+    height: 45px;
+    font-family: PoppinsReg;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    position: relative;
     border: 1px solid #B3B3B3;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+  .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn:hover {
+    background-color: #2feabe;
+    color: #282828;
+    font-family: PoppinsMed;
+    border-color: #2feabe;
+    transition: all 0.3s;
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn:hover {
     background-color: #B3B3B3;
-    font-family: PoppinsMed;
-    font-size: 0.84em;
     border: 1px solid #B3B3B3;
     color: #121212;
+  }
+}
+#modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.862745098);
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+#modal #modal-wrapper {
+  min-width: 100%;
+  padding: 0px 45px;
+}
+#modal #modal-wrapper #modal-content {
+  position: relative;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 550px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#modal #modal-wrapper #modal-content .fa-xmark {
+  position: absolute;
+  z-index: 1;
+  right: -30px;
+  bottom: 0px;
+  font-size: 1.9em;
+  cursor: pointer;
+  color: #B3B3B3;
+}
+#modal #modal-wrapper #modal-content .fa-xmark:hover {
+  color: #737373;
+}
+#modal #modal-wrapper #modal-content .slider {
+  position: relative;
+}
+#modal #modal-wrapper #modal-content .slider img {
+  max-height: 26em;
+}
+#modal #modal-wrapper #modal-content .slider .slick-prev {
+  left: 0;
+  z-index: 1;
+  background-image: url(../assets/svg/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+#modal #modal-wrapper #modal-content .slider .slick-next {
+  right: 0;
+  background-image: url(../assets/svg/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+#modal #modal-wrapper #modal-content .slider button {
+  position: absolute;
+  font-size: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgba(18, 18, 18, 0.2470588235);
+  border: none;
+  height: 55px;
+  width: 40px;
+}
+#modal #modal-wrapper #modal-content .modal-bottom {
+  position: relative;
+  padding: 8px 4px 0px;
+  min-height: 100%;
+  background-color: white;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  overflow: hidden;
+  border-top: 2px solid #121212;
+}
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
+  font-family: PoppinsReg;
+  letter-spacing: 1px;
+  margin: 0px;
+  font-size: 1.185em;
+  padding-left: 10px;
+  margin-top: 1px;
+}
+#modal #modal-wrapper #modal-content .modal-bottom h4 {
+  font-family: PoppinsSemi;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #737373;
+  font-size: 0.9em;
+  margin-top: -4px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a .mobile {
+  display: none;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button {
+  height: 30px;
+  font-family: PoppinsMed;
+  text-transform: uppercase;
+  color: white;
+  padding: 0px 8px;
+  font-size: 0.75em;
+  border: 2.5px solid #15d1a5;
+  letter-spacing: 0.4px;
+  background-color: #15d1a5;
+  cursor: pointer;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button i {
+  color: white;
+  margin-left: 5px;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button:hover {
+  background-color: #10a380;
+  border: 2.3px solid #10a380;
+  color: white;
+}
+#modal #modal-wrapper #modal-content .modal-bottom a button:hover i {
+  color: white;
+}
+#modal #modal-wrapper #modal-content .modal-bottom p {
+  display: block;
+  overflow-y: auto;
+  font-family: PoppinsReg;
+  font-size: 0.88em;
+  line-height: 1.65em;
+  padding: 8px 10px 16px;
+  max-height: 145px;
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  #modal #modal-wrapper #modal-content {
+    display: flex;
+    max-height: 100vh;
+    background-color: #121212;
+  }
+  #modal #modal-wrapper #modal-content .fa-xmark {
+    right: -26px;
+    bottom: -23px;
+  }
+  #modal #modal-wrapper #modal-content .slider {
+    max-width: 55%;
+    display: flex;
+    align-items: center;
+  }
+  #modal #modal-wrapper #modal-content .slider button {
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.0941176471);
+    width: 32px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom {
+    border-top: none;
+    border-left: 2px solid #121212;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
+    line-height: 19px;
+    padding-left: 5px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
+    display: none;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row .mobile {
+    display: block;
+    padding: 0px 3px;
+    height: 25px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom h4 {
+    line-height: 15px;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom p {
+    line-height: 1.65em;
+    padding: 0px 5px 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #modal #modal-wrapper #modal-content .modal-bottom h4 {
+    margin: 4px 0px 10px;
+    line-height: 1em;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
+    justify-content: start;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
+    line-height: 1em;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
+    display: none;
+    margin-left: 6px;
+    background-color: white;
+    border: 0px solid #404040;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button i {
+    color: #404040;
+    font-size: 1.26em;
+    margin-top: 3px;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
+    display: block;
+    height: auto;
+    text-align: center;
+    color: #14c89d;
+    border: none;
+    font-size: 0.84em;
+    white-space: nowrap;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
+    color: #15d1a5;
+  }
+}
+@media screen and (max-width: 390px) {
+  #modal {
+    min-width: 300px;
+  }
+  #modal #modal-wrapper {
+    padding: 0px 10px;
+  }
+  #modal #modal-wrapper #modal-content .fa-xmark {
+    bottom: -35px;
+    right: 5px;
+    z-index: 5;
+    font-size: 1.96em;
   }
 }
 #contact-section {
@@ -1033,26 +1092,29 @@ section {
   font-size: 0.86em;
   float: right;
   margin: 8px;
-  height: 45px;
   width: 175px;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #181818;
-  color: #B3B3B3;
-  font-family: PoppinsReg;
-  letter-spacing: 0.5px;
   text-align: center;
   padding: 11px;
-  transition: ease-in-out 0.3s all;
+  color: #B3B3B3;
+  background-color: #121212;
+  height: 45px;
+  font-family: PoppinsReg;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  position: relative;
   border: 1px solid #B3B3B3;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 #contact-section .contact-wrapper .contact-form .submit-btn:hover {
   background-color: #2feabe;
   color: #282828;
   font-family: PoppinsMed;
-  font-size: 0.9em;
   border-color: #2feabe;
-  transition: ease-in-out 0.3s all;
+  transition: all 0.3s;
+}
+#contact-section .contact-wrapper .contact-form .submit-btn:hover {
+  font-size: 0.9em;
 }
 #contact-section .contact-wrapper .contact-form ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */

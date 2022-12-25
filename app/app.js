@@ -4,10 +4,9 @@ function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
   let pageIDArray = pageID.split("/");
-
   pageID = pageIDArray[0];
   let subPageID = pageIDArray[1];
- 
+
   if (!pageID) {
     MODEL.changePage("home");
   } else if (pageID == "" || pageID == "home") {
@@ -48,13 +47,9 @@ function initFormListener() {
       icon: "error",
       backdrop: `
     rgba(0,0,0,0.6)
-    
-   
-   
   `,
       confirmButtonColor: "#2feabe",
       showCloseButton: true,
-
       showConfirmButton: false,
       customClass: {
         fontFamily: "PoppinsReg",
@@ -84,15 +79,12 @@ function initListeners() {
   $(window).on("load", route);
 }
 
+$(".slider").slick({
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  cssEase: "linear",
+});
 
- 
-  $(".slider").slick({
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    cssEase: "linear",
-  })
- 
-  initListeners();
-  initApp();
- 
+initListeners();
+initApp();
