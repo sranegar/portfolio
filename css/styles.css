@@ -490,7 +490,7 @@ section {
   font-size: 0.8em;
   color: white;
   position: absolute;
-  background-color: #252525;
+  background-color: #323232;
   padding: 4px 5px;
   min-width: 8%;
 }
@@ -867,7 +867,7 @@ section {
 }
 #modal #modal-wrapper #modal-content .modal-bottom {
   position: relative;
-  padding: 8px 4px 0px;
+  padding: 6px 4px 0px;
   min-height: 100%;
   background-color: white;
   border-bottom-right-radius: 15px;
@@ -880,6 +880,7 @@ section {
   justify-content: space-between;
 }
 #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row h2 {
+  display: block;
   font-family: PoppinsReg;
   letter-spacing: 1px;
   margin: 0px;
@@ -887,20 +888,10 @@ section {
   padding-left: 10px;
   margin-top: 1px;
 }
-#modal #modal-wrapper #modal-content .modal-bottom h4 {
-  font-family: PoppinsSemi;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #737373;
-  font-size: 0.9em;
-  margin-top: -4px;
-  margin-bottom: 0px;
-  padding-left: 10px;
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a {
+  text-decoration: none;
 }
-#modal #modal-wrapper #modal-content .modal-bottom a .mobile {
-  display: none;
-}
-#modal #modal-wrapper #modal-content .modal-bottom a button {
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button {
   height: 30px;
   font-family: PoppinsMed;
   text-transform: uppercase;
@@ -912,17 +903,30 @@ section {
   background-color: #15d1a5;
   cursor: pointer;
 }
-#modal #modal-wrapper #modal-content .modal-bottom a button i {
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button i {
   color: white;
   margin-left: 5px;
 }
-#modal #modal-wrapper #modal-content .modal-bottom a button:hover {
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button:hover {
   background-color: #10a380;
   border: 2.3px solid #10a380;
   color: white;
 }
-#modal #modal-wrapper #modal-content .modal-bottom a button:hover i {
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a button:hover i {
   color: white;
+}
+#modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
+  display: none;
+}
+#modal #modal-wrapper #modal-content .modal-bottom h4 {
+  font-family: PoppinsSemi;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #737373;
+  font-size: 0.9em;
+  margin-top: -4px;
+  margin-bottom: 0px;
+  padding-left: 10px;
 }
 #modal #modal-wrapper #modal-content .modal-bottom p {
   display: block;
@@ -968,7 +972,6 @@ section {
     display: none;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row .mobile {
-    display: block;
     padding: 0px 3px;
     height: 25px;
   }
@@ -985,7 +988,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   #modal #modal-wrapper #modal-content .modal-bottom h4 {
-    margin: 4px 0px 10px;
+    margin: 8px 0px 2px;
     line-height: 1em;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row {
@@ -1006,16 +1009,23 @@ section {
     margin-top: 3px;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile {
-    display: block;
+    display: flex;
     height: auto;
     text-align: center;
     color: #14c89d;
-    border: none;
     font-size: 0.84em;
     white-space: nowrap;
   }
   #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile i {
     color: #15d1a5;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile:hover {
+    background-color: none !important;
+    border: none;
+    color: white;
+  }
+  #modal #modal-wrapper #modal-content .modal-bottom .modal-bottom-top-row a .mobile:hover i {
+    color: white;
   }
 }
 @media screen and (max-width: 390px) {

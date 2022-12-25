@@ -79,7 +79,7 @@
 
              .modal-bottom {
                  position: relative;
-                 padding: 8px 4px 0px;
+                 padding: 6px 4px 0px;
                  min-height: 100%;
                  background-color: $site-white;
                  border-bottom-right-radius: 15px;
@@ -91,13 +91,51 @@
                      display: flex;
                      justify-content: space-between;
 
+
                      h2 {
+                         display: block;
                          font-family: PoppinsReg;
                          letter-spacing: 1px;
                          margin: 0px;
                          font-size: 1.185em;
                          padding-left: 10px;
                          margin-top: 1px;
+                     }
+
+                     a {
+                         text-decoration: none;
+
+                         button {
+                             height: 30px;
+                             font-family: PoppinsMed;
+                             text-transform: uppercase;
+                             color: $site-white;
+                             padding: 0px 8px;
+                             font-size: .75em;
+                             border: 2.5px solid darken($site-pink, 10%);
+                             letter-spacing: .4px;
+                             background-color: darken($site-pink, 10%);
+                             cursor: pointer;
+
+                             i {
+                                 color: $site-white;
+                                 margin-left: 5px;
+                             }
+
+                             &:hover {
+                                 background-color: darken($site-pink, 20%);
+                                 border: 2.3px solid darken($site-pink, 20%);
+                                 color: $site-white;
+
+                                 i {
+                                     color: $site-white;
+                                 }
+                             }
+                         }
+
+                         .mobile {
+                             display: none;
+                         }
                      }
                  }
 
@@ -112,40 +150,6 @@
                      padding-left: 10px;
                  }
 
-                 a {
-
-                     .mobile {
-                         display: none;
-                     }
-
-                     button {
-                         height: 30px;
-                         font-family: PoppinsMed;
-                         text-transform: uppercase;
-                         color: $site-white;
-                         padding: 0px 8px;
-                         font-size: .75em;
-                         border: 2.5px solid darken($site-pink, 10%);
-                         letter-spacing: .4px;
-                         background-color: darken($site-pink, 10%);
-                         cursor: pointer;
-
-                         i {
-                             color: $site-white;
-                             margin-left: 5px;
-                         }
-
-                         &:hover {
-                             background-color: darken($site-pink, 20%);
-                             border: 2.3px solid darken($site-pink, 20%);
-                             color: $site-white;
-
-                             i {
-                                 color: $site-white;
-                             }
-                         }
-                     }
-                 }
 
                  p {
                      display: block;
@@ -213,9 +217,9 @@
                          }
 
                          .mobile {
-                             display: block;
                              padding: 0px 3px;
                              height: 25px;
+
                          }
 
                      }
@@ -239,18 +243,18 @@
          }
      }
 
-    
+
  }
 
  @media screen and (max-width: 768px) {
      #modal {
          #modal-wrapper {
              #modal-content {
-                 .fa-xmark {
-                 }
+                 .fa-xmark {}
+
                  .modal-bottom {
                      h4 {
-                         margin: 4px 0px 10px;
+                         margin: 8px 0px 2px;
                          line-height: 1em;
                      }
 
@@ -276,17 +280,25 @@
                              }
 
                              .mobile {
-                                 display: block;
+                                 display: flex;
                                  height: auto;
                                  text-align: center;
                                  color: darken($site-pink, 12%);
-                                 border: none;
                                  font-size: .84em;
                                  white-space: nowrap;
-
+                                
                                  i {
                                      color: darken($site-pink, 10%);
+                                 }
 
+                                 &:hover {
+                                     background-color: none !important;
+                                     border: none;
+                                     color: $site-white;
+
+                                     i {
+                                         color: $site-white;
+                                     }
                                  }
                              }
                          }
