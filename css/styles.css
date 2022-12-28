@@ -449,7 +449,6 @@ section {
 #about-page .skills-title {
   background-color: #282828;
   text-align: center;
-  border-bottom: 1px solid #2feabe;
 }
 #about-page .skills-row {
   margin: 0 auto;
@@ -490,9 +489,7 @@ section {
   font-size: 0.8em;
   color: white;
   position: absolute;
-  background-color: #323232;
   padding: 4px 5px;
-  min-width: 8%;
 }
 #about-page .skills-row .skills-col1 .dev-skills progress {
   width: 100%;
