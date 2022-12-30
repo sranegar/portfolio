@@ -97,7 +97,7 @@ var columns = [
           "Collaborated with a design team to solve client's problems by creating web and new media solutions. I was the project manager, web developer, and web designer for this project. The solution led to the client selling out of all remaining 2022 theatre shows for the first time in several years. The final delivery included a website redesign with improved functionality to meet client's needs, content creation for social media marketing, and resources to improve website and social media maintainability.",
         href: "https://www.hendrickscivic.com",
         images: [
-          "assets/images/slider-images/hct.jpg",
+          "assets/images/slider-images/hct.png",
           "assets/images/slider-images/hct-2.png",
           "assets/images/slider-images/hct-3.png",
         ],
