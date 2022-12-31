@@ -30,7 +30,7 @@ var columns = [
         images: [
           "assets/images/slider-images/game-planet.jpg",
           "assets/images/slider-images/game-planet-3.jpg",
-          "assets/images/slider-images/game-planet-2.jpg",
+          "assets/images/slider-images/game-planet-2.png",
         ],
       },
     ],
