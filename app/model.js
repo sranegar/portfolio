@@ -10,7 +10,7 @@ var columns = [
         img: "assets/images/imi.jpg",
         subDetails: "Landing Page Marketing Solution",
         details:
-          "Drive IMI is a marketing design solution for Irving Materials Inc. I collaborated with the development and marketing teams at IMI and to design a fully responsive landing page utalizing Semantic UI's component library and Next.js for development. I took full ownership of this project from conception to deployment and contributed to design, architecture, and software decisions. The pages are programmed dynamically to alter content for each state's job opportunities and services. This project challenged me how to focus on a design that could alter effortlessly and cohesively on all devices to accomdate the dynamic content. I utilized Semantic UI for styled components and found using their grid extremely helpful for responsiveness.",
+          "Drive IMI is a marketing design solution for Irving Materials Inc. I collaborated with the development and marketing teams at IMI and to design a fully responsive landing page utilizing Semantic UI's component library and Next.js for development. I took full ownership of this project from conception to deployment and contributed to design, architecture, and software decisions. The pages are programmed dynamically to alter content for each state's job opportunities and services. This project challenged me how to focus on a design that could alter effortlessly and cohesively on all devices to accommodate the dynamic content. I utilized Semantic UI for styled components and found using their grid extremely helpful for responsiveness.",
         href: "https://drive-imi-master.vercel.app/",
         images: [
           "assets/images/slider-images/drive-imi-1.jpg",
@@ -44,7 +44,7 @@ var columns = [
         img: "assets/images/masNewsletter.png",
         subDetails: "Email Template",
         details:
-          "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computiner - IUPUI. I completed this project from start to finish by designing the template to meet the client's needs and developing to be fully responsive and compatible with light mode and dark mode email client settings. In addition, I created the page header graphic in two different color versions to add a unique touch while still maintaining brand guidelines.",
+          "An email template solution for the director of the Media Arts and Science program at the School of Informatics and Computing - IUPUI. I completed this project from start to finish by designing the template to meet the client's needs and developing to be fully responsive and compatible with light mode and dark mode email client settings. In addition, I created the page header graphic in two different color versions to add a unique touch while still maintaining brand guidelines.",
         href: "https://sranegar.github.io/masNewsletter/",
         images: [
           "assets/images/slider-images/newsletter.jpg",
