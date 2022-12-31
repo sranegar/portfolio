@@ -60,7 +60,7 @@ var columns = [
         img: "assets/images/brighter-days.jpg",
         subDetails: "Front-end design / brand development",
         details:
-          "Brighter Days is a front-end website design template and brand identity written in HTML, Sass, and Javascript with a focus on fast loading, design responsiveness, and CSS animations. This was purely made out of joy and allowed me to practice my front-end skills and embrace creativity. I started this project in Adobe XD and developed clean code by utilizing reusable components via Mixins.",
+          "Brighter Days is a front-end website design template and brand development written in HTML, Sass, and Javascript with a focus on fast loading, design responsiveness, and CSS animations. This was purely made out of joy and allowed me to practice my front-end skills and embrace creativity. I started this project in Adobe XD and developed clean code by utilizing reusable components via Mixins.",
         href: "https://sranegar.github.io/e-commerce-cbd/",
         images: [
           "assets/images/slider-images/cbd1.jpg",
