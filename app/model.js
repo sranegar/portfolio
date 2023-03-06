@@ -264,11 +264,6 @@ export function changePage(pageID, subPage, callback, callbackTwo) {
 
       callback();
     });
-  } else if (pageID == "about") {
-    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-      $("html, body").animate({ scrollTop: 0 }, "slow");
-      $("#app").html(data);
-    });
   } else if (pageID == "contact") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("html, body").animate({ scrollTop: 0 }, "slow");

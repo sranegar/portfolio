@@ -153,7 +153,7 @@ section {
 }
 .site-container .home .home-btn button:hover {
   background-color: #2feabe;
-  color: #282828;
+  color: #2b2b2b;
   font-family: PoppinsMed;
   border-color: #2feabe;
   transition: all 0.3s;
@@ -236,7 +236,7 @@ section {
   margin: 0px;
 }
 .site-container hr {
-  border: 0.5px solid #282828;
+  border: 0.5px solid #2b2b2b;
   margin-bottom: 12px;
 }
 
@@ -362,253 +362,6 @@ section {
     background-position: 80vw;
   }
 }
-#about-page {
-  padding-top: 8vh;
-  background-color: white;
-}
-#about-page .section-title h1 {
-  font-family: Yeseva;
-  font-size: 2em;
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px 0px;
-}
-#about-page .skills-title {
-  color: silver;
-}
-#about-page .section-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 6px;
-}
-#about-page .section-row .text-row {
-  font-family: PoppinsReg;
-  font-size: 1em;
-  max-width: 60%;
-  color: #000;
-  margin: 0 auto;
-  line-height: 1.6em;
-  letter-spacing: 0.3px;
-  border-left: 3px solid #181818;
-  padding-left: 20px;
-  text-align: left;
-}
-#about-page .section-row .text-row-two {
-  text-align: right;
-  min-width: 60%;
-  border-left: none;
-  border-right: 3px solid #181818;
-  padding-right: 20px;
-  margin-top: 20px;
-}
-#about-page .section-row .text-row-two .contact-link {
-  text-decoration: none;
-  color: #000;
-}
-#about-page .section-row .row-two {
-  border-left: 1px solid #282828;
-}
-#about-page .about-btns-wrapper {
-  max-width: 28%;
-  margin: 30px auto 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 5%;
-}
-#about-page .about-btns-wrapper button {
-  width: 175px;
-  margin-top: 10px;
-  font-size: 0.86em;
-  color: #404040;
-  background-color: transparent;
-  height: 45px;
-  font-family: PoppinsReg;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  position: relative;
-  border: 2px solid #404040;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
-#about-page .about-btns-wrapper button:hover {
-  background-color: #2feabe;
-  color: #282828;
-  font-family: PoppinsMed;
-  border-color: #2feabe;
-  transition: all 0.3s;
-}
-#about-page .about-btns-wrapper button:hover {
-  color: #052f25;
-  border: 2px solid #0e8b6e;
-  font-size: 0.9em;
-}
-#about-page .skills-title {
-  background-color: #282828;
-  text-align: center;
-}
-#about-page .skills-row {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  background-color: #B3B3B3;
-  padding: 30px 100px 80px;
-}
-#about-page .skills-row h3 {
-  font-family: PoppinsReg;
-  font-size: 1.2em;
-  padding: 40px 0px 30px;
-  color: #121212;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.5px;
-  width: 100%;
-}
-#about-page .skills-row p {
-  font-family: PoppinsLight;
-  font-size: 14px;
-}
-#about-page .skills-row .skills-col1 {
-  min-width: 50%;
-  border-right: 2px solid #121212;
-  padding-right: 50px;
-}
-#about-page .skills-row .skills-col1 .dev-skills {
-  display: flex;
-  flex-direction: column;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 8px;
-}
-#about-page .skills-row .skills-col1 .dev-skills label {
-  font-family: PoppinsLight;
-  font-size: 0.8em;
-  color: white;
-  position: absolute;
-  padding: 4px 5px;
-}
-#about-page .skills-row .skills-col1 .dev-skills progress {
-  width: 100%;
-  -webkit-appearance: none;
-}
-#about-page .skills-row .skills-col1 .dev-skills progress#file {
-  height: 28px;
-  margin-bottom: 10px;
-}
-#about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-bar {
-  background-color: white;
-}
-#about-page .skills-row .skills-col1 .dev-skills progress::-webkit-progress-value {
-  background-color: #404040;
-}
-#about-page .skills-row .skills-col2 {
-  min-width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: PoppinsReg;
-}
-#about-page .skills-row .skills-col2 .circle {
-  position: relative;
-  width: 140px;
-  height: 140px;
-  margin: 2rem;
-  border-radius: 50%;
-  background: white;
-  overflow: hidden;
-}
-#about-page .skills-row .skills-col2 .circle.per-85 {
-  background-image: conic-gradient(#404040 86%, white 0);
-}
-#about-page .skills-row .skills-col2 .circle.per-90 {
-  background-image: conic-gradient(#404040 93%, white 0);
-}
-#about-page .skills-row .skills-col2 .circle.per-75 {
-  background-image: conic-gradient(#404040 80%, white 0);
-}
-#about-page .skills-row .skills-col2 .circle .inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 115px;
-  height: 115px;
-  background: #B3B3B3;
-  border-radius: 50%;
-  font-size: 0.8em;
-  color: #121212;
-}
-#about-page .mobile-row {
-  display: none;
-}
-
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 105;
-  }
-}
-@media screen and (max-width: 768px) {
-  #about-page .mobile-row {
-    display: block;
-    padding: 35px 25px 35px;
-    text-align: right;
-    letter-spacing: 0.4px;
-    font-family: PoppinsReg;
-  }
-  #about-page .mobile-row a {
-    text-decoration: none;
-    color: #404040;
-  }
-  #about-page .section-row .text-row {
-    max-width: 100%;
-    padding: 0px 10px;
-  }
-  #about-page .section-row .text-row-two .contact-link {
-    text-decoration: underline;
-    color: #10a380;
-    transition: ease-in-out 0.2s all;
-  }
-  #about-page .section-row .text-row-two .contact-link:hover {
-    color: #14c39a;
-    transition: ease-in-out 0.2s all;
-  }
-  #about-page .about-btns-wrapper {
-    width: 55%;
-    padding-bottom: 50px;
-  }
-  #about-page .about-btns-wrapper .contact-btn {
-    display: none;
-  }
-  #about-page .skills-row {
-    flex-direction: column;
-    padding: 0px 20px 80px;
-  }
-  #about-page .skills-row .skills-col1 {
-    border-right: none;
-    border-bottom: 2px solid #121212;
-    padding-bottom: 50px;
-    padding-right: 0px;
-  }
-  #about-page .skills-row .skills-col1 .dev-skills label {
-    padding: 4px 10px;
-    min-width: 25%;
-  }
-  #about-page .skills-row .skills-col2 .circle {
-    margin: 1.5rem;
-  }
-}
-@media screen and (max-width: 390px) {
-  .about-section-row {
-    flex-direction: column;
-  }
-}
 .work {
   position: relative;
 }
@@ -709,7 +462,7 @@ section {
 }
 .work .work-wrapper .work-col .project-container .title-wrapper .work-btn-wrapper .work-btn:hover {
   background-color: #2feabe;
-  color: #282828;
+  color: #2b2b2b;
   font-family: PoppinsMed;
   border-color: #2feabe;
   transition: all 0.3s;
@@ -784,7 +537,7 @@ section {
   }
   .work .work-wrapper .work-col .project-container .image-container .title-wrapper .work-btn-wrapper .work-btn:hover {
     background-color: #2feabe;
-    color: #282828;
+    color: #2b2b2b;
     font-family: PoppinsMed;
     border-color: #2feabe;
     transition: all 0.3s;
@@ -1084,7 +837,7 @@ section {
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0px 0 3px;
-  background-color: #282828;
+  background-color: #2b2b2b;
   outline: none;
   color: #2feabe;
   border: none;
@@ -1098,7 +851,7 @@ section {
 #contact-section .contact-wrapper .contact-form textarea:active {
   border-color: transparent;
   border-bottom: 2px solid #2feabe;
-  background-color: #282828;
+  background-color: #2b2b2b;
 }
 #contact-section .contact-wrapper .contact-form .submit-btn {
   font-size: 0.86em;
@@ -1120,7 +873,7 @@ section {
 }
 #contact-section .contact-wrapper .contact-form .submit-btn:hover {
   background-color: #2feabe;
-  color: #282828;
+  color: #2b2b2b;
   font-family: PoppinsMed;
   border-color: #2feabe;
   transition: all 0.3s;
@@ -1169,7 +922,7 @@ section {
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0px 0 0;
-  background-color: #282828;
+  background-color: #2b2b2b;
   border: none;
   resize: none;
   color: #2feabe;
@@ -1211,7 +964,7 @@ footer .icons-wrapper {
 footer .icons-wrapper .icon {
   width: 40px;
   height: 40px;
-  background-color: #282828;
+  background-color: #2b2b2b;
   display: flex;
   align-items: center;
   justify-content: center;
