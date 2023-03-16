@@ -80,7 +80,7 @@ var columns = [
         subDetails: "MP3 Player",
         details:
           "A single page Music Player application client built in React that consumes web service data provided by a music API written in PHP using RESTful API. This was a solo passion project that allowed me to expand my practice as a full stack developer to understand all processes of backend and frontend development. I built the music API using PHP and a relational database that stored all data. The client successfully pulls all data and plays music. The music player also has a progress bar that animates along with the music. Note: I am having trouble deploying this on my own. If you feel like you can help- please contact me!",
-        href: "",
+        href: "https://music-streaming-app.vercel.app/",
         images: [
           "assets/images/slider-images/mp3.jpg",
           "assets/images/slider-images/mp3-2.jpg",
